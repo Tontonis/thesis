@@ -1,0 +1,40 @@
+\section{Frequency Domain Simulations}
+
+There are a number
+
+\begin{itemize}
+\item{Advantages of frequency domain - good resolution of structure by meshing, fast solution for individual modes, accurate for resonant structures. Weaknesses - Very memory intensive. Very time consuming to characterise structures over a large frequency ranges}
+\end{itemize}
+
+\subsection{Eigenmode Simulations}
+
+Eigenmode solvers are a subset of frequency domain solver that are used to identify strongly resonant modes in a structure. These can be cavity modes, antenna like oscillations or a number of other resonances within the structure. The resulting output of the simulation is typically the resonant frequency of the eigenmode(s), the quality factor $Q$ of the mode (if lossy boundary materials are defined) and the field pattern of the eigenmode solution.
+
+From the field pattern it is possible to readily calculate the longitudinal and transverse $R/Q$ of each cavity mode as defined in Sec.~\ref{sec:sec:imp_geo_imp}. The field patterns may also be used to calculate a number of other properties for each eigenmode, such as surface losses and stored energy in the cavity, which will be explained in further details in Sec.~\ref{sec:ferrite_damping}.
+
+\begin{itemize}
+\item{To identify cavity modes of structures}
+\item{Extract the resonant frequency and Q of cavity modes}
+\item{fields on axis/off axis to extract R/Q, transverse R/Q}
+\end{itemize}
+
+\subsection{The Coaxial Wire Method by Simulation}
+
+The coaxial wire method as described in Sec.~\ref{sec:coax_wire_meth} can be directly simulated using waveguide ports to represent matched connections at the ends of the device under test. The resulting simulations provide a transmission coefficient $S_{21}$ which may subsequently be evaluated in the same manner as measurements made with a physical wire. As with the measurements used in practice, a displaced wire and two wires may be simulated and again treated as measurements.
+
+\begin{itemize}
+\item{port solutions for driven modal simulations}
+\item{Allow the extraction of S21}
+\item{Evaluate as in previous section}
+\end{itemize}
+
+\subsection{Simulation of the particle beam}
+
+It is also possible to simulate a particle beam directly in the frequency domain. This is done by defining a wave source that produces a field similar to that of the particle beam. For ultrarelativistic beams this neccessitates a source field that is tangential to the direction of motion, and this may technically be possible for cases in which $\beta < 1$. The field components due to the source may be acquired and are the equivalent of the wakefield contribution at a given frequency. The beam impedance $Z$ can subsequently be easily evaluated from the resulting fields
+
+\begin{itemize}
+\item{Refer back to the nature of the EM field surrounding a charged particle beam (TEM-like)}
+\item{We can enforce a TEM like profile on emitted radiation of a surface}
+\item{With a TEM source with no wire - basically a particle beam}
+\item{Evaluation as mentioned in Oleksey's paper}
+\end{itemize}

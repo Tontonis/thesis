@@ -1,0 +1,55 @@
+\section{Symmetric Structures}
+
+The measurement of a symmetric structure greatly simplifies the measurement and analysis of the five impedance components considered significant for beam dynamics. A symmetric structure is defined as a structure that has both left/right and top/bottom symmetry in an orientation, as shown in figure [figure with ref]. It should be noted that this orientation does not have to be aligned with the reference orbit, however the respective impedances will have to be transformed to the correct coordinate system for any beam dynamics calculations if this is the case.
+
+If we consider the single wire measurements, given a general description in formula \eqref{eqn:imp-gen}[eq 33], we can generalise the impedance to
+
+\begin{equation}
+Z = A_{1} + aexp(-j\theta) A_{2} + aexp(j\theta) A_{3} + a^{2}exp(-2j\theta) A_{4} + a^{2}exp(2j\theta) A_{5} + a^{2} A_{6}
+% Generalised impedance proportional to x^2
+\end{equation}
+
+where $A_{1} = A_{0,0},$ $A_{2} = Z_{1,0} + Z_{0,-1}, $ $A_{3} = Z_{0,1} + Z_{-1,0}, $ $A_{4} = Z_{2,0} + Z_{1,-1} + Z_{0,-2}, $ $A_{5} = Z_{0,2} + Z_{-1,1} + Z_{-2,0}, $ $A_{6} = Z_{1,1} + Z_{-1,-1}$ and factors of $O(a^{3})$ are negligably small. It should be clear that $A_{1}$ is a representation of the longitudinal impedance, and the other combinations of the rotated measurements would be equal to the impedances $\bar{Z_{x}}$ and $\bar{Z_{y}}$ for certain values of $a$ and $\theta$. For example, if we set $a=x$ and $\theta  = 0$ in a cartesian coordinate system we obtain;
+
+\begin{equation}
+Z = A_{1} + x^{2}\left[A_{4} + A_{5} +A_{6}\right] = A_{1} + x^{2}\left[ \bar{Z_{x}} + \left(Z_{2,0} + Z_{0,2} + Z_{-2,0} + Z_{0,-2}\right) \right]
+\end{equation}
+
+where $\bar{Z_{x}} = Z_{1,1} + Z_{1,-1} + Z_{-1,1} + Z_{-1,-1}$. It can be seen that taking a series of measurements for different values of $x$ would give a parabola, of which the $x^{2}$ coefficient would be;
+
+\begin{equation}
+\bar{Z}_{l,1x} = \bar{Z_{x}} + \left(Z_{2,0} + Z_{0,2} + Z_{-2,0} + Z_{0,-2}\right)
+\end{equation}
+
+Using a similar derivation for $a=y$ and $\theta = \pi/2$ one can show that;
+
+\begin{equation}
+Z = A_{1} + y^{2}\left[\bar{Z_{y}} - \left(Z_{2,0} + Z_{0,2} + Z_{-2,0} + Z{0,-2}\right) \right]
+\end{equation}
+
+\begin{equation}
+\bar{Z}_{l,1y} = \bar{Z_{y}} - \left(Z_{2,0} + Z_{0,2} + Z_{-2,0} + Z_{0,-2}\right)
+\end{equation}
+
+We define the detuning/quadrupolar impedance from this as
+
+\begin{equation}
+-kZ^{detuning} = \left(Z_{2,0} + Z_{0,2} + Z_{-2,0} + Z_{0,-2}\right)
+\end{equation}
+
+And as such the quadratic term coefficients can be rewritten as
+
+\begin{align}
+Z_{l,1x} = \bar{Z_{x}} - Z^{detuning} \\
+Z_{l,1y} = \bar{Z_{y}} + Z^{detuning}
+\end{align}
+
+Given that we obtain $\bar{Z_{x}}, \bar{Z_{y}}$ directly from two wire measurements, we can thus obtain the detuning impedance by simply subtracting impedance from the two wire measurement from the quadratic coefficient $Z^{detuning} = \pm \left( Z_{l,1x/y} - \bar{Z_{y}} \right)$
+
+Similarly, it can be seen that 
+
+\begin{equation}
+Z_{l,1x} + Z_{l,1y} = \bar{Z_{x}} + \bar{Z_{y}}
+\end{equation}
+
+which can act as a verification of the validity of the measurements taken.

@@ -1,0 +1,76 @@
+\section{CDF Run II Prediction}\label{cdfrun2}
+
+Having fixed the POMWIG normalisation at the Tevatron using the published Run I results, predictions for the increased statistics of Run II can be made. The increased statistics are partly due to a dedicated trigger that looks for an incident hit in the RP and one calorimeter tower with $E_T>5$~GeV. The approach adopted for the Run II prediction is to follow, as closely as possible, the preliminary DPE di-jet analysis presented in \cite{Gallinaro:2005qh,Gallinaro:2005uh}. Because the CDF analysis was preliminary, the predictions in this section are not compared to the data and as such there is no need to smear the MC final state particles.
+
+The kinematic region for Run II is defined \cite{Gallinaro:2005qh} as
+\begin{equation}
+E_T^{1,2} > 10\text{ GeV}
+\end{equation}
+\begin{equation}
+|\eta_{1,2}| < 2.5
+\end{equation}
+\begin{equation}
+0.03 < \xi_{\bar{p}} < 0.1
+\end{equation}
+\begin{equation}
+\xi_p < 0.1
+\end{equation}
+\begin{equation}
+|t_{\bar{p}}| < 1 \text{ GeV}^2.
+\end{equation}
+The larger $\xi_p$ range is due to a new configuration of forward detectors, the MiniPlug (MP) and Beam-Shower Counters (BSC) \cite{Gallinaro:2004nd}, which cover the pseudo-rapidity region $3.6 < \eta < 7.5$. 
+
+In addition to ExHuME, the DPEMC event generator \cite{Boonekamp:2003ie} is also used to predict the exclusive component. This generator is based on a different, non-perturbative model of central exclusive production \cite{Bialas:1991wj,Forshaw:2005qp}. The differences between the generators have been well documented for Higgs production at the LHC  \cite{Alekhin:2005dy:excMC}, but the most important difference is that DPEMC does not contain a Sudakov suppression factor. As the Sudakov factor suppresses radiation up to the scale of the hard scatter, the cross section predicted by the Durham model has a steeper mass dependence because the phase space for gluon emission increases with central mass. The DPEMC model requires a soft-survival factor which is taken to be $S^2 = 0.1$ \cite{maartenboonekamp}. DPEMC is included to investigate whether Run II data could distinguish between the two models.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{| c | c | c | c |}
+\hline
+& $E_{T}^{min}$ (GeV)   & $\sigma_{T}$ (nb) & $\sigma_{R_{JJ} > 0.8}$ (nb) \\
+\hline 
+%CDF & 10 & n/a & 1.140 $\pm$ 0.060 $^{+ 0.047}_{-0.045}$ \\
+POMWIG & 10 & 188.16 & 0.10  \\ 
+ExHuME (MRST2002) & 10 &   0.82 & 0.26 \\
+ExHuME (CTEQ6M) & 10 &   1.45 & 0.43 \\
+DPEMC & 10 & 2.61 & 0.80\\
+POMWIG + ExHuME (MRST2002) & 10 & 188.98 & 0.36  \\ 
+POMWIG + ExHuME (CTEQ6M) & 10 & 189.61 & 0.53  \\ 
+POMWIG + DPEMC & 10 & 190.77 &  0.90 \\ 
+\hline
+%CDF & 25 & & 0.034 $\pm$ 0.003 $^{+0.015}_{-0.010}$\\
+POMWIG & 25 &  0.940 & 0.008 \\ 
+ExHuME (MRST2002) & 25 & 0.016 & 0.012\\
+ExHuME (CTEQ6M) & 25 & 0.037 & 0.027\\
+DPEMC & 25 & 0.176 & 0.118\\
+POMWIG + ExHuME (MRST2002) & 25 & 0.956 & 0.020\\
+POMWIG + ExHuME (CTEQ6M) & 25 & 0.977 & 0.035\\
+POMWIG + DPEMC & 25 & 1.116 & 0.126\\
+\hline
+\end{tabular}
+\caption[The predicted cross sections for CDF Run II]{The cross section predictions, $\sigma_T$, from POMWIG (with an effective gap survival factor $S^2 = 0.27$), ExHuME and DPEMC, in the CDF Run II preliminary kinematic range as described in the text. Also shown is the ExHuME prediction using the CTEQ6M parton density function. $E_{T}^{min}$ is the minimum transverse energy of the jets and  $\sigma_{R_{JJ} > 0.8}$ is the cross section of the exclusive region $R_{jj}>0.8$. \label{cdfrun2xs}} 
+\end{table}%
+
+The cross section of the event generators after applying the Run II kinematic constraints are shown in table \ref{cdfrun2xs} where, for completeness, the effect of using the CTEQ6M parton distribution functions is included for ExHuME. In all cases, the exclusive component is larger than the POMWIG contribution for events that satisfy $R_{jj}>0.8$. However, as shown in figure \ref{cdfrjjrun2}, this excess does not manifest itself as a visible peak above the DPE background, which is entirely consistent with the preliminary data. The DPEMC event generator predicts a larger cross section than ExHuME, although the different soft-survival factors play a major part in this.
+
+\begin{figure}[t]
+\centering
+	\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/ExHuME_RJJ_Run2.eps,width=0.5\textwidth,height = 6cm}}
+	\subfigure[]{\epsfig{figure=Diagrams/DPEMC_RJJ_Run2.eps,width=0.5\textwidth,height = 6cm}}
+	}
+\caption[The predicted $R_{jj}$ distributions for the ExHuME and DPEMC event generators for Run II at the Tevatron]{The predicted $R_{jj}$ distributions for the ExHuME (a) and DPEMC (b) event generators for Run II at the Tevatron. \label{cdfrjjrun2}}
+\end{figure}
+
+Table \ref{cdfrun2xs} gives a hint of the differences between the two exclusive models. The ratio of the ExHuME (MRST2002) cross section to the DPEMC cross section is 0.31 for all events with jets that satisfy $E_T > 10$~GeV.  For jets with transverse energy greater than 25~GeV however, the ratio decreases to 0.09. Figure \ref{cdfrun2etjet2} (a) shows the cross section in the exclusive region,  $R_{jj}>0.8$, as a function of the minimum transverse energy of the jets, $E_T^{min}$.  There is a clear difference in the distributions produced by POMWIG$+$ExHuME and POMWIG$+$DPEMC. 
+
+ If the background DPE events are subtracted, then the transverse energy dependence of the cross section for events that satisfy $R_{jj} > 0.8$ is represented by one of the exclusive curves in figure \ref{cdfrun2etjet2} (b), which have been normalised to pass through the same point at $E_{T}^{min}=10$~GeV. The difference in the predictions of the two exclusive generators is now even more pronounced as ExHuME predicts a significantly steeper transverse energy distribution than DPEMC. This is entirely due to the Sudakov suppression factor; if large central masses are suppressed, then large transverse energy jets will be suppressed. It is concluded that the transverse energy distribution of the events that satisfy $R_{jj}>0.8$ can, in principle, distinguish between the two exclusive models.
+
+\begin{figure} [t]
+\centering
+	\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/CDF_ETDistAll.eps,width=0.5\textwidth,height = 6cm}}
+	\subfigure[]{\epsfig{figure=Diagrams/CDF_ETDistComp.eps,width=0.5\textwidth,height = 6cm}}
+	}
+\caption[The cross section of the exclusive region, $R_{jj} > 0.8$, as a function of the minimum transverse energy of the second jet]{The cross section of the exclusive region, $R_{jj} > 0.8$, as a function of the minimum transverse energy of the second jet (a). Figure (b) shows the contribution to the $R_{jj}$ region from the exclusive event generators. \label{cdfrun2etjet2}}
+\end{figure}
+

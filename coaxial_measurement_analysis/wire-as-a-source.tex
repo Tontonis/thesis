@@ -1,0 +1,61 @@
+\section{A Coaxial Wire as a Field Source}
+
+To carry out the coaxial measurement, it is neccessary to use a thin conductive wire suspended in the device under test to simulate the electromagnetic fields as would be produced by a relativistic charged particle. Conveniently, the formalism as derived by Tsutsui is utilises a current density, which can represent either the motion of charged particle or of current carrying wire. This is subsequently utilised to simulate both two wire and single wire measurements.
+
+\subsection{Two Wire Measurements}
+
+If we consider two wires located at positions $x=\pm a$, their current density can be approximated by
+
+\begin{align*}
+J & = I(\delta(x-a)\-\delta(x+a))\delta(y)exp(j(\omega{}t - kz))\\
+  & = \frac{I}{\pi{}a}\sum^{\infty}_{m=-\infty}exp(j(2m+1)\theta)exp(j(\omega{}t-kz))\\
+  & = 2 \sum^{\infty}_{m=-\infty}a^{|2m+1|}J_{2m+1}
+\end{align*}
+
+The impedance is thus;
+
+\begin{align}
+Z & = -\frac{1}{I^{2}}\int dV \left( 2\sum^{\infty}_{m=-\infty}a^{|2m+1|}E_{2m+1}\right) \left( 2\sum^{n=\infty}_{n=-\infty}a^{|2n+1|}J^{*}_{2n+1}) \right)\\
+& =  4\sum_{n,m} a^{|2m+1| + |2n+1|}Z_{2m+1,2n+1} \\
+& =  4a^{2}(Z_{1,1} + Z_{-1,1} + Z_{1,-1} + Z_{-1,-1}) + O(a^{4})\\
+& =  4a^{2}\bar{Z_{x}}+O(a^{4})
+\end{align}
+
+This demonstrates that the transverse impedance as defined in (2), $\bar{Z_{x}}/k$ can be measured using the two wire technique for negligable higher order components (i.e. small displacement a). Subsequently to determine the transverse impedance $\bar{Z^{\perp}_{x}}$ it is simply neccessary to utilise;
+
+\begin{equation}
+\bar{Z^{\perp}_{x}} = \frac{\bar{Z_{x}}}{k} = \frac{cZ}{\omega(2a)^{2}}
+\end{equation}
+
+where Z is the measured longitudinal impedance from the two wires.
+
+\subsection{One Wire Measurements}
+
+For a wire displaced at a distance $x=x_{0}$, $y=y_{0}$, the current density may be approximated as
+
+\begin{align}
+J & = & I\delta{}(x-x_{0})\delta{}(y-y_{0})exp(j(\omega t - kz)) \\
+  & = & \frac{I}{2\pi a}\delta (r-a) \sum^{\infty}_{m=-\infty} exp(jm(\theta - \theta_{0})) exp(j(\omega t - kz)) \\
+  & = & \sum^{\infty}_{m=-\infty} a^{|m|} exp(-jm\theta_{0})J_{m}
+\end{align}
+
+where
+
+\begin{align*}
+x_{0} = acos(\theta_{0}) \\
+y_{0} = asin(\theta_{0})
+\end{align*}
+
+During measurements $a$ and $\theta_{0}$ will be varied and thus that various coefficients $Z_{n,m}$ can be determined.
+
+\begin{align}
+Z  &=  -\frac{1}{I^{2}}\int dV \left( \sum^{\infty}_{m=-\infty} a^{|m|} exp(-jm\theta_{0})E_{m} \right) \left( \sum^{\infty}_{n=-infty} a^{|n|} exp(jn\theta_{0}) J^{*}_{n} \right) \\
+   &=  \sum_{m,n}a^{|m| + |n|}exp(-j(m-n)\theta_{0})Z_{m,n} \\
+  &= Z_{0,0} + a \left[ exp(-j\theta_{0})(Z_{1,0} + Z_{0,-1}) + exp(j\theta_{0})(Z_{0,1}+Z_{-1,0} \right] \\
+ & + a^{2} \ [ exp(-2j\theta_{0})(Z_{2,0} + Z_{1,-1} +Z_{0,-2}) + (Z_{1,1} + Z_{-1,-1}) \\
+ & + exp(2j\theta_{0})(Z_{0,2} + Z_{-1,1} + Z_{-2,0}) ] \\
+ & + a^{3} \left[...\right] + ...
+\eqref{eqn:imp-gen}
+\end{align}
+
+By scanning the wire position, it is possible to obtain the values of the various coefficients and obtain the values for the transverse impedance. This will be covered in more depth in section 4.

@@ -1,0 +1,41 @@
+\documentclass[12pt,PhD]{Thesis}
+%%%% \documentclass[12pt,MSc,singlespace]{muthesis}
+%%%%  can be used until the final draft
+\usepackage{graphicx}
+\usepackage{braket}
+\usepackage{afterpage}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{axodraw}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage[british]{babel}
+\newcommand{\Pom}{I$\!$P}
+\newcommand{\Reg}{I$\!$R}
+
+\begin{document}
+\afterpreface
+% \renewcommand{\topfraction}{0.9}
+ %\renewcommand{\bottomfraction}{0.8}
+ %\setcounter{topnumber}{2}
+  %  \setcounter{bottomnumber}{2}
+ %   \setcounter{totalnumber}{4}     % 2 may work better
+%    \setcounter{dbltopnumber}{2}    % for 2-column pages
+%    \renewcommand{\dbltopfraction}{0.9} % fit big float above 2-col. text
+%    \renewcommand{\textfraction}{0.07}  % allow minimal text w. figs
+%    %   Parameters for FLOAT pages (not text pages):
+%    \renewcommand{\floatpagefraction}{0.7}      % require fuller float pages
+%        % N.B.: floatpagefraction MUST be less than topfraction !!
+%    \renewcommand{\dblfloatpagefraction}{0.7}   % require fuller float pages
+  %  \linespread{1.6}
+
+\chapter{$h \rightarrow b\bar{b}$ at ATLAS} \label{higgsstudy}
+\input{Analysis/JetAlgos.tex}
+\input{Analysis/ExclusiveVariables.tex}
+\input{Analysis/Higgs.tex}
+
+\bibliographystyle{mnras}
+\bibliography{references}
+
+\end{document}

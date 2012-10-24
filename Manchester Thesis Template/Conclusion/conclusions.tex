@@ -1,0 +1,30 @@
+An investigation into central exclusive production has been presented in this thesis. The study focused on the $b \bar{b}$ decay channel of a Higgs boson at the LHC and di-jet production at the Tevatron, both of which had been predicted to be observable in the literature. These analyses required the development of a new Monte Carlo event generator that was capable of simulating the full central exclusive event.
+
+The ExHuME generator was developed, which implemented the Durham model of central exclusive production. Four processes were included for general use: Higgs, $q\bar{q}$, $gg$ and $\gamma\gamma$. The program was written in C$++$ and designed so that users could easily implement new processes if the central system was a one or two particle state. 
+
+Initial studies using ExHuME showed that the cross section of central exclusive processes are dependent on the parton density function used in the calculation. It was found that changing the parton density function could change the cross section by up to a factor of two. The potential observation of central exclusive di-photon events at ATLAS was evaluated by calculating the number of events that would pass the ATLAS level 1 photon trigger. It was shown that the process will be observable at ATLAS if forward proton detectors were installed 420~m either side of the interaction point. It was also shown that a complementary study will be possible at very low luminosity ($10^{32}$~cm$^{-2}$~s$^{-1}$) if a rapidity gap is required in addition to a lower transverse energy trigger for the photons.
+
+The potential observation of central exclusive di-jets at the Tevatron was investigated. The distribution of the di-jet mass fraction, $R_{jj}$, was predicted for CDF Run II, using a double pomeron exchange (DPE) event generator in conjunction with ExHuME. The central exclusive events were shown to be an excess over the DPE events at large values of the di-jet mass fraction. It was shown that the transverse energy distribution of the jets from events that satisfy $R_{jj}>0.8$ could be used to distinguish between the different theoretical models of central exclusive production.
+
+The central exclusive $b \bar{b}$ decay channel of a Higgs boson was investigated at the LHC,  assuming that forward proton detectors would be installed in the 420~m region either side of the interaction point at ATLAS. The analysis covered the Standard Model Higgs boson and the MSSM lightest Higgs boson for two MSSM parameter choices. The backgrounds simulated in the study were the central exclusive $gg$ and $b\bar{b}$ processes and the diffractive (DPE) and non-diffractive production of light jets and $b\bar{b}$. Non-diffractive events were shown to act as a background if a threefold coincidence occurred between a non-diffractive event and two single diffractive events.
+
+A series of analysis cuts were developed to reduce these backgrounds. Two methods of reconstructing the di-jet mass fraction were examined, $R_{jj}$ and $R_{j}$, and it was found that the $R_j$ variable was less susceptible to final state radiation effects than the $R_{jj}$ variable.
+A comparative study of the cone and $k_T$ algorithms was performed, with the emphasis being placed on the separation of the central exclusive and DPE processes. It was found that the cone algorithm was more successful than the $k_T$ algorithm at reducing the DPE background. Furthermore, the central exclusive $gg$ background was also reduced when using the cone algorithm.
+
+It was discovered that matching the kinematic information between the protons in the forward detectors and the jets  in the central detector would not have enough rejection power to reduce the non-diffractive background.
+It was shown that these backgrounds could be further reduced by charged particle multiplicity cuts,  which were motivated by the observation that protons in non-diffractive events can have multiple parton interactions. 
+This resulted in the non-diffractive events being reduced to a tolerable level.
+
+A preliminary trigger study was performed, which examined the possibility of using muon, rapidity gap and jet triggers to retain the signal events at ATLAS. It was concluded that it would not be possible to implement a rapidity gap trigger due to the large number of pile-up events at the LHC.
+It was also found that the currently proposed low transverse momentum muon trigger would not retain enough of the signal. However, it was shown that a low transverse energy jet trigger could be implemented at level 1, if the large rejection power from the forward detectors was used to reduce the rate at level 2. This jet trigger would have to be pre-scaled so that a fixed jet rate occurred at level 1, and it was shown that meaningful results could only be obtained if the allowed rate was 25~kHz.
+
+Unfortunately, the Standard Model Higgs cross section is too small to observe a significant excess of signal over background in the $b\bar{b}$ decay channel. In the case of the MSSM, only one of the parameter choices ($m_A=130$~GeV, tan$\beta=50$) was potentially observable at ATLAS. It was found that a significance of 3.0 could be achieved after five years of data acquisition, with 5 signal events observed every year.
+This prediction has a large uncertainty, with the dominant effect being the uncertainty in the central exclusive calculation. Future work could focus on reducing the uncertainty associated with each of the processes used in this analysis.
+
+%%introductory paragraph on three main points
+
+%% ExHuME -
+
+%% Higgs -> bb
+
+%% dijet tevatron

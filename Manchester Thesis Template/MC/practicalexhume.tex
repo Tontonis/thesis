@@ -1,0 +1,38 @@
+\chapter{ExHuME Run Control Parameters} \label{appendixa}
+
+ExHuME can be controlled by passing a card file from the command line that can contain the control parameters given in table \ref{cards}. The collider can be set to the LHC ($1$), the Tevatron ($0$) or neither ($-1$). Choosing a collider sets the proton collision energy, $\sqrt{s}$, the survival factor, $S^2$,  and $R_{g}$, which accounts for the skewed effect in the un-integrated gluons. Choosing neither means that the user must set these parameters. The PDF values are the PDF set numbers accepted by the LHAPDF library.  \texttt{Freeze} is a scale below which $\alpha_{s}$ is frozen and $Q_{\perp min}$ is the lower bound on the integral in equation \ref{ceplumi}.
+
+\begin{table}[htdp]
+\begin{center}
+\begin{tabular}{| l | l | l | l |}%these are l's in the middle
+\hline
+\textbf{Parameter}&\textbf{Name}&\textbf{Type}&\textbf{Default}\\
+\hline
+$\alpha$&\texttt{AlphaEW}&\texttt{double}& 0.0072974\\
+$M_{W}$&\texttt{WMass}&\texttt{double}& 80.33\\
+$M_{Z}$&\texttt{ZMass}&\texttt{double}& 91.127\\
+$M_{h}$&\texttt{HiggsMass}&\texttt{double}&120.0 \\
+$M_{t}$&\texttt{TopMass}&\texttt{double}&175.0 \\
+$M_{b}$&\texttt{BottomMass}&\texttt{double}& 4.6\\
+$M_{c}$&\texttt{CharmMass}&\texttt{double}& 1.42\\
+$M_{s}$&\texttt{StrangeMass}&\texttt{double}& 0.19\\
+$M_{\tau}$&\texttt{TauMass}&\texttt{double}& 1.77\\
+$M_{\mu}$&\texttt{MuonMass}&\texttt{double}& 0.1057\\
+$v$&\texttt{HiggsVev}&\texttt{double}& 246.0\\
+$Q_{\perp min}^{2}$&\texttt{MinQt2}&\texttt{double}& 0.64\\
+$\Lambda$ ($MeV$)&\texttt{LambdaQCD}&\texttt{double}& 80 ($MeV$)\\
+&\texttt{Freeze}&\texttt{double}& $Q_{\perp min}$\\
+$b$&\texttt{B}&\texttt{double}& 4.0 \\
+collider&\texttt{FNAL\_or\_LHC}&\texttt{int}& 1\\
+$s$&\texttt{s}&\texttt{double}& $1.96\times 10^{8}$\\
+$s^{\frac{1}{2}}$&\texttt{root\_s}&\texttt{double}& 14000.0\\
+$\mathcal{S}^{2}$&\texttt{Survive}&\texttt{double}& 0.03\\
+$PDF$&\texttt{PDF}&\texttt{int}& 20250\\
+\hline
+
+\end{tabular}
+\end{center}
+\caption{ExHuME control parameters}
+\label{cards}
+\end{table}
+

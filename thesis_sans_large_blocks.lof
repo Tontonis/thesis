@@ -1,0 +1,11 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The spectral lines of a beam with \G@refundefinedtrue \text {\normalfont \bfseries ??}\GenericWarning { }{LaTeX Warning: Reference `fig:BB-20MHz-spacing' on page 14 undefined} 50ns bunch spacing and \G@refundefinedtrue \text {\normalfont \bfseries ??}\GenericWarning { }{LaTeX Warning: Reference `fig:BB-40MHz-spacing' on page 14 undefined} 25ns bunch spacing with a broadband impedance ($R_{s} = 0.23M\Omega , Q=1, \omega _{0} = 1$GHz)}}{14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{14}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The change in power loss due to a broadband impedance with an increased number of bunches in a storage ring}}{14}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The spectral lines overlaying on a narrow band impedance. The spectral lines (in blue) are for $\omega _{0}=40\text {MHz}$. Note how only a single spectral line lies on this impedance.}}{15}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Wakefield Basics}{4}
+\contentsline {section}{\numberline {3}A Coaxial Wire as a Field Source}{7}
+\contentsline {subsection}{\numberline {3.1}Two Wire Measurements}{7}
+\contentsline {subsection}{\numberline {3.2}One Wire Measurements}{7}
+\contentsline {section}{\numberline {4}Analysis using the Transmission Method}{9}
+\contentsline {section}{\numberline {5}Analysis using the Resonator Method}{10}
+\contentsline {section}{\numberline {6}Symmetric Structures}{12}
+\contentsline {section}{\numberline {7}Asymmetric Structures}{14}

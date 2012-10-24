@@ -1,0 +1,152 @@
+\section{Monte Carlo Methods} \label{mcmethods}
+
+\subsection{Monte Carlo Integration}
+
+The basic Monte Carlo (MC) method is an integration technique based on randomly sampling a distribution. Consider a one dimensional function, $f(x)$. The definite integral, $I$, can be estimated \cite{Langanke:1993qn} by 
+\begin{equation} \label{onedint}
+I = \int^{x_{2}}_{x_{1}} f(x) dx \approx \frac{x_{2}-x_{1}}{N} \sum_{i=1}^{N} f(x_i)
+\end{equation} 
+where $N$ is the number of sampling points chosen randomly in the range $\{x_{1}, x_{2}\}$. The function is averaged across the specified range and the approximation becomes exact as $N\rightarrow\infty$. The uncertainty in the integral, $\sigma_I$, is calculated by
+\begin{equation}\label{onederror}
+\sigma_{I}^2  = \frac{\left(x_2 - x_1\right)^2}{N}\left[\frac{1}{N}\sum_{i=1}^{N} f(x_i)^2 - \left(\frac{1}{N}\sum_{i=1}^{N}f(x_i)\right)^2 \right]
+\end{equation}
+where the term in square brackets is the variance of the function.
+The uncertainty in the integral can be reduced significantly in two ways. Firstly, the uncertainty  decreases with $N^{1/2}$, which means that sampling more points results in a better estimate of the integral. Secondly, the uncertainty decreases with the variance of the function. Therefore, if the amount by which a function varies from its average is reduced, the uncertainty in the integral will also decrease.
+
+The smoothing out of functions in this way is achieved by the use of a weight function. A new integration variable, $y$, is introduced such that
+\begin{equation}\label{changeintvar}
+\frac{dy}{dx} = w(x)
+\end{equation}
+where $w(x)$ is the weight function.
+%\begin{equation}
+%\int_{x_{min}}^{x_{max}} w(x) dx = 1.
+%\end{equation}
+The integral can then be rewritten as 
+\begin{equation}\label{ndint}
+I = \int^{y_{2}}_{y_{1}} \frac{f(x(y))}{w(x(y))} dy \approx \frac{y_{2} - y_{1}}{N} \sum_{i=1}^{N} \frac{f(x(y_i))}{w(x(y_i))}
+\end{equation}
+ where the sampling points are chosen randomly in the range $\{y_{1}, y_{2}\}$. The uncertainty in the integral can be evaluated using equation \ref{onederror} with the substitution $f(x)\rightarrow\frac{f(x)}{w(x)}$. The uncertainty is now dependent on the variance of $\frac{f(x)}{w(x)}$, which can be minimised by an appropriately chosen weight function. 
+ 
+The power of the MC integration technique is realised with the extension to an arbitrary number of dimensions. Each component of the $n$-dimensional point $\textbf{x}=(x^1,...,x^n)$ is chosen independently and the integral is approximated by
+\begin{equation}
+I \approx \frac{1}{N}\sum_{i=1}^{N} f(\textbf{x}_i) \prod_{j=1}^{n}\left( x^j_{2} -x^{j}_{1}\right) 
+\end{equation}
+where the product term is simply the volume element over which the integration is performed. An $n$-dimensional  weight function can then be chosen providing it factorises into the form
+\begin{equation}
+w(\textbf{x}) = \prod_{j=1}^{n} w(x^j) 
+\end{equation}
+where each $w(x^j)$ is a weight function for dimension $j$. This results in the new $n$-dimensional integration variable, $\textbf{y}$, the components of which are chosen randomly and  independently between $\{y^j_{1}, y^j_{2}\}$.
+
+
+\subsection{Pseudo-Random Number Generators}
+
+A computer does not generate true random numbers, but rather generates numbers according to an algorithm. These pseudo-random numbers appear random to someone who does not know the details of the algorithm. The generation of these numbers must have three important characteristics \cite{James:1988vf}. 
+
+Firstly, the random number sequence must have a long period. Any algorithm that generates a sequence of numbers will eventually start repeating itself. For any given calculation, the number of pseudo-random numbers generated must not become close to the period of the sequence.
+
+Secondly, the results of the generation must be repeatable. This is achieved by the use of a seed number from which the algorithm generates the sequence. Thus, the complete calculation can then be repeated and the same results obtained. The seed can also be recorded at any time. This allows a small subset of numbers to be recreated from a large sequence. This is desirable if, for example, a small set of numbers is changing the result of the calculation. The set can then be examined at any time without having to regenerate the  entire sequence.
+
+The final requirement is a good distribution, which means that the random numbers should not be correlated and should be uniformly distributed. The only way to see if a random number generator results in a good distribution is to subject it to a variety of tests \cite{Vattulainen:1993rm,Rutti:2004th}. 
+
+\subsection{Generation of Random Numbers to a Distribution}\label{mcdist}
+
+The basic Monte Carlo evaluation of an integral required random numbers to be distributed uniformly in the integration variable of interest. The introduction of the weight function however, results in the random numbers being distributed uniformly in a new variable defined by equation \ref{changeintvar}. This can be viewed as the smoothing out of the function by changing integration variables. However, the uniform distribution of random numbers in this new variable is equivalent to the random numbers being picked - in the original integration variable - with a probability density defined by the (normalised) weight function. This is known as importance sampling because random numbers are more likely to be picked in regions of interest determined by the weight function.
+
+This method only allows random numbers to be picked for an analytical function that is integrable. For a non-analytic function, Von~Neumann rejection can be used to distribute the random numbers. Von~Neumann rejection works as follows for a one dimensional function $f(x)$:
+\begin{enumerate}
+\item A weight function, $w(x)$, is chosen such that, for all $x$, $w(x) \geq f(x)$.
+\item The random values of $x$ are distributed according to $w(x)$.
+\item For each value of $x$, a random number, $r$, is picked in the interval $\{0, 1\}$.
+\item The point is accepted if 
+\begin{equation}
+\frac{f(x)}{w(x)} \geq r .
+\end{equation}
+\end{enumerate}
+The result of such an algorithm is shown in figure \ref{vonneu} (a). Using this method, random numbers can be distributed to any function providing a suitable weight function can be chosen. The efficiency, $\epsilon$, of picking the points is given by 
+\begin{equation}
+\epsilon = \frac{N_{P}}{N_{T}}
+\end{equation}
+where $N_{T}$ and $N_P$ are the number of points attempted and accepted respectively. The choice of weight function is important from a computing perspective as a poor efficiency increases the time taken to complete the task.
+Figure \ref{vonneu} (b) shows the effect of choosing a weight function that does not satisfy $w(x) \geq f(x)$. The actual distribution generated in this case would be min($f(x)$, $w(x)$).
+%%figure here
+\begin{figure} 
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/VonNeuDistributed.eps,width=0.5\textwidth,height = 5cm}}
+	\subfigure[]{\epsfig{figure=Diagrams/VonNeuBadlyDistributed.eps,width=0.5\textwidth,height = 5cm}}
+}
+\caption[The Von Neumann technique to generate random numbers  to a distribution]{Figure (a) shows the Von Neumann  rejection method to generate random numbers, $x$, to a specific distribution, $f(x)$. Initially the values of $x$ were distributed according to an appropriately chosen weight function, w(x). Figure (b) shows the effect of picking a weight function that doesn't satisfy $f(x) \leq w(x)$ for all $x$.\label{vonneu}}
+\end{figure}
+
+
+\subsection{Numerical Methods for Estimating the Weight Function}\label{mcnumerical}
+
+The problem with the generation of random numbers to a distribution is that prior knowledge of the distribution is required in order to choose an appropriate weight function. Without this knowledge, the result can be the incorrect distribution of the points or very inefficient picking. One way to avoid these problems is to numerically estimate the normalised weight function, or probability density, by calculating the integral.
+
+%%
+
+%This method cannot be extended to two or more dimensions where, to estimate the probability distribution, random sampling must be used to evaluate the integral. 
+This type of approach has been implemented in the VEGAS algorithm \cite{Lepage:1980dq}, which allows $n$-dimensional distribution of random numbers. An adapted version of VEGAS is described here. 
+For each axis, $j$, the integration range, $\{a^j, b^j\}$, is divided into $M_0$ strips and therefore the integration volume is divided into $(M_0)^n$ hypercubes that form a grid as shown in figure \ref{vegasstrip} (a). For $M_0$ strips, there are $M_0+1$ axis divisions, $x^j_k$, where $0\leq k \leq M_0$, and the separation of each division is $\frac{b^j - a^j}{M_0}$. The boundaries of the integration range satisfy $x^j_0 = a^j$ and $x^j_{M_0} = b^j$. 
+
+A standard Monte Carlo sampling is carried out for $N$ points assuming a uniform probability density for each axis. The integral of each strip, $I^j_k$, which is bounded by the divisions $x_k^j$ and $x^j_{k-1}$,  is recorded for each axis. Note that, by definition, the integral $I_0^j$ is set to zero for all $j$, since this strip is outside the range of integration. The probability density, $\rho^j_k$, of each strip is then given by 
+\begin{equation}\label{integralprobdensity}
+\rho^j_k = \frac{ I^j_k}{I}
+\end{equation}
+where I is the total integral. Any number, $I^{\prime}$, in the range $\{0, I\}$ can be mapped back to a point on an axis, $x^j$, by recognising that
+\begin{equation}
+I^{\prime} = \int_{a^{j}}^{x^j} \, f(x^j) \, dx^j
+\end{equation}
+and using linear interpolation.
+Firstly, the strip of interest, $k^{\prime}$, is identified using
+\begin{equation}
+C^j_{k^{\prime}-1} \leq I^{\prime} \leq C^j_{k^{\prime}}.
+\end{equation}
+where $C^j_{k^{\prime}}$ is the cumulative integral up to the division $x^j_{k^{\prime}}$ and defined as
+\begin{equation}
+C^j_{k^{\prime}} = \sum_{k=0}^{k=k^{\prime}} I^j_k.
+\end{equation}
+The boundary conditions for the cumulative integrals are $C^j_{0}=0$ and $C^j_{M_0}=I$. The point on the axis that corresponds to $I^{\prime}$ is given by
+\begin{equation}\label{vegaspointmap}
+x^j = x^j_{k^{\prime}-1} + \,  \left(\frac{I^{\prime} -  C^j_{k^{\prime}-1}}{C^j_{k^{\prime}} -  C^j_{k^{\prime}-1}}\right)
+\left(x^j_{k^{\prime}} - x^j_{k^{\prime}-1} \right)   .
+\end{equation}
+
+After the initial estimate of the probability density for each axis, a new grid is formed with each strip in the grid having approximately the same integral, $I^j_k = \frac{I}{M_0}$. This is achieved by creating new strip boundaries by setting $I^{\prime} = \frac{kI}{M_0}$ in equation \ref{vegaspointmap}. An example of the grid changing is shown in figure \ref{vegasstrip} (b). Another  Monte Carlo sampling is carried out with the random numbers being picked in the range $\{0, I\}$ for each axis and the actual point on the axis is determined by equation \ref{vegaspointmap}. This concentrates points in the region where the integral is largest, which corresponds to small hypercubes in the new grid. The new $I^j_k$ are recorded.
+
+This process is repeated as many times as the user requires.  Each iteration results in a probability density that more closely resembles the function of interest. At the end of the calculation, when the user is satisfied that the integral and probability density are well known, points on each axis can be picked efficiently by selecting a random number in the range $\{0, I\}$ and using equation \ref{vegaspointmap}. The error, $\sigma_{\alpha}$, in the integral, $I_{\alpha}$, is reduced in each sampling, $\alpha$, as the probability density becomes more like the function of interest. The combined integral estimate is then given by
+\begin{equation}
+I = \bar{\sigma}^2 \sum_{\alpha} \frac{I_{\alpha}}{\sigma_{\alpha}^2}
+\end{equation}
+where $\bar{\sigma}$ is the uncertainty of the combined sample and is given by
+\begin{equation}
+\frac{1}{\bar{\sigma}^2} = \sum_{\alpha} \frac{1}{\sigma_{\alpha}^2}.
+\end{equation}
+
+\begin{figure} 
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/vegasuniform.eps,width=0.5\textwidth,height = 5cm}}
+	\subfigure[]{\epsfig{figure=Diagrams/vegasincreased.eps,width=0.5\textwidth,height = 5cm}}
+}
+\caption[The alteration of hypercube size by the VEGAS algorithm]{Figure (a) shows the VEGAS grid for a uniform probability density. This is the grid that VEGAS initialises. Figure (b) shows a grid which corresponds to uniform distribution in the vertical coordinate, but an decreasing distribution (left to right) in the horizontal coordinate. \label{vegasstrip}}
+\end{figure}
+
+The VEGAS method works well for distributions that do not contain sharp peaks or divergences that are a function of two coordinates. For example, a discontinuous function with an edge perpendicular to an axis will be handled efficiently by VEGAS. On the other hand, a discontinuous function with an edge 45 degrees to two axes will cause problems and will result in inefficient weighting. 
+
+This problem arises because, within each strip on the axis in question, there are areas where the function and integral will be zero. The integral of the strip however, can be quite large. Thus picking the two coordinates independently can result in a lot of points picked in an area of zero integral. Although these points can then be rejected by Von Neumann methods, the result is an overall increase in computing resources required to complete the task.
+
+If the problem is restricted to one dimension, then Monte Carlo methods do not need to be used to calculate the integral in order to estimate the probability distribution. The integration range, $\{a,b\}$, is divided into $M_0+1$ equally spaced points, $x_k$, with the boundary conditions $x_0 =a$ and $x_{M_0}=b$. The integral between each point 
+\begin{equation}\label{intjames}
+I_k = \int_{x_{k-1}}^{x_{k}} f(x) dx
+\end{equation}
+can then be calculated using Simpson's rule \cite{Langanke:1993qn}. The total integral is just the sum of the integrals, $I=\sum_{k=0}^{M_0} I_k$, with $I_0=0$.
+
+The integral is then refined by placing more points in the region where the integral is largest. This is achieved by selecting $M_1$ new points equally spaced in $\{0,I\}$. The position of the points on the axis are calculated by equation \ref{vegaspointmap} with $I^{\prime} = \frac{kI}{M}$. There now exists $M_0 + M_1 + 1$ points in the integration region and Simpson's rule is again used to calculate the integral between each point. This procedure is iterated until the user is satisfied that the integral is well determined and many points have been placed in the region of largest integral. The final result is that points distributed in the range $\{0, I\}$ can be mapped back to points on the axis using equation \ref{vegaspointmap}.
+
+%An iterative procedure is then used to refine the integral by placing more points in the regions where the integral is largest. For each iteration, $i$, the number of new points added is $\left( A\right)^i M$ where $A$ is a user defined number. The points are equally spaced in $[0, I]$, and the new $x_k$ values are obtained from equation \ref{vegaspointmap}. 
+
+
+
+
+

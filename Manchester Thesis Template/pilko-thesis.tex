@@ -1,0 +1,106 @@
+\documentclass[12pt,PhD]{Thesis}
+%%%% \documentclass[12pt,MSc,singlespace]{muthesis}
+%%%%  can be used until the final draft
+\usepackage{graphicx}
+\usepackage{braket}
+\usepackage{afterpage}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+%\usepackage{axodraw}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage[british]{babel}
+\newcommand{\Pom}{I$\!$P}
+\newcommand{\Reg}{I$\!$R}
+
+\submitdate{2006}
+
+% \renewcommand{\topfraction}{0.9}
+ %\renewcommand{\bottomfraction}{0.8}
+ %\setcounter{topnumber}{2}
+  %  \setcounter{bottomnumber}{2}
+ %   \setcounter{totalnumber}{4}     % 2 may work better
+%    \setcounter{dbltopnumber}{2}    % for 2-column pages
+%    \renewcommand{\dbltopfraction}{0.9} % fit big float above 2-col. text
+%    \renewcommand{\textfraction}{0.07}  % allow minimal text w. figs
+%    %   Parameters for FLOAT pages (not text pages):
+%    \renewcommand{\floatpagefraction}{0.7}      % require fuller float pages
+%        % N.B.: floatpagefraction MUST be less than topfraction !!
+%    \renewcommand{\dblfloatpagefraction}{0.7}   % require fuller float pages
+  %  \linespread{1.6}
+\dept{School of Physics and Astronomy}
+\begin{document}
+\title{Central Exclusive Production at TeV Energies}
+    \author{Andrew Denis Pilkington}
+    \principaladviser{Prof. Fred Loebinger and Dr. Brian Cox}
+%    \firstreader{John Green}
+%    \secondreader{John BigBooty\\(Another School)}
+
+
+%\renewcommand{\baselinestretch}{1.6}
+%\parskip 8 true pt
+%\parindent 25pt
+\beforeabstract
+\prefacesection{Abstract}
+    \input{Introduction/abstract.tex}
+\afterabstract
+    \prefacesection{The Author}
+    \input{Introduction/author.tex}
+    \prefacesection{Acknowledgements}
+     %acknowledgements here
+    \input{Introduction/acknowledge.tex}
+\afterpreface
+
+    %\chapter{Introduction}
+
+%\parskip 8 true pt
+%\parindent 25pt
+
+\chapter{Introduction}
+\input{Introduction/introduction.tex}
+
+
+\chapter{Theoretical Motivation}
+\input{Theory/StandardModel}
+\input{Theory/Hadron.tex}
+\input{Theory/HiggsSearches.tex}
+\input{Theory/CentralExclusive.tex} 
+\input{Theory/DoublePomeronExchange.tex}
+    
+\chapter{Experimental Considerations}
+\input{Detector/LHC.tex}
+\input{Detector/ATLAS}
+\input{Detector/FP420.tex}
+
+\chapter{The ExHuME Generator}
+\input{MC/mcmethods.tex}
+\input{MC/eventgenerators.tex}
+\input{MC/exhume.tex}
+
+\chapter{$H \rightarrow b\bar{b}$ at ATLAS} \label{higgsstudy}
+\input{Analysis/JetAlgos.tex}
+\input{Analysis/ExclusiveVariables.tex}
+\input{Analysis/Higgs.tex}
+
+\chapter{Di-Jet Production at the Tevatron}
+    \input{Analysis/CDFIntro.tex}
+    \input{Analysis/CDFRun1.tex}
+    \input{Analysis/CDFRun2.tex}
+    \input{Analysis/CDFResults.tex}
+    
+\chapter{Conclusions}
+    \input{Conclusion/conclusions.tex}
+\appendix
+\input{MC/practicalexhume.tex}
+    
+        % ...
+    %\chapter{Conclusions}
+        % ...
+    %\appendix
+    %\chapter{A Long Proof}
+     %    ...
+\bibliographystyle{mnras}
+\bibliography{references}
+
+\end{document}

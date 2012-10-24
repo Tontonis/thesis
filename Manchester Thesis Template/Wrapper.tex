@@ -1,0 +1,61 @@
+\documentclass[12pt]{report}
+ \usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+ \geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+ %\geometry{landscape}                % Activate for for rotated page geometry
+ %\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{afterpage}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{axodraw}
+\usepackage{epsfig}
+\usepackage{subfigure}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+ 
+ %\textfloatsep{1cm}
+% 
+%\topfraction{0.8}
+ \renewcommand{\topfraction}{0.9}
+ \renewcommand{\bottomfraction}{0.8}
+ \setcounter{topnumber}{2}
+    \setcounter{bottomnumber}{2}
+    \setcounter{totalnumber}{4}     % 2 may work better
+    \setcounter{dbltopnumber}{2}    % for 2-column pages
+    \renewcommand{\dbltopfraction}{0.9} % fit big float above 2-col. text
+    \renewcommand{\textfraction}{0.07}  % allow minimal text w. figs
+    %   Parameters for FLOAT pages (not text pages):
+    \renewcommand{\floatpagefraction}{0.7}      % require fuller float pages
+        % N.B.: floatpagefraction MUST be less than topfraction !!
+    \renewcommand{\dblfloatpagefraction}{0.7}   % require fuller float pages
+ \title{Brief Article}
+ \author{The Author}
+ %\date{}                                           % Activate to display a given date or no date
+ \linespread{1.6}
+ \begin{document}
+
+ %\maketitle
+ %\section{}
+ %\subsection{}
+\chapter{Theoretical Motivation}
+
+\input{Theory/StandardModel}
+
+%\input{CentralExclusiveProduction.tex}
+
+\chapter{Experimental Considerations}
+\input{Detector/LHC.tex}
+\input{Detector/ATLAS}
+\input{Detector/FP420.tex}
+
+\chapter{Analysis}
+\input{Analysis/JetAlgos.tex}
+\input{Analysis/ExclusiveVariables.tex}
+\input{Analysis/Higgs.tex}
+%\input{Analysis/CDF}
+
+
+%\input{Bibliography/biblio.tex}
+
+\end{document}

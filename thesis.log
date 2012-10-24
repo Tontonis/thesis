@@ -1,0 +1,1155 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.2.24)  24 OCT 2012 17:51
+entering extended mode
+**C:/Users/hugo/PhD/Reports/Thesis/thesis.tex
+(C:/Users/hugo/PhD/Reports/Thesis/thesis.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+(C:\Users\hugo\PhD\Reports\Thesis\Thesis.cls
+Document Class: Thesis 
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\ieeepes\vmargin.sty"
+Package: vmargin 1999/06/01
+
+Package `vmargin', V2.2, <1999/06/01>
+\PaperWidth=\dimen103
+\PaperHeight=\dimen104
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.sty"
+Package: t1enc 1994/06/01 Standard LaTeX package
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\times.sty"
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\mathcomp\mathcomp.sty"
+Package: mathcomp 2001/01/07 v0.1f (TBo)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+)
+\symTC=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `TC' in version `bold'
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \dagger on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \ddagger on input line 48.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip43
+\subfigcapskip=\skip44
+\subfigcaptopadj=\dimen105
+\subfigbottomskip=\skip45
+\subfigcapmargin=\dimen106
+\subfiglabelskip=\skip46
+\c@subfigure=\count88
+\c@lofdepth=\count89
+\c@subtable=\count90
+\c@lotdepth=\count91
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip47
+\subfig@bottom=\skip48
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen107
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen108
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen109
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks18
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks19
+\eqnshift@=\dimen110
+\alignsep@=\dimen111
+\tagshift@=\dimen112
+\tagwidth@=\dimen113
+\totwidth@=\dimen114
+\lineht@=\dimen115
+\@envbody=\toks20
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count104
+))
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
+)
+(C:\Users\hugo\PhD\Reports\Thesis\thesis.aux
+
+LaTeX Warning: Label `fig:diff_bunch_len_para' multiply defined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \global 
+l.315 ...:p\"A\IeC {\textyen }ase-1-rf}{{7.1}{88}}
+                                                  
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.315 ...:p\"A\IeC {\textyen }ase-1-rf}{{7.1}{88}}
+                                                  
+? 
+! Extra \endcsname.
+\@ifundefined ...dafter \ifx \csname #1\endcsname 
+                                                  \relax \expandafter \@firs...
+l.315 ...:p\"A\IeC {\textyen }ase-1-rf}{{7.1}{88}}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \global 
+l.315 ...:p\"A\IeC {\textyen }ase-1-rf}{{7.1}{88}}
+                                                  
+? 
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 39.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 39.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count105
+\scratchdimen=\dimen118
+\scratchbox=\box28
+\nofMPsegments=\count106
+\nofMParguments=\count107
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count108
+\MPscratchDim=\dimen119
+\MPnumerator=\count109
+\makeMPintoPDFobject=\count110
+\everyMPtoPDFconversion=\toks24
+)
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 47.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+) [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(C:\Users\hugo\PhD\Reports\Thesis\thesis.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 8.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 8.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [2
+
+] [3])
+\tf@toc=\write3
+ [4]
+(C:\Users\hugo\PhD\Reports\Thesis\thesis.lot)
+\tf@lot=\write4
+ [5
+
+]
+(C:\Users\hugo\PhD\Reports\Thesis\thesis.lof [6
+
+] [7]
+Overfull \hbox (21.20888pt too wide) in paragraph at lines 43--43
+ [][] []\T1/ptm/m/n/12 Measurement setup for mea-sure-ments of the dipo-lar bea
+m cou-pling impedance 
+ []
+
+[8] [9] [10])
+\tf@lof=\write5
+ [11] (C:\Users\hugo\PhD\Reports\Thesis\Preface/abstract.tex)
+[12
+
+] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+
+ []
+
+[14
+
+] [15
+
+] (C:\Users\hugo\PhD\Reports\Thesis\Preface/author.tex) [16
+
+] [17
+
+]
+Chapter 1.
+(C:\Users\hugo\PhD\Reports\Thesis\Introduction/introduction.tex) [18
+
+]
+Chapter 2.
+(C:\Users\hugo\PhD\Reports\Thesis\Wakefields_and_Impedances/wakefields.tex
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 13.
+
+[19
+
+] [20] [21] [22]
+
+LaTeX Warning: Reference `eqn:long_wake_func; eqn:trans_wake_func' on page 23 u
+ndefined on input line 143.
+
+
+Overfull \hbox (1.52687pt too wide) in paragraph at lines 148--148
+[] 
+ []
+
+[23])
+(C:\Users\hugo\PhD\Reports\Thesis\Wakefields_and_Impedances/impedances.tex
+Overfull \hbox (7.51727pt too wide) in paragraph at lines 7--8
+\T1/ptm/m/n/12 The lon-gi-tu-di-nal beam cou-pling impedance $\OML/cmm/m/it/12 
+Z[]$ \T1/ptm/m/n/12 and the trans-verse beam cou-pling impedance
+ []
+
+[24]) (C:\Users\hugo\PhD\Reports\Thesis\Wakefields_and_Impedances/geometric.tex
+[25] [26] [27])
+(C:\Users\hugo\PhD\Reports\Thesis\Wakefields_and_Impedances/resistive_wall.tex
+[28]
+Overfull \hbox (8.09985pt too wide) in paragraph at lines 27--27
+[]\T1/ptm/m/n/10 (a) 
+ []
+
+
+Overfull \hbox (8.65991pt too wide) in paragraph at lines 31--31
+[]\T1/ptm/m/n/10 (b) 
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 38.
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+))
+(C:\Users\hugo\PhD\Reports\Thesis\Wakefields_and_Impedances/beam_induced_heatin
+g.tex [29] [30]
+<Wakefields_and_Impedances/figures/beam_spectra_power_gauss_meas_12ns.pdf, id=1
+12, 578.16pt x 433.62pt>
+File: Wakefields_and_Impedances/figures/beam_spectra_power_gauss_meas_12ns.pdf 
+Graphic file (type pdf)
+
+<use Wakefields_and_Impedances/figures/beam_spectra_power_gauss_meas_12ns.pdf>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/beam_spectra_power_g
+auss_meas_12ns.pdf used on input line 70.
+(pdftex.def)             Requested size: 192.34288pt x 144.25293pt.
+File: Wakefields_and_Impedances/figures/beam_spectra_power_gauss_meas_12ns.pdf 
+Graphic file (type pdf)
+
+<use Wakefields_and_Impedances/figures/beam_spectra_power_gauss_meas_12ns.pdf>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/beam_spectra_power_g
+auss_meas_12ns.pdf used on input line 74.
+(pdftex.def)             Requested size: 192.34288pt x 144.25293pt.
+
+[31]
+<Wakefields_and_Impedances/figures/bunch_profile_12ns.pdf, id=118, 578.16pt x 4
+33.62pt>
+File: Wakefields_and_Impedances/figures/bunch_profile_12ns.pdf Graphic file (ty
+pe pdf)
+ <use Wakefields_and_Impedances/figures/bunch_profile_12ns.pdf>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/bunch_profile_12ns.p
+df used on input line 111.
+(pdftex.def)             Requested size: 277.82788pt x 208.3668pt.
+
+<Wakefields_and_Impedances/figures/current_spectrum_12ns.pdf, id=119, 578.16pt 
+x 433.62pt>
+File: Wakefields_and_Impedances/figures/current_spectrum_12ns.pdf Graphic file 
+(type pdf)
+ <use Wakefields_and_Impedances/figures/current_spectrum_12ns.pdf>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/current_spectrum_12n
+s.pdf used on input line 121.
+(pdftex.def)             Requested size: 192.34288pt x 144.25293pt.
+
+<Wakefields_and_Impedances/figures/power_spectrum_12ns.pdf, id=120, 578.16pt x 
+433.62pt>
+File: Wakefields_and_Impedances/figures/power_spectrum_12ns.pdf Graphic file (t
+ype pdf)
+ <use Wakefields_and_Impedances/figures/power_spectrum_12ns.pdf>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/power_spectrum_12ns.
+pdf used on input line 125.
+(pdftex.def)             Requested size: 192.34288pt x 144.25293pt.
+
+[32 <C:/Users/hugo/PhD/Reports/Thesis/Wakefields_and_Impedances/figures/beam_sp
+ectra_power_gauss_meas_12ns.pdf>] [33 <C:/Users/hugo/PhD/Reports/Thesis/Wakefie
+lds_and_Impedances/figures/bunch_profile_12ns.pdf> <C:/Users/hugo/PhD/Reports/T
+hesis/Wakefields_and_Impedances/figures/current_spectrum_12ns.pdf> <C:/Users/hu
+go/PhD/Reports/Thesis/Wakefields_and_Impedances/figures/power_spectrum_12ns.pdf
+>]
+<Wakefields_and_Impedances/figures/gaussian_time_dom_diff_lengths.pdf, id=316, 
+578.16pt x 433.62pt>
+File: Wakefields_and_Impedances/figures/gaussian_time_dom_diff_lengths.pdf Grap
+hic file (type pdf)
+
+<use Wakefields_and_Impedances/figures/gaussian_time_dom_diff_lengths.pdf>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/gaussian_time_dom_di
+ff_lengths.pdf used on input line 136.
+(pdftex.def)             Requested size: 192.34288pt x 144.25293pt.
+
+<Wakefields_and_Impedances/figures/gaussian_power_spec_diff_lengths.pdf, id=317
+, 578.16pt x 433.62pt>
+File: Wakefields_and_Impedances/figures/gaussian_power_spec_diff_lengths.pdf Gr
+aphic file (type pdf)
+
+<use Wakefields_and_Impedances/figures/gaussian_power_spec_diff_lengths.pdf>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/gaussian_power_spec_
+diff_lengths.pdf used on input line 140.
+(pdftex.def)             Requested size: 192.34288pt x 144.25293pt.
+
+<Wakefields_and_Impedances/figures/current_amp_para_change.pdf, id=318, 578.16p
+t x 433.62pt>
+File: Wakefields_and_Impedances/figures/current_amp_para_change.pdf Graphic fil
+e (type pdf)
+
+<use Wakefields_and_Impedances/figures/current_amp_para_change.pdf>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/current_amp_para_cha
+nge.pdf used on input line 149.
+(pdftex.def)             Requested size: 192.34288pt x 144.25293pt.
+
+<Wakefields_and_Impedances/figures/freq_power_para_change.pdf, id=319, 578.16pt
+ x 433.62pt>
+File: Wakefields_and_Impedances/figures/freq_power_para_change.pdf Graphic file
+ (type pdf)
+
+<use Wakefields_and_Impedances/figures/freq_power_para_change.pdf>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/freq_power_para_chan
+ge.pdf used on input line 153.
+(pdftex.def)             Requested size: 192.34288pt x 144.25293pt.
+
+<Wakefields_and_Impedances/figures/beam_spectra_power_12ns.pdf, id=320, 578.16p
+t x 433.62pt>
+File: Wakefields_and_Impedances/figures/beam_spectra_power_12ns.pdf Graphic fil
+e (type pdf)
+
+<use Wakefields_and_Impedances/figures/beam_spectra_power_12ns.pdf>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/beam_spectra_power_1
+2ns.pdf used on input line 162.
+(pdftex.def)             Requested size: 277.82788pt x 208.3668pt.
+ [34 <C:/Users/hugo/PhD/Reports/Thesis/Wakefields_and_Impedances/figures/gaussi
+an_time_dom_diff_lengths.pdf> <C:/Users/hugo/PhD/Reports/Thesis/Wakefields_and_
+Impedances/figures/gaussian_power_spec_diff_lengths.pdf> <C:/Users/hugo/PhD/Rep
+orts/Thesis/Wakefields_and_Impedances/figures/current_amp_para_change.pdf> <C:/
+Users/hugo/PhD/Reports/Thesis/Wakefields_and_Impedances/figures/freq_power_para
+_change.pdf>]
+<Wakefields_and_Impedances/figures/low_q_10_resonance_beam_harmonics.pdf, id=53
+8, 578.16pt x 433.62pt>
+File: Wakefields_and_Impedances/figures/low_q_10_resonance_beam_harmonics.pdf G
+raphic file (type pdf)
+
+<use Wakefields_and_Impedances/figures/low_q_10_resonance_beam_harmonics.pdf>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/low_q_10_resonance_b
+eam_harmonics.pdf used on input line 182.
+(pdftex.def)             Requested size: 277.82788pt x 208.3668pt.
+
+
+LaTeX Warning: Reference `eqn:heating-gen' on page 35 undefined on input line 1
+97.
+
+[35 <C:/Users/hugo/PhD/Reports/Thesis/Wakefields_and_Impedances/figures/beam_sp
+ectra_power_12ns.pdf>]
+Overfull \hbox (76.73761pt too wide) detected at line 206
+[] \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 :
+ []
+
+
+<Wakefields_and_Impedances/figures/high_q_1000_resonance_beam_harmonics.pdf, id
+=603, 578.16pt x 433.62pt>
+File: Wakefields_and_Impedances/figures/high_q_1000_resonance_beam_harmonics.pd
+f Graphic file (type pdf)
+
+<use Wakefields_and_Impedances/figures/high_q_1000_resonance_beam_harmonics.pdf
+>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/high_q_1000_resonanc
+e_beam_harmonics.pdf used on input line 210.
+(pdftex.def)             Requested size: 277.82788pt x 208.3668pt.
+
+
+LaTeX Warning: Reference `eqn:heating-gen' on page 36 undefined on input line 2
+16.
+
+[36 <C:/Users/hugo/PhD/Reports/Thesis/Wakefields_and_Impedances/figures/low_q_1
+0_resonance_beam_harmonics.pdf>] [37 <C:/Users/hugo/PhD/Reports/Thesis/Wakefiel
+ds_and_Impedances/figures/high_q_1000_resonance_beam_harmonics.pdf>]
+<Wakefields_and_Impedances/figures/heating_narrowband_gauss_bunch_length.pdf, i
+d=715, 578.16pt x 433.62pt>
+File: Wakefields_and_Impedances/figures/heating_narrowband_gauss_bunch_length.p
+df Graphic file (type pdf)
+
+<use Wakefields_and_Impedances/figures/heating_narrowband_gauss_bunch_length.pd
+f>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/heating_narrowband_g
+auss_bunch_length.pdf used on input line 248.
+(pdftex.def)             Requested size: 341.94652pt x 256.45554pt.
+
+
+LaTeX Warning: Reference `fig:bunch_length_heat_narrow_cos' on page 38 undefine
+d on input line 254.
+
+[38] [39 <C:/Users/hugo/PhD/Reports/Thesis/Wakefields_and_Impedances/figures/he
+ating_narrowband_gauss_bunch_length.pdf>]
+<Wakefields_and_Impedances/figures/heating_narrowband_gausscos_bunch_length.pdf
+, id=756, 578.16pt x 433.62pt>
+File: Wakefields_and_Impedances/figures/heating_narrowband_gausscos_bunch_lengt
+h.pdf Graphic file (type pdf)
+
+<use Wakefields_and_Impedances/figures/heating_narrowband_gausscos_bunch_length
+.pdf>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/heating_narrowband_g
+ausscos_bunch_length.pdf used on input line 261.
+(pdftex.def)             Requested size: 213.71576pt x 160.2847pt.
+
+<Wakefields_and_Impedances/figures/impedance_and_power_cos_res.pdf, id=757, 578
+.16pt x 433.62pt>
+File: Wakefields_and_Impedances/figures/impedance_and_power_cos_res.pdf Graphic
+ file (type pdf)
+
+<use Wakefields_and_Impedances/figures/impedance_and_power_cos_res.pdf>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/impedance_and_power_
+cos_res.pdf used on input line 265.
+(pdftex.def)             Requested size: 213.71576pt x 160.2847pt.
+
+Overfull \hbox (14.28001pt too wide) in paragraph at lines 261--266
+[][] [] 
+ []
+
+
+<Wakefields_and_Impedances/figures/heating_broadband_gausscos_bunch_length.pdf,
+ id=758, 578.16pt x 433.62pt>
+File: Wakefields_and_Impedances/figures/heating_broadband_gausscos_bunch_length
+.pdf Graphic file (type pdf)
+
+<use Wakefields_and_Impedances/figures/heating_broadband_gausscos_bunch_length.
+pdf>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/heating_broadband_ga
+usscos_bunch_length.pdf used on input line 275.
+(pdftex.def)             Requested size: 213.71576pt x 160.2847pt.
+
+<Wakefields_and_Impedances/figures/impedance_and_power_cos_res_broad.pdf, id=75
+9, 578.16pt x 433.62pt>
+File: Wakefields_and_Impedances/figures/impedance_and_power_cos_res_broad.pdf G
+raphic file (type pdf)
+
+<use Wakefields_and_Impedances/figures/impedance_and_power_cos_res_broad.pdf>
+Package pdftex.def Info: Wakefields_and_Impedances/figures/impedance_and_power_
+cos_res_broad.pdf used on input line 279.
+(pdftex.def)             Requested size: 213.71576pt x 160.2847pt.
+
+Overfull \hbox (14.28001pt too wide) in paragraph at lines 275--280
+[][] [] 
+ []
+
+[40 <C:/Users/hugo/PhD/Reports/Thesis/Wakefields_and_Impedances/figures/heating
+_narrowband_gausscos_bunch_length.pdf> <C:/Users/hugo/PhD/Reports/Thesis/Wakefi
+elds_and_Impedances/figures/impedance_and_power_cos_res.pdf>] [41 <C:/Users/hug
+o/PhD/Reports/Thesis/Wakefields_and_Impedances/figures/heating_broadband_gaussc
+os_bunch_length.pdf> <C:/Users/hugo/PhD/Reports/Thesis/Wakefields_and_Impedance
+s/figures/impedance_and_power_cos_res_broad.pdf>])
+(C:\Users\hugo\PhD\Reports\Thesis\Wakefields_and_Impedances/beam_instabilities.
+tex [42] [43] [44]) [45]
+Chapter 3.
+(C:\Users\hugo\PhD\Reports\Thesis\beam_based_impedance_measurements.tex
+[46
+
+] [47] [48] [49]) [50]
+Chapter 4.
+
+(C:\Users\hugo\PhD\Reports\Thesis\Bench_Top_Measurements/impedance_measurements
+.tex [51
+
+] [52] [53] [54] [55] [56] [57]
+
+LaTeX Warning: Reference `fig:two_wire_measure' on page 58 undefined on input l
+ine 206.
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 211--211
+[]\T1/ptm/m/n/12 Figure 4.5: Mea-sure-ment setup for mea-sure-ments of the dipo
+-lar beam cou-pling
+ []
+
+
+LaTeX Warning: Reference `chap:wake_imp' on page 58 undefined on input line 216
+.
+
+[58] [59]
+Overfull \hbox (16.98785pt too wide) in paragraph at lines 273--273
+[] 
+ []
+
+
+Overfull \hbox (44.08281pt too wide) in paragraph at lines 281--281
+[] 
+ []
+
+[60] [61]
+Overfull \hbox (60.97878pt too wide) in paragraph at lines 344--344
+[] 
+ []
+
+[62] [63] <figures/cavity_beampipe.pdf, id=1032, 569.12625pt x 455.30101pt>
+File: figures/cavity_beampipe.pdf Graphic file (type pdf)
+
+<use figures/cavity_beampipe.pdf>
+Package pdftex.def Info: figures/cavity_beampipe.pdf used on input line 386.
+(pdftex.def)             Requested size: 213.71576pt x 170.97366pt.
+
+<figures/cavity_beampipe_coaxial.pdf, id=1033, 711.37767pt x 455.30101pt>
+File: figures/cavity_beampipe_coaxial.pdf Graphic file (type pdf)
+
+<use figures/cavity_beampipe_coaxial.pdf>
+Package pdftex.def Info: figures/cavity_beampipe_coaxial.pdf used on input line
+ 390.
+(pdftex.def)             Requested size: 267.1447pt x 170.97366pt.
+
+Overfull \hbox (67.70895pt too wide) in paragraph at lines 386--391
+[][] [] 
+ []
+
+) [64 <C:/Users/hugo/PhD/Reports/Thesis/figures/cavity_beampipe.pdf> <C:/Users/
+hugo/PhD/Reports/Thesis/figures/cavity_beampipe_coaxial.pdf>]
+Chapter 5.
+(C:\Users\hugo\PhD\Reports\Thesis\Computational_Simulations/introduction.tex)
+(C:\Users\hugo\PhD\Reports\Thesis\Computational_Simulations/time_domain.tex
+[65
+
+]
+
+LaTeX Warning: Reference `fig:time_domain_beam' on page 66 undefined on input l
+ine 21.
+
+
+Overfull \hbox (8.09985pt too wide) in paragraph at lines 27--27
+[]\T1/ptm/m/n/10 (a) 
+ []
+
+
+Overfull \hbox (8.65991pt too wide) in paragraph at lines 31--31
+[]\T1/ptm/m/n/10 (b) 
+ []
+
+
+Overfull \hbox (8.09985pt too wide) in paragraph at lines 35--35
+[]\T1/ptm/m/n/10 (c) 
+ []
+
+
+Overfull \hbox (8.65991pt too wide) in paragraph at lines 39--39
+[]\T1/ptm/m/n/10 (d) 
+ []
+
+
+LaTeX Warning: Reference `fig:time_domain_beam' on page 66 undefined on input l
+ine 42.
+
+[66])
+(C:\Users\hugo\PhD\Reports\Thesis\Computational_Simulations/freq_domain.tex
+
+LaTeX Warning: Reference `sec:sec:imp_geo_imp' on page 67 undefined on input li
+ne 13.
+
+
+LaTeX Warning: Reference `sec:ferrite_damping' on page 67 undefined on input li
+ne 13.
+
+[67]
+
+LaTeX Warning: Reference `sec:coax_wire_meth' on page 68 undefined on input lin
+e 23.
+
+[68]) [69]
+Chapter 6.
+
+(C:\Users\hugo\PhD\Reports\Thesis\Beam_Coupling_Impedance_Reduction_Techniques/
+introduction.tex)
+(C:\Users\hugo\PhD\Reports\Thesis\Beam_Coupling_Impedance_Reduction_Techniques/
+step_ins.tex [70
+
+]
+Overfull \hbox (8.09985pt too wide) in paragraph at lines 12--12
+[]\T1/ptm/m/n/10 (a) 
+ []
+
+
+Overfull \hbox (8.65991pt too wide) in paragraph at lines 16--16
+[]\T1/ptm/m/n/10 (b) 
+ []
+
+)
+(C:\Users\hugo\PhD\Reports\Thesis\Beam_Coupling_Impedance_Reduction_Techniques/
+transitions.tex
+Overfull \hbox (8.09985pt too wide) in paragraph at lines 10--10
+[]\T1/ptm/m/n/10 (a) 
+ []
+
+
+Overfull \hbox (8.65991pt too wide) in paragraph at lines 14--14
+[]\T1/ptm/m/n/10 (b) 
+ []
+
+[71]
+Overfull \hbox (8.09985pt too wide) in paragraph at lines 28--28
+[]\T1/ptm/m/n/10 (a) 
+ []
+
+
+Overfull \hbox (8.65991pt too wide) in paragraph at lines 32--32
+[]\T1/ptm/m/n/10 (b) 
+ []
+
+
+Overfull \hbox (8.09985pt too wide) in paragraph at lines 37--37
+[]\T1/ptm/m/n/10 (c) 
+ []
+
+)
+(C:\Users\hugo\PhD\Reports\Thesis\Beam_Coupling_Impedance_Reduction_Techniques/
+conductive_coatings.tex [72]
+
+LaTeX Warning: Reference `sec:phase_2_res_wall' on page 73 undefined on input l
+ine 12.
+
+)
+(C:\Users\hugo\PhD\Reports\Thesis\Beam_Coupling_Impedance_Reduction_Techniques/
+beam_screens.tex
+Overfull \hbox (4.52844pt too wide) in paragraph at lines 8--9
+\T1/ptm/m/n/12 of view, es-pe-cially con-tribut-ing a large imag-i-nary com-po-
+nent to the lon-gi-tu-di-nal impedance
+ []
+
+[73]
+
+LaTeX Warning: Reference `sec:mki_studies' on page 74 undefined on input line 1
+0.
+
+)
+(C:\Users\hugo\PhD\Reports\Thesis\Beam_Coupling_Impedance_Reduction_Techniques/
+serigraphy.tex [74]
+Overfull \hbox (8.09985pt too wide) in paragraph at lines 13--13
+[]\T1/ptm/m/n/10 (a) 
+ []
+
+
+Overfull \hbox (8.65991pt too wide) in paragraph at lines 17--17
+[]\T1/ptm/m/n/10 (b) 
+ []
+
+
+Overfull \hbox (8.09985pt too wide) in paragraph at lines 21--21
+[]\T1/ptm/m/n/10 (c) 
+ []
+
+)
+(C:\Users\hugo\PhD\Reports\Thesis\Beam_Coupling_Impedance_Reduction_Techniques/
+damping_materials.tex [75] [76]
+
+LaTeX Warning: Reference `sec:tctp' on page 77 undefined on input line 33.
+
+
+<Beam_Coupling_Impedance_Reduction_Techniques/figures/pillbox_cavity_ferr.pdf, 
+id=1089, 569.12625pt x 341.47577pt>
+File: Beam_Coupling_Impedance_Reduction_Techniques/figures/pillbox_cavity_ferr.
+pdf Graphic file (type pdf)
+
+<use Beam_Coupling_Impedance_Reduction_Techniques/figures/pillbox_cavity_ferr.p
+df>
+Package pdftex.def Info: Beam_Coupling_Impedance_Reduction_Techniques/figures/p
+illbox_cavity_ferr.pdf used on input line 41.
+(pdftex.def)             Requested size: 192.34288pt x 115.40723pt.
+
+<Beam_Coupling_Impedance_Reduction_Techniques/figures/pillbox_cavity_shielded_f
+err.pdf, id=1090, 569.12625pt x 341.47577pt>
+File: Beam_Coupling_Impedance_Reduction_Techniques/figures/pillbox_cavity_shiel
+ded_ferr.pdf Graphic file (type pdf)
+
+<use Beam_Coupling_Impedance_Reduction_Techniques/figures/pillbox_cavity_shield
+ed_ferr.pdf>
+Package pdftex.def Info: Beam_Coupling_Impedance_Reduction_Techniques/figures/p
+illbox_cavity_shielded_ferr.pdf used on input line 45.
+(pdftex.def)             Requested size: 192.34288pt x 115.40723pt.
+ [77] [78 <C:/Users/hugo/PhD/Reports/Thesis/Beam_Coupling_Impedance_Reduction_T
+echniques/figures/pillbox_cavity_ferr.pdf> <C:/Users/hugo/PhD/Reports/Thesis/Be
+am_Coupling_Impedance_Reduction_Techniques/figures/pillbox_cavity_shielded_ferr
+.pdf>]
+
+LaTeX Warning: Reference `fig:wall_losses' on page 79 undefined on input line 8
+2.
+
+[79]
+
+LaTeX Warning: Reference `app:ferr_losses' on page 80 undefined on input line 1
+13.
+
+[80]
+<Beam_Coupling_Impedance_Reduction_Techniques/figures/no_screen_long_imp_all.pd
+f, id=1120, 726.31348pt x 528.47438pt>
+File: Beam_Coupling_Impedance_Reduction_Techniques/figures/no_screen_long_imp_a
+ll.pdf Graphic file (type pdf)
+
+<use Beam_Coupling_Impedance_Reduction_Techniques/figures/no_screen_long_imp_al
+l.pdf>
+Package pdftex.def Info: Beam_Coupling_Impedance_Reduction_Techniques/figures/n
+o_screen_long_imp_all.pdf used on input line 117.
+(pdftex.def)             Requested size: 299.20076pt x 217.70807pt.
+
+<Beam_Coupling_Impedance_Reduction_Techniques/figures/no_screen_loss_tan_vs_q.p
+df, id=1121, 603.45451pt x 452.59087pt>
+File: Beam_Coupling_Impedance_Reduction_Techniques/figures/no_screen_loss_tan_v
+s_q.pdf Graphic file (type pdf)
+
+<use Beam_Coupling_Impedance_Reduction_Techniques/figures/no_screen_loss_tan_vs
+_q.pdf>
+Package pdftex.def Info: Beam_Coupling_Impedance_Reduction_Techniques/figures/n
+o_screen_loss_tan_vs_q.pdf used on input line 127.
+(pdftex.def)             Requested size: 192.34288pt x 144.25883pt.
+
+<Beam_Coupling_Impedance_Reduction_Techniques/figures/no_screen_q_vs_loss_ferr.
+pdf, id=1122, 578.16pt x 433.62pt>
+File: Beam_Coupling_Impedance_Reduction_Techniques/figures/no_screen_q_vs_loss_
+ferr.pdf Graphic file (type pdf)
+
+<use Beam_Coupling_Impedance_Reduction_Techniques/figures/no_screen_q_vs_loss_f
+err.pdf>
+Package pdftex.def Info: Beam_Coupling_Impedance_Reduction_Techniques/figures/n
+o_screen_q_vs_loss_ferr.pdf used on input line 131.
+(pdftex.def)             Requested size: 192.34288pt x 144.25293pt.
+
+<Beam_Coupling_Impedance_Reduction_Techniques/figures/no_screen_loss_tan_vs_pow
+er.pdf, id=1123, 578.16pt x 433.62pt>
+File: Beam_Coupling_Impedance_Reduction_Techniques/figures/no_screen_loss_tan_v
+s_power.pdf Graphic file (type pdf)
+
+<use Beam_Coupling_Impedance_Reduction_Techniques/figures/no_screen_loss_tan_vs
+_power.pdf>
+Package pdftex.def Info: Beam_Coupling_Impedance_Reduction_Techniques/figures/n
+o_screen_loss_tan_vs_power.pdf used on input line 138.
+(pdftex.def)             Requested size: 299.20076pt x 224.39859pt.
+
+Overfull \hbox (1.64558pt too wide) in paragraph at lines 144--145
+[]\T1/ptm/m/n/12 For the case of the shielded fer-rite, the real com-po-nent of
+ the beam cou-pling impedance
+ []
+
+[81 <C:/Users/hugo/PhD/Reports/Thesis/Beam_Coupling_Impedance_Reduction_Techniq
+ues/figures/no_screen_long_imp_all.pdf>] [82 <C:/Users/hugo/PhD/Reports/Thesis/
+Beam_Coupling_Impedance_Reduction_Techniques/figures/no_screen_loss_tan_vs_q.pd
+f> <C:/Users/hugo/PhD/Reports/Thesis/Beam_Coupling_Impedance_Reduction_Techniqu
+es/figures/no_screen_q_vs_loss_ferr.pdf> <C:/Users/hugo/PhD/Reports/Thesis/Beam
+_Coupling_Impedance_Reduction_Techniques/figures/no_screen_loss_tan_vs_power.pd
+f>]
+<Beam_Coupling_Impedance_Reduction_Techniques/figures/screen_long_imp_all.pdf, 
+id=1289, 578.16pt x 433.62pt>
+File: Beam_Coupling_Impedance_Reduction_Techniques/figures/screen_long_imp_all.
+pdf Graphic file (type pdf)
+
+<use Beam_Coupling_Impedance_Reduction_Techniques/figures/screen_long_imp_all.p
+df>
+Package pdftex.def Info: Beam_Coupling_Impedance_Reduction_Techniques/figures/s
+creen_long_imp_all.pdf used on input line 150.
+(pdftex.def)             Requested size: 299.20076pt x 224.39859pt.
+
+<Beam_Coupling_Impedance_Reduction_Techniques/figures/screen_loss_tan_vs_q.pdf,
+ id=1290, 578.16pt x 433.62pt>
+File: Beam_Coupling_Impedance_Reduction_Techniques/figures/screen_loss_tan_vs_q
+.pdf Graphic file (type pdf)
+
+<use Beam_Coupling_Impedance_Reduction_Techniques/figures/screen_loss_tan_vs_q.
+pdf>
+Package pdftex.def Info: Beam_Coupling_Impedance_Reduction_Techniques/figures/s
+creen_loss_tan_vs_q.pdf used on input line 161.
+(pdftex.def)             Requested size: 192.34288pt x 144.25293pt.
+
+<Beam_Coupling_Impedance_Reduction_Techniques/figures/screen_q_vs_loss_ferr.pdf
+, id=1291, 578.16pt x 433.62pt>
+File: Beam_Coupling_Impedance_Reduction_Techniques/figures/screen_q_vs_loss_fer
+r.pdf Graphic file (type pdf)
+
+<use Beam_Coupling_Impedance_Reduction_Techniques/figures/screen_q_vs_loss_ferr
+.pdf>
+Package pdftex.def Info: Beam_Coupling_Impedance_Reduction_Techniques/figures/s
+creen_q_vs_loss_ferr.pdf used on input line 165.
+(pdftex.def)             Requested size: 192.34288pt x 144.25293pt.
+
+<Beam_Coupling_Impedance_Reduction_Techniques/figures/screen_loss_tan_vs_power.
+pdf, id=1292, 578.16pt x 433.62pt>
+File: Beam_Coupling_Impedance_Reduction_Techniques/figures/screen_loss_tan_vs_p
+ower.pdf Graphic file (type pdf)
+
+<use Beam_Coupling_Impedance_Reduction_Techniques/figures/screen_loss_tan_vs_po
+wer.pdf>
+Package pdftex.def Info: Beam_Coupling_Impedance_Reduction_Techniques/figures/s
+creen_loss_tan_vs_power.pdf used on input line 172.
+(pdftex.def)             Requested size: 299.20076pt x 224.39859pt.
+) [83 <C:/Users/hugo/PhD/Reports/Thesis/Beam_Coupling_Impedance_Reduction_Techn
+iques/figures/screen_long_imp_all.pdf>] [84 <C:/Users/hugo/PhD/Reports/Thesis/B
+eam_Coupling_Impedance_Reduction_Techniques/figures/screen_loss_tan_vs_q.pdf> <
+C:/Users/hugo/PhD/Reports/Thesis/Beam_Coupling_Impedance_Reduction_Techniques/f
+igures/screen_q_vs_loss_ferr.pdf> <C:/Users/hugo/PhD/Reports/Thesis/Beam_Coupli
+ng_Impedance_Reduction_Techniques/figures/screen_loss_tan_vs_power.pdf>] [85]
+Chapter 7.
+(C:\Users\hugo\PhD\Reports\Thesis\LHC_Collimation_Upgrades/introduction.tex
+[86
+
+]
+! Too many }'s.
+l.25 ...tor vacuum tank (see Fig~\{fig:phase-1-rf}
+                                                   for more details). These ...
+
+? 
+[87]
+Overfull \hbox (8.09985pt too wide) in paragraph at lines 30--30
+[]\T1/ptm/m/n/10 (a) 
+ []
+
+
+Overfull \hbox (8.65991pt too wide) in paragraph at lines 33--33
+[]\T1/ptm/m/n/10 (b) 
+ []
+
+
+LaTeX Warning: Reference `fig:rf-system-phase-2' on page 88 undefined on input 
+line 42.
+
+[88])
+(C:\Users\hugo\PhD\Reports\Thesis\LHC_Collimation_Upgrades/phase_2_jaw_material
+.tex [89]
+
+LaTeX Warning: Reference `fig:phase2-jaw-designs' on page 90 undefined on input
+ line 15.
+
+
+<LHC_Collimation_Upgrades/figures/mo-geo.png, id=1470, 302.63063pt x 376.40625p
+t>
+File: LHC_Collimation_Upgrades/figures/mo-geo.png Graphic file (type png)
+ <use LHC_Collimation_Upgrades/figures/mo-geo.png>
+Package pdftex.def Info: LHC_Collimation_Upgrades/figures/mo-geo.png used on in
+put line 36.
+(pdftex.def)             Requested size: 192.34288pt x 239.23355pt.
+
+<LHC_Collimation_Upgrades/figures/mo-mocd-geo.png, id=1471, 298.86656pt x 362.1
+0281pt>
+File: LHC_Collimation_Upgrades/figures/mo-mocd-geo.png Graphic file (type png)
+ <use LHC_Collimation_Upgrades/figures/mo-mocd-geo.png>
+Package pdftex.def Info: LHC_Collimation_Upgrades/figures/mo-mocd-geo.png used 
+on input line 40.
+(pdftex.def)             Requested size: 192.34288pt x 233.04343pt.
+)
+(C:\Users\hugo\PhD\Reports\Thesis\LHC_Collimation_Upgrades/tctp_collimator/intr
+oduction.tex)
+(C:\Users\hugo\PhD\Reports\Thesis\LHC_Collimation_Upgrades/tctp_collimator/impe
+dance_simulation_results.tex)
+(C:\Users\hugo\PhD\Reports\Thesis\LHC_Collimation_Upgrades/tctp_collimator/tran
+sverse_impedance_concerns.tex)
+(C:\Users\hugo\PhD\Reports\Thesis\LHC_Collimation_Upgrades/tctp_collimator/beam
+_induced_heating.tex) [90] [91 <C:/Users/hugo/PhD/Reports/Thesis/LHC_Collimatio
+n_Upgrades/figures/mo-geo.png> <C:/Users/hugo/PhD/Reports/Thesis/LHC_Collimatio
+n_Upgrades/figures/mo-mocd-geo.png>]
+Chapter 8.
+(C:\Users\hugo\PhD\Reports\Thesis\LHC_MKI/introduction.tex)
+(C:\Users\hugo\PhD\Reports\Thesis\LHC_MKI/observations_during_operation.tex)
+(C:\Users\hugo\PhD\Reports\Thesis\LHC_MKI/comparisons_15_simulations_measuremen
+ts.tex [92
+
+] [93] [94])
+(C:\Users\hugo\PhD\Reports\Thesis\LHC_MKI/impedance_behaviour_components.tex
+[95])
+(C:\Users\hugo\PhD\Reports\Thesis\LHC_MKI/considerations_besides_impedance_for_
+new_designs.tex [96] [97])
+(C:\Users\hugo\PhD\Reports\Thesis\LHC_MKI/new_beam_screen_designs.tex [98])
+(C:\Users\hugo\PhD\Reports\Thesis\LHC_MKI/measurements_observation_19_screen_co
+nductors.tex [99] [100] [101])
+(C:\Users\hugo\PhD\Reports\Thesis\LHC_MKI/plans_after_ls1.tex [102] [103]
+[104]) [105]
+Chapter 9.
+(C:\Users\hugo\PhD\Reports\Thesis\thesis.bbl [106
+
+]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 24.
+
+)
+
+! LaTeX Error: \begin{itemize} on input line 46 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 \end{document}
+                    
+? 
+[107
+
+] (C:\Users\hugo\PhD\Reports\Thesis\thesis.aux
+! Missing \endcsname inserted.
+<to be read again> 
+                   \global 
+l.315 ...:p\"A\IeC {\textyen }ase-1-rf}{{7.1}{88}}
+                                                  
+? 
+! Extra \endcsname.
+\@newl@bel ...dafter \ifx \csname #1@#2\endcsname 
+                                                  \reserved@a \else \@tempsw...
+l.315 ...:p\"A\IeC {\textyen }ase-1-rf}{{7.1}{88}}
+                                                  
+? 
+)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 46 (\begingroup)
+### bottom level
+(\end occurred when \ifx on line 315 was incomplete)
+(\end occurred when \ifx on line 315 was incomplete) 
+Here is how much of TeX's memory you used:
+ 3416 strings out of 494045
+ 59327 string characters out of 3148390
+ 95844 words of memory out of 3000000
+ 6485 multiletter control sequences out of 15000+200000
+ 47319 words of font info for 70 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 28i,13n,24p,1952b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.
+9/fonts/enc/dvips/fontname/8r.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/
+cm-super/cm-super-t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+bx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
+rw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on thesis.pdf (107 pages, 1607651 bytes).
+PDF statistics:
+ 1587 PDF objects out of 1728 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+

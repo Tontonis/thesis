@@ -1,0 +1,13 @@
+\section{Conductive Coatings}
+\label{sec:conductive_coatings}
+
+As can be seen in Sec.~\ref{sec:res_wall_imp}, a higher conductivity in the material seen by the beam in a particle accelerator results a lower beam coupling impedance. Typically this rule of thumb is followed in the design of particle accelerators, however the operational requirements of devices in the machine often require that they not be made from a good conducting material. Examples of this include collimators (requiring high strength, mechanical stability and certain radiation properties),  beam instrumentation and numerous other devices.
+
+It has been seen [citey mccite cite] that a thin layer of high conductivity material placed on the surface of a poorly conducting material can effectively screen the beam from interacting with the poorly conducting material for a large frequency range. This can be explained by considering the skin depth of a material $\delta$. As shown in Sec.~\ref{sec:res_wall_imp}, 
+
+\begin{equation}
+\delta \left( \omega \right) = \sqrt{\frac{2}{\mu_{0} \sigma \omega}}.
+\end{equation}
+
+The skin depth can be thought of as the distance of penetration of the electromagnetic field into the material. In thus be seen that for a good conducting material like copper ($\sigma_{cu} \approx 6 \times 10^{7} S m^{-1}$), for frequencies of the order of a hundred megahurtz or above, a thickness of a $10\mu m$ is much larger than the skin depth at 100MHz ($\delta \left( 100\text{MHz} \right) = 6\mu m$), thus effectively screening the layer below. For many machines the part of the frequency spectrum of concern is above this area (most electron machines, small hadron colliders). It is possible to use thicker coatings (on the order of millimetres) for machines that require a very broad frequency range screened. This is investigated in detail in Sec.~\ref{sec:phase_2_res_wall}.
+

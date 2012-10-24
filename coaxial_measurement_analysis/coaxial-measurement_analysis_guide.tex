@@ -1,0 +1,66 @@
+\documentclass[12pt,a4paper,twopage,openright]{article}
+
+
+
+% ******** vmargin settings *********
+\usepackage{vmargin} %This give you full control over the used page area, it maybe not the idea method in Latex to do so, but I wanted to reduce to amount of white space on the page
+\setpapersize{A4}
+\setmargins{3.5cm}%			%linker Rand, left edge
+	  {1cm}%     %oberer Rand, top edge
+           {14.7cm}%		%Textbreite, text width
+           {23.42cm}%   %Texthoehe, text hight
+           {14pt}%			%Kopfzeilenhöhe, header hight
+           {1cm}%   	  %Kopfzeilenabstand, header distance
+           {0pt}%				%Fußzeilenhoehe footer hight
+           {2cm}%    	  %Fusszeilenabstand, footer distance   
+
+
+%Defining text font profile
+\usepackage{t1enc} % as usual
+\usepackage[latin1]{inputenc} % as usual
+\usepackage{times}	
+\usepackage{mathcomp}
+\usepackage{amsmath}
+\usepackage[pdftex]{graphicx}
+
+\pagestyle{plain}
+\renewcommand{\topfraction}{0.99}
+\renewcommand{\bottomfraction}{0.99}
+\renewcommand{\textfraction}{0}
+
+
+
+\begin{document}
+%Plan
+%
+\title{Analysis Methodology for Coaxial Wire Measurements of Impedance}
+\author{Hugo Alistair Day}
+\date{May 2010}
+\maketitle
+
+
+\begin{abstract}
+The analysis of data from the measurement of device impedance using the coaxial wire technique require a degree of understanding of both what is actually being measured by the method, and of what is being defined as a real and imaginary impedance. Through my own work I discovered a lack of clear definitions of how the data measured directly related to the quantities that we refer to from the point of view of particle motion. The idea of this document is to attempt to clarify how the quantities are related, and also give a clear guide as to how to analyse the experimental data to be compatible with a beam dynamics point of view. This presently a work in progress
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+
+% Introduction - Coaxial Wire Method
+% Wakefield Basics - Definiton of longitudinal, dipolar/driving, quadrupolar/detuning impedance
+% Analysis of transmission method
+% Analysis of resonator method
+%
+\include{introduction}
+\include{wakefield-basics}
+\include{wire-as-a-source}
+\include{transmission-method}
+\include{resonator-method}
+\include{symmetric-structures}
+\include{asymmetric-structures}
+
+\bibliographystyle{IEEEtran}
+\bibliography{general_bibliography}
+
+\end{document}

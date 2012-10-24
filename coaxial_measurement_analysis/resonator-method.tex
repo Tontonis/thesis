@@ -1,0 +1,47 @@
+\section{Analysis using the Resonator Method}
+
+The resonator method of impedance measurement is an alternative measurement scheme for measuring the impedance of structures in which low power losses are to be expected. The method works by establishing a weak capacitive through coupling coupling between the VNA and the device under test (DUT) as shown in figure [figure: scheme of experiment]. This creates a standing wave oscillation within the DUT, from which Q values can be obtained from the $\lambda/2$ peaks that can be measured. Measurement of these Q values and a comparison to the expected Q values of a high conductive reference pipe allow the real impedance to be measured with very high accuracy. The imaginary impedance can also be meaured by the frequency shift of the Q values from that of a reference pipe by considering the increased electrical length of the DUT.
+
+To develop a better understanding of how the resonator method works, let us consider the physical processes that occur within the DUT during measurements. Through the weak capacitive coupling, a series of standing waves is created within the DUT, with a wavelength;
+
+\begin{equation}
+\lambda = \frac{2 L_{electric}}{n}
+\end{equation}
+
+where $n$ is an integer and $L_{electric}$ is the electrical length of the DUT. At the corresponding frequencies to these wavelengths, it is possible to achieve very accurate measurements of the resistive losses of the transmitted signal due to their being minimal losses to surrounding frequencies. Using a lorentzian fitting routine to obtain the Q values of these peaks, the corresponding transmission coefficient is obtain and subsequently the real impedance. It is worth noting that if the DUT has a low enough impedance for the resonator method to be valid then the non-log formula (eqn [ref]) is valid even for distribbuted impedances.
+
+To obtain the imaginary impedance, it is possible to utilise both the method described in section 4, or to measure the frequency shift of the resonant peaks between the DUT and a reference pipe. This reference pipe can either be calculated analytically or measured in a lab. If we consider the DUT in an electrical circuit, with the real impedance represented by a resistance $R_{1}$ and the imaginary impedance by an inductance $j\omega L$ and compare it to a circuit containing only a resistance $R_{2}$ we obtain two generic impedances;
+
+\begin{align}
+Z_{1} = R_{1} + j\omega L = R + jX = Z_{0,1}e^{j\phi} \\
+Z_{2} = R_{2} = Z_{0,2}e^{j.0}
+\end{align}
+
+Subsequently if we consider the measured voltages of the two systems at any given time we measure;
+
+\begin{align}
+V_{1} = V_{0}e^{j(\omega_{1} t_{1} + \phi)} \\
+V_{2} = V_{0}e^{j(\omega_{2} t_{2})}
+\end{align}
+
+As we are interested in the resonant peaks of the two measurements, i.e. were $V_{1} = V_{2} = V_{0}$, we can take the equivalence and determine $\phi$. Considering the real component of the voltage;
+
+\begin{align}
+V_{1} = V_{2} = V_{0} \\
+V_{0}cos\left( \omega_{1}t_{1} + \phi\right) = V_{0}cos\left( \omega_{2}t_{2}\right) = V_{0}
+\end{align}
+
+Ergo,
+
+\begin{align}
+cos\left( \omega_{1}t_{1} + \phi\right) = cos\left( \omega_{2}t_{2}\right) \\
+\omega_{1}t_{1} + \phi =  \omega_{2}t_{2} \\
+\phi =  \omega_{1}t_{1} -  \omega_{2}t_{2}
+\end{align}
+
+The imaginary impedance can simply be measured through considering a complex impedance plane so that;
+
+\begin{align}
+X = Zsin(\phi) \\
+X = \frac{Rsin{\phi}}{cos\phi} = Rtan\phi
+\end{align} 

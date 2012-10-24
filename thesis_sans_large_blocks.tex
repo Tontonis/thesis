@@ -1,0 +1,89 @@
+\documentclass[12pt,PhD]{Thesis}
+
+
+
+% ******** vmargin settings *********
+\usepackage{vmargin} %This give you full control over the used page area, it maybe not the idea method in Latex to do so, but I wanted to reduce to amount of white space on the page
+\setpapersize{A4}
+%\setmargins{3.5cm}%			%linker Rand, left edge
+%	  {1cm}%     %oberer Rand, top edge
+%           {14.7cm}%		%Textbreite, text width
+%           {23.42cm}%   %Texthoehe, text hight
+%           {14pt}%			%Kopfzeilenhöhe, header hight
+%           {1cm}%   	  %Kopfzeilenabstand, header distance
+%           {0pt}%				%Fußzeilenhoehe footer hight
+%           {2cm}%    	  %Fusszeilenabstand, footer distance   
+
+
+%Defining text font profile
+\usepackage{t1enc} % as usual
+
+
+
+
+\usepackage[latin1]{inputenc} % as usual
+\usepackage{times}	
+\usepackage{mathcomp, subfigure}
+\usepackage{amsmath}
+\usepackage[pdftex]{graphicx}
+
+\pagestyle{plain}
+%\renewcommand{\topfraction}{0.99}
+%\renewcommand{\bottomfraction}{0.99}
+%\renewcommand{\textfraction}{0}
+
+
+\dept{School of Physics and Astronomy}
+\submitdate{2011}
+
+\begin{document}
+%Plan
+%
+\title{Measurements and Simulations of Impedance Reduction Techniques in Particle Accelerators}
+\author{Hugo Alistair Day}
+\principaladviser{Dr. Roger Jones}
+
+
+\beforeabstract
+\prefacesection{Abstract}
+A review of the first two years of study are presented. These topics consist of; Simulations of coaxial wire measurements of the impedance of asymmetric devices, coaxial wire measurements of ferrite kicker magnets for use in the SPS and LHC and impedance studies of a number of potential collimator upgrades for the LHC, focusing on the phase 2 secondary collimators for the LHC. Also disucssed is future work towards completion of the PhD and a timetable of writing to ensure timely completion.
+\afterabstract
+\afterpreface
+
+
+\tableofcontents
+
+% What is new in the thesis:
+% Wire measurements of asymmetric structures
+% LMCI with SC and BB impedances - reconstructing Kell-Schnell diagram
+% Simulations of wire measurements of structures
+% Simulations of large structures (3m of magnets/kicker magnets)
+%
+%
+%
+
+
+
+\chapter{Introduction}
+\input{introduction}
+
+\chapter{Wakefields and Impedance}
+\input{wakefields_impedance}
+
+\chapter{Bench Top Measurements of Beam Coupling Impedance}
+%\input{impedance_measurements}
+
+
+\chapter{Computational Simulations of Beam Coupling Impedance}
+\input{impedance_simulations}
+
+
+\chapter{Beam Coupling Impedance Reduction Techniques}
+
+\chapter{Case Studies}
+\input{case_studies}
+
+\bibliographystyle{IEEEtran}
+\bibliography{general_bibliography}
+
+\end{document}

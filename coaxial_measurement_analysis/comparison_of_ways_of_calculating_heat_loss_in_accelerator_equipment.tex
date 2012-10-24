@@ -1,0 +1,60 @@
+\documentclass[12pt,a4paper,twopage,openright]{article}
+
+
+
+% ******** vmargin settings *********
+\usepackage{vmargin} %This give you full control over the used page area, it maybe not the idea method in Latex to do so, but I wanted to reduce to amount of white space on the page
+\setpapersize{A4}
+\setmargins{3.5cm}%			%linker Rand, left edge
+	  {1cm}%     %oberer Rand, top edge
+           {14.7cm}%		%Textbreite, text width
+           {23.42cm}%   %Texthoehe, text hight
+           {14pt}%			%Kopfzeilenhöhe, header hight
+           {1cm}%   	  %Kopfzeilenabstand, header distance
+           {0pt}%				%Fußzeilenhoehe footer hight
+           {2cm}%    	  %Fusszeilenabstand, footer distance   
+
+
+%Defining text font profile
+\usepackage{t1enc} % as usual
+\usepackage[latin1]{inputenc} % as usual
+\usepackage{times}	
+\usepackage{mathcomp}
+\usepackage{amsmath}
+\usepackage[pdftex]{graphicx}
+
+\pagestyle{plain}
+\renewcommand{\topfraction}{0.99}
+\renewcommand{\bottomfraction}{0.99}
+\renewcommand{\textfraction}{0}
+
+
+
+\begin{document}
+To explain the comparison between considering beam induced heating - a comparison using the formula for synchrotrons (thus taking using synchrotron frequency as the multiplication frequency) and using that for a signal repeated at a certain rate (i.e. using the bunch seperation as the period of the signal).
+
+The formula for calculating the heating using a synchrotron is as follows;
+
+\begin{eqnarray}
+P_{loss} & = & 2n_{bunch} \left(N_{b}ef_{s}  \right)^{2}\left[\displaystyle\sum\limits_{p=0}^\infty |\lambda(p\omega_{s})|^{2}R(p\omega_{s} )   \right] \nonumber \\
+& = & 2n_{bunch} \left(N_{b}ef_{s}  \right)^{2}\left[\displaystyle\sum\limits_{p=0}^\infty |P(p\omega_{s})R(p\omega_{s} )   \right]
+\label{eqn:pow-loss-syn}
+\end{eqnarray}
+
+where $P_{loss}$ is the total power loss, $n_{bunch}$ is the number of bunches in the ring, $N_{b}$ is the number of particles per bunch, $e$ is the charge per bunch particle, $f_{s}$ is the revolution frequency, $|\lambda(\omega_{s})|$ is the longitudinal line density of the bunch in the frequency domain, $\omega_{s} = 2\pi f_{s}$, $R(\omega_{s})$ is the real component of the longitudinal impedance and $P(\omega_{s})$ is the longitudinal power spectrum in the frequency domain.
+
+If we make a substitution of 
+\begin{equation}
+f_{s} = \frac{f_{0}}{n_{buckets}}
+\end{equation}
+
+where $f_{0}$ is the frequency between bunches and $n_buckets$ is the number of RF buckets in one turn of the ring (can be taken to nearest integer or decimal value, the difference should not be great unless the ring is very small). Substituting this into Eqn.~\ref{eqn:pow-loss-syn} we obtain the following;
+
+\begin{eqnarray}
+P_{loss} & = & 2n_{bunch}\left(N_{b}e\frac{f_{0}}{n_{buckets}}    \right)^{2} \left[\displaystyle\sum\limits_{p=0}^\infty P\left(p\frac{\omega_{0}}{n_{buckets}}\right)R\left(p\frac{\omega_{0}}{n_{buckets}} \right)   \right]  \nonumber \\
+& = & 2n_{bunch}\left(N_{b}ef_{0}\right)^{2} \frac{1}{n_{buckets}^{2}} \left[\displaystyle\sum\limits_{q=0}^\infty P(q\omega_{0})R(q\omega_{0} )   \right] n_{buckets} \nonumber \\
+& = & 2\rho \left(N_{b}ef_{0}  \right)^{2} \left[\displaystyle\sum\limits_{q=0}^\infty P(q\omega_{0})R(q\omega_{0} )   \right]
+\end{eqnarray}
+
+where $q = \frac{p}{n_{buckets}}$ and $\rho = \frac{n_{bunch}}{n_{buckets}}$ is a scaling factor to account for the fact that not all buckets are occupied. Note the equivalence is brought about by the change in the index of the sum. The advantage of the form using the bunch spacing is that it can quite easily be used in LINACs also, but other than that it's not anything new.
+\end{document}

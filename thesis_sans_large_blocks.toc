@@ -1,0 +1,27 @@
+\contentsline {chapter}{Abstract}{5}
+\contentsline {chapter}{Declaration}{6}
+\contentsline {chapter}{Copyright}{7}
+\contentsline {chapter}{\numberline {1}Introduction}{9}
+\contentsline {chapter}{\numberline {2}Wakefields and Impedance}{10}
+\contentsline {section}{\numberline {2.1}Wakefields, Impedances and Beam Dynamics Effects}{10}
+\contentsline {section}{\numberline {2.2}Theoretical Background of Wakefields and Impedances}{10}
+\contentsline {subsection}{\numberline {2.2.1}Resistive Wall Impedance}{11}
+\contentsline {subsection}{\numberline {2.2.2}Geometric Impedance}{11}
+\contentsline {section}{\numberline {2.3}Examples of Effects}{11}
+\contentsline {subsection}{\numberline {2.3.1}Beam Induced Heating}{11}
+\contentsline {subsubsection}{Heating Due to a Broadband Impedance}{13}
+\contentsline {subsubsection}{Heating due to a Narrowband Impedance}{15}
+\contentsline {subsection}{\numberline {2.3.2}Single Bunch and Coupled Bunch Instabilities}{16}
+\contentsline {subsection}{\numberline {2.3.3}Example of LMCI with Broadband and Space Charge Impedances Studied with HEADTAIL}{16}
+\contentsline {chapter}{\numberline {3}Bench Top Measurements of Beam Coupling Impedance}{17}
+\contentsline {chapter}{\numberline {4}Computational Simulations of Beam Coupling Impedance}{18}
+\contentsline {section}{\numberline {4.1}Time Domain Simulations}{18}
+\contentsline {subsection}{\numberline {4.1.1}Direct Simulation of a Particle Beam}{18}
+\contentsline {section}{\numberline {4.2}Frequency Domain Simulations}{19}
+\contentsline {subsection}{\numberline {4.2.1}Eigenmode Simulations}{19}
+\contentsline {subsection}{\numberline {4.2.2}The Coaxial Wire Method by Simulation}{19}
+\contentsline {subsection}{\numberline {4.2.3}Simulation of the particle beam}{19}
+\contentsline {chapter}{\numberline {5}Beam Coupling Impedance Reduction Techniques}{20}
+\contentsline {chapter}{\numberline {6}Case Studies}{21}
+\contentsline {section}{\numberline {6.1}LHC Injection Kicker Magnet}{21}
+\contentsline {section}{\numberline {6.2}LHC Phase 2 Collimator Designs}{23}

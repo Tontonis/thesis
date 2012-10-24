@@ -1,0 +1,31 @@
+\section{Analysis using the Transmission Method}
+
+The transmission method of impedance measurement [ref Caspers/Kroyer/Mostacci] is the most frequently used method of taking data using the coaxial wire technique and has a number of technical difficulties associated with it that are well covered in the existing literiture [ref Caspers/Kroyer/Barnes/own notes]. Here we shall concern ourselves primarily with the analysis of the data collected which is less extensively covered. Firstly, we should clarify what the data measured actually is. These measurements involve the measurement of the scattering parameters of a signal passed through the device under test, in the case of this method the coefficient $S_{21}$ (as might be expected given the section title). This coefficient is a complex number, and on most visual network analysers (VNAs) can be outputted as a magnitude, an angle or a complex number. The subsequent analysis will assume that we are treating the complex number form, so note that if analysis is done seperately for the amplitude and the angle, \textbf{the same analysis method is valid for both values}. 
+
+Firstly, to carry out the analysis we must convert the measured value, $S_{21}$, to a value which represents something to beam dynamics, the beam impedance. There are a number of methods in which this can be achieved through considering the scattering matrices for both lumped impedances or distributed impedances. This is covered in good detail in [Caspers/Kroyer SPS MKE paper].
+
+For impedances that might be expected to be of a low value, or impedances located in a small physical space, the lumped impedance formula may be used; 
+
+\begin{equation}
+Z = 2Z_{ch} \frac{1-S_{21}}{S_{21}}
+\end{equation}
+
+For more distributed impedances there exist two log formulae which can be applied for differing conditions [ref Caspers/Jensen]
+
+\begin{equation}
+Z = -2Z_{ch}ln\left(\frac{S_{21,measured}}{S_{21,ref}} \right)
+\label{eqn:log-form}
+\end{equation}
+
+where $S_{21,measured}$ is the measured transmission coefficient and $S_{21,ref}$ is the transmission coefficient of an equal length, perfectly conducting pipe. It should be noted that both $S_{21}$ values should be in linear format and not dB format for this analysis to be valid. The value of $Z_{ch}$ can be determined through either measurement of the reflection coefficient [Caspers] or by analytical results [RF ref]. \citation{eqn:log-form} can be simplified to
+
+\begin{equation}
+Z = -2Z_{ch}\left[ ln\left(Z\right) + i(\phi_{measured} - \phi_{ref}) \right]
+\end{equation}
+
+where $S_{21,measured} = Ze^{j\phi_{measured}}$ and $S_{21,ref}  = e^{j\phi_{ref}} = e^{j\frac{\omega L}{c}}$, $\phi_{measured}$ is the measured phase advance of the transmission coefficient, L is the length of the device being measured, c is the speed of light and $\omega$ is the angular frequency at which the measurement is carried out at.
+
+[section on improved log formula and E. Jensen's paper]
+
+An important note is that many VNAs will output phase measurements only between $-\pi < \phi_{measured} < \pi$ or $0 < \phi_{measured} < 2\pi$ whereas $\phi_{ref}$ may take values greater than this. It is neccessary to take account of this during data processing to prevent erroneous analyses.
+

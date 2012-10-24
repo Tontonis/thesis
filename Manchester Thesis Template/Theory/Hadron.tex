@@ -1,0 +1,60 @@
+\section{Physics of Hadron-Hadron Collisions}
+
+The Standard Model is primarily tested by colliding particles at high energy and observing the result. Given an initial state, the probability of producing a final state is calculated using the interaction terms predicted by the Standard Model. This allows 
+the cross section of the scattering process 
+to be defined 
+and deviations from the calculated cross section can indicate the presence of new physics. The differential cross section for a $2\rightarrow N$ scatter is given by
+\begin{equation} \label{simplexs}
+d \sigma = \frac{1}{2s} \sum |\mathcal{M}|^2 d\Phi_N
+\end{equation}
+where $\mathcal{M}$ is the invariant amplitude and the summation is over all unobserved quantum numbers, with the appropriate averaging of the initial state. The centre-of-mass energy of the collision, $s$, is given by
+\begin{equation}
+s= \left(k_1 + k_2 \right)^2
+\end{equation}
+where $k_1$ and $k_2$ are the 4-momentum of the incoming particles, whose mass is assumed to be small compared to $\sqrt{s}$. 
+The Lorentz invariant phase space for the outgoing state, $d\Phi_N$, is given by
+\begin{equation}
+d\Phi_N = \left(2\pi \right)^4 \delta^4\left(k_{1} + k_2 - \Sigma_i^N k_i \right) \, 
+\prod_{i}^{N} \frac{d^4 k_i}{\left(2\pi \right)^4} \left(2\pi\right) \delta \left(k_i^2 - m_i^2 \right)
+\end{equation}
+where each $k_i$ is the 4-momentum of an outgoing particle and $m_i$ is its mass.
+The phase space represents the complete set of kinematical configurations available for the outgoing state.
+%and there are 3N- 4 variables that must be integrated over to give the cross section.
+
+Outside of the interaction region, the particles entering and leaving the hard scatter are assumed to be free from interactions. The interaction itself is assumed to happen on a short time scale.
+Protons, however, are composite objects made from coloured quarks and gluons, collectively known as partons. It is the partons which enter the hard scatter and are used in calculating cross sections. Outside of the scattering region however, the partons are colour confined inside the proton and, as such, are not free from interactions. Fortunately, for a hard scattering process, the proton-proton ($pp$) cross section can be factorised into a hard scatter part, which occurs on short time scales, 
+%(large momentum scales)
+and a long range part which occurs on time scales much larger than the hard scattering. 
+%(small momentum scales). 
+The cross section of $p p \rightarrow X$ is given by \cite{Seymour:2005hs}
+\begin{equation} \label{ppxs}
+d\sigma_{p p \rightarrow X} =  
+\sum_{j,k} \int_0^1 dx_1~g_{j/p} \left(x_1,\mu_F^2 \right) \int_0^1 dx_2~g_{k/p}\left(x_2, \mu_F^2 \right)
+d\hat{\sigma}_{jk\rightarrow X}
+\end{equation}
+where the $g_{b/a} (x,\mu_F^2)$ are the parton density functions (PDFs) which give the probability of a parton, $b$, from the the incoming hadron, $a$, entering the hard scatter with a fraction, $x$, of the hadron momentum.
+%Thus the hard scatter has a reduced centre-of-mass, $\hat{s}$, given by
+%\begin{equation}
+%\hat{s}=x_1 x_2 s
+%\end{equation}
+%where $s$ is the collision centre-of-mass energy of the incoming hadrons.
+
+The PDFs depend upon the momentum scale at which they are probed. The factorisation of the cross section necessarily introduces a momentum scale, $\mu_F$, which separates the short-time (or large momentum) scales, from the long-time (or small momentum) scales. Thus, interactions below the factorisation scale are incorporated into the PDFs, which explains the scale dependence. The change of PDF with respect to the momentum scale is described in perturbative QCD using the DGLAP evolution equations \cite{Seymour:2005hs}. However, a specific input PDF cannot be predicted using perturbative techniques and experimental data from, for example, HERA \cite{Adloff:2000qk,Raicevic:2006sp} is required to obtain knowledge of the PDF at a specific scale.
+
+\subsection{Feynman Diagrams}
+
+The invariant amplitude, used in the cross section calculation of equation \ref{simplexs}, can be calculated using Feynman diagrams \cite{Halzen:1984mc}. In this approach, the interaction terms in the lagrangian represent vertices in momentum space. The internal particle lines that connect the vertices are propagator terms. Examples of vertex terms are shown in figure \ref{feynmannvertices}. The initial state is positioned on the left hand side and the final state on the right hand side of the diagram.  Fermions are represented by arrows pointing left to right, while anti-fermions point from right to left. 
+
+\begin{figure} 
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/gluonvertex.eps,width = 5cm, height=5cm}}\qquad
+	\subfigure[]{\epsfig{figure=Diagrams/wvertex.eps,width = 5cm, height=5cm}}
+	}
+\caption[Example vertices in the Feynman diagram approach]{Example vertices in the Feynman diagram approach. Figure (a) shows a $u$ quark interacting with a gluon. Figure (b) shows an electron interacting with a $W^{-}$ boson and changing into an electron neutrino.\label{feynmannvertices}}
+\end{figure}
+
+The external particles have a simple description in Feynman language. Each external fermion and anti-fermion is associated with one of the four spinors ($u$,$\bar{u}$,$v$,$\bar{v}$) that satisfy the Dirac equation, which is obtained from equation \ref{diracL} using the standard Euler-Lagrange equations. Each external vector boson is associated with a polarisation vector, $\epsilon^{\mu}$ or $\epsilon^{\mu \, *}$. The full amplitude for a scattering process can involve multiple diagrams and is calculated by the coherent sum of the individual diagrams. Examples of how to use these rules in a complete calculation are given in \cite{Halzen:1984mc,Mandl:1985bg}.
+					
+
+

@@ -1,0 +1,851 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.1.19)  1 DEC 2011 12:56
+entering extended mode
+**E:/PhD/1st_Year_09-10/Reports/Thesis/Manchester*Thesis*Template/pilko-thesis.
+tex
+
+("E:/PhD/1st_Year_09-10/Reports/Thesis/Manchester Thesis Template/pilko-thesis.
+tex"
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\Thesis.cls"
+Document Class: Thesis 
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+))
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\braket.sty")
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\tools\afterpage.sty"
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks15
+\AP@partial=\box26
+\AP@footins=\box27
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen105
+))
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks18
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks19
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+))
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+))
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\epsfig.sty"
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen114
+\epsfysize=\dimen115
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip46
+\subfigcapskip=\skip47
+\subfigcaptopadj=\dimen116
+\subfigbottomskip=\skip48
+\subfigcapmargin=\dimen117
+\subfiglabelskip=\skip49
+\c@subfigure=\count101
+\c@lofdepth=\count102
+\c@subtable=\count103
+\c@lotdepth=\count104
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip50
+\subfig@bottom=\skip51
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\babel\babel.sty"
+Package: babel 2008/07/08 v3.8m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\babel\english.ldf"
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count105
+\U@D=\dimen118
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\pilko-thesis.
+aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+ ("C:\Program Files (x86)\MiKTeX 2.8\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count106
+\scratchdimen=\dimen119
+\scratchbox=\box30
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen120
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
+\everyMPtoPDFconversion=\toks23
+)
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 44.
+ ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\psnfss\t1ppl.fd"
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+) [1
+
+{C:/Users/hday/AppData/Local/MiKTeX/2.8/pdftex/config/pdftex.map}]
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\pilko-thesis.
+toc")
+\tf@toc=\write3
+ [2
+
+]
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\pilko-thesis.
+lot")
+\tf@lot=\write4
+ [3
+
+]
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\pilko-thesis.
+lof")
+\tf@lof=\write5
+ [4
+
+]
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\Introduction/
+abstract.tex"
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+ ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)) [5
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+
+ []
+
+[6
+
+] [7
+
+]
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\Introduction/
+author.tex") [8
+
+]
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\Introduction/
+acknowledge.tex") [9
+
+] [10]
+Chapter 1.
+
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\Introduction/
+introduction.tex" [11
+
+]) [12]
+Chapter 2.
+
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\Theory/Standa
+rdModel.tex"
+
+LaTeX Warning: Citation `Tagg:2006sx' on page 13 undefined on input line 20.
+
+[13
+
+]
+
+LaTeX Warning: Citation `Halzen:1984mc' on page 14 undefined on input line 34.
+
+
+LaTeX Warning: Citation `Ellis:1991qj' on page 14 undefined on input line 34.
+
+
+LaTeX Warning: Citation `Mandl:1985bg' on page 14 undefined on input line 34.
+
+
+LaTeX Warning: Citation `Ross:1999gw' on page 14 undefined on input line 34.
+
+
+Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
+d on input line 37.
+
+[14] [15]
+
+LaTeX Warning: Citation `Halzen:1984mc' on page 16 undefined on input line 94.
+
+[16]
+
+LaTeX Warning: Citation `Ellis:1991qj' on page 17 undefined on input line 151.
+
+[17] [18] [19] [20] [21]
+
+LaTeX Warning: Citation `Christenson' on page 22 undefined on input line 343.
+
+
+LaTeX Warning: Citation `Aubert:2004zt' on page 22 undefined on input line 344.
+
+
+
+LaTeX Warning: Citation `Abe:2001xe' on page 22 undefined on input line 344.
+
+[22]
+
+LaTeX Warning: Citation `Martin:1997ns' on page 23 undefined on input line 353.
+
+
+
+LaTeX Warning: Citation `Martin:1997ns' on page 23 undefined on input line 357.
+
+
+
+LaTeX Warning: Citation `Martin:1997ns' on page 23 undefined on input line 357.
+
+
+
+LaTeX Warning: Citation `Martin:1997ns' on page 23 undefined on input line 361.
+
+
+
+LaTeX Warning: Citation `Olive:1999ks' on page 23 undefined on input line 361.
+
+[23])
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\Theory/Hadron
+.tex" [24]
+
+LaTeX Warning: Citation `Seymour:2005hs' on page 25 undefined on input line 29.
+
+
+
+LaTeX Warning: Citation `Seymour:2005hs' on page 25 undefined on input line 42.
+
+
+
+LaTeX Warning: Citation `Adloff:2000qk' on page 25 undefined on input line 42.
+
+
+LaTeX Warning: Citation `Raicevic:2006sp' on page 25 undefined on input line 42
+.
+
+[25]
+
+LaTeX Warning: Citation `Halzen:1984mc' on page 26 undefined on input line 46.
+
+Package epstopdf Info: Source file: <Diagrams/gluonvertex.eps>
+(epstopdf)                    date: 2006-10-29 14:39:08
+(epstopdf)                    size: 41133 bytes
+(epstopdf)             Output file: <Diagrams/gluonvertex-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2011-12-01 12:47:17
+(epstopdf)                    size: 6279 bytes
+(epstopdf)             Command: <epstopdf --outfile=Diagrams/gluonvertex-eps-co
+nverted-to.pdf Diagrams/gluonvertex.eps>
+(epstopdf)             \includegraphics on input line 53.
+Package epstopdf Info: Output file is already uptodate.
+<Diagrams/gluonvertex-eps-converted-to.pdf, id=98, 597.23125pt x 845.1575pt>
+File: Diagrams/gluonvertex-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Diagrams/gluonvertex-eps-converted-to.pdf>
+Package pdftex.def Info: Diagrams/gluonvertex-eps-converted-to.pdf used on inpu
+t line 53.
+(pdftex.def)             Requested size: 142.26309pt x 142.2563pt.
+Package epstopdf Info: Source file: <Diagrams/wvertex.eps>
+(epstopdf)                    date: 2006-10-29 14:45:50
+(epstopdf)                    size: 49814 bytes
+(epstopdf)             Output file: <Diagrams/wvertex-eps-converted-to.pdf>
+(epstopdf)                    date: 2011-12-01 12:47:19
+(epstopdf)                    size: 9599 bytes
+(epstopdf)             Command: <epstopdf --outfile=Diagrams/wvertex-eps-conver
+ted-to.pdf Diagrams/wvertex.eps>
+(epstopdf)             \includegraphics on input line 53.
+Package epstopdf Info: Output file is already uptodate.
+
+<Diagrams/wvertex-eps-converted-to.pdf, id=99, 597.23125pt x 845.1575pt>
+File: Diagrams/wvertex-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Diagrams/wvertex-eps-converted-to.pdf>
+Package pdftex.def Info: Diagrams/wvertex-eps-converted-to.pdf used on input li
+ne 53.
+(pdftex.def)             Requested size: 142.26309pt x 142.2563pt.
+
+
+LaTeX Warning: Citation `Halzen:1984mc' on page 26 undefined on input line 57.
+
+
+LaTeX Warning: Citation `Mandl:1985bg' on page 26 undefined on input line 57.
+
+[26 <E:/PhD/1st_Year_09-10/Reports/Thesis/Manchester Thesis Template/Diagrams/g
+luonvertex-eps-converted-to.pdf> <E:/PhD/1st_Year_09-10/Reports/Thesis/Manchest
+er Thesis Template/Diagrams/wvertex-eps-converted-to.pdf>])
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\Theory/HiggsS
+earches.tex"
+
+LaTeX Warning: Citation `Abe:1995hr' on page 27 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Barate:2003sz' on page 27 undefined on input line 3.
+
+
+LaTeX Warning: Citation `unknown:2005di' on page 27 undefined on input line 3.
+
+Package epstopdf Info: Source file: <Diagrams/s06_blueband.eps>
+(epstopdf)                    date: 2006-07-24 07:32:48
+(epstopdf)                    size: 16997 bytes
+(epstopdf)             Output file: <Diagrams/s06_blueband-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2011-12-01 12:47:24
+(epstopdf)                    size: 12062 bytes
+(epstopdf)             Command: <epstopdf --outfile=Diagrams/s06_blueband-eps-c
+onverted-to.pdf Diagrams/s06_blueband.eps>
+(epstopdf)             \includegraphics on input line 10.
+Package epstopdf Info: Output file is already uptodate.
+<Diagrams/s06_blueband-eps-converted-to.pdf, id=129, 569.12625pt x 626.34pt>
+File: Diagrams/s06_blueband-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Diagrams/s06_blueband-eps-converted-to.pdf>
+Package pdftex.def Info: Diagrams/s06_blueband-eps-converted-to.pdf used on inp
+ut line 10.
+(pdftex.def)             Requested size: 206.28343pt x 199.17134pt.
+Package epstopdf Info: Source file: <Diagrams/tevsearchhiggs.eps>
+(epstopdf)                    date: 2006-10-19 21:57:58
+(epstopdf)                    size: 13400 bytes
+(epstopdf)             Output file: <Diagrams/tevsearchhiggs-eps-converted-to.p
+df>
+(epstopdf)                    date: 2011-12-01 12:47:35
+(epstopdf)                    size: 6022 bytes
+(epstopdf)             Command: <epstopdf --outfile=Diagrams/tevsearchhiggs-eps
+-converted-to.pdf Diagrams/tevsearchhiggs.eps>
+(epstopdf)             \includegraphics on input line 10.
+Package epstopdf Info: Output file is already uptodate.
+
+<Diagrams/tevsearchhiggs-eps-converted-to.pdf, id=130, 569.12625pt x 445.665pt>
+File: Diagrams/tevsearchhiggs-eps-converted-to.pdf Graphic file (type pdf)
+<use Diagrams/tevsearchhiggs-eps-converted-to.pdf>
+Package pdftex.def Info: Diagrams/tevsearchhiggs-eps-converted-to.pdf used on i
+nput line 10.
+(pdftex.def)             Requested size: 206.28343pt x 199.16693pt.
+
+Overfull \hbox (11.75179pt too wide) in paragraph at lines 10--11
+ [][] 
+ []
+
+
+LaTeX Warning: Citation `Soldner-Rembold:2006wf' on page 27 undefined on input 
+line 11.
+
+
+LaTeX Warning: Citation `Soldner-Rembold:2006wf' on page 27 undefined on input 
+line 11.
+
+
+LaTeX Warning: Citation `Soldner-Rembold:2006wf' on page 27 undefined on input 
+line 14.
+
+)
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\Theory/Centra
+lExclusive.tex" [27]
+
+LaTeX Warning: Citation `Albrow:2000na' on page 28 undefined on input line 7.
+
+[28 <E:/PhD/1st_Year_09-10/Reports/Thesis/Manchester Thesis Template/Diagrams/s
+06_blueband-eps-converted-to.pdf> <E:/PhD/1st_Year_09-10/Reports/Thesis/Manches
+ter Thesis Template/Diagrams/tevsearchhiggs-eps-converted-to.pdf>]
+
+LaTeX Warning: Citation `Khoze:2001xm' on page 29 undefined on input line 33.
+
+
+LaTeX Warning: Citation `Khoze:1997dr' on page 29 undefined on input line 33.
+
+
+LaTeX Warning: Citation `Khoze:2000cy' on page 29 undefined on input line 33.
+
+[29]
+Package epstopdf Info: Source file: <Diagrams/KMR.eps>
+(epstopdf)                    date: 2006-11-21 22:07:18
+(epstopdf)                    size: 34752 bytes
+(epstopdf)             Output file: <Diagrams/KMR-eps-converted-to.pdf>
+(epstopdf)                    date: 2011-12-01 12:47:36
+(epstopdf)                    size: 5362 bytes
+(epstopdf)             Command: <epstopdf --outfile=Diagrams/KMR-eps-converted-
+to.pdf Diagrams/KMR.eps>
+(epstopdf)             \includegraphics on input line 43.
+Package epstopdf Info: Output file is already uptodate.
+ <Diagrams/KMR-eps-converted-to.pdf, id=152, 597.23125pt x 845.1575pt>
+File: Diagrams/KMR-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Diagrams/KMR-eps-converted-to.pdf>
+Package pdftex.def Info: Diagrams/KMR-eps-converted-to.pdf used on input line 4
+3.
+(pdftex.def)             Requested size: 276.4156pt x 170.71788pt.
+ [30 <E:/PhD/1st_Year_09-10/Reports/Thesis/Manchester Thesis Template/Diagrams/
+KMR-eps-converted-to.pdf>]
+
+LaTeX Warning: Citation `Cox:2005if' on page 31 undefined on input line 93.
+
+[31]
+
+LaTeX Warning: Citation `DeRoeck:2002hk' on page 32 undefined on input line 95.
+
+
+
+LaTeX Warning: Citation `Kaidalov:2003ys' on page 32 undefined on input line 97
+.
+
+)
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\Theory/Double
+PomeronExchange.tex" [32]
+
+LaTeX Warning: Citation `Arneodo:2005kd' on page 33 undefined on input line 9.
+
+Package epstopdf Info: Source file: <Diagrams/Elastic.eps>
+(epstopdf)                    date: 2006-10-06 00:37:20
+(epstopdf)                    size: 28446 bytes
+(epstopdf)             Output file: <Diagrams/Elastic-eps-converted-to.pdf>
+(epstopdf)                    date: 2011-12-01 12:47:36
+(epstopdf)                    size: 2769 bytes
+(epstopdf)             Command: <epstopdf --outfile=Diagrams/Elastic-eps-conver
+ted-to.pdf Diagrams/Elastic.eps>
+(epstopdf)             \includegraphics on input line 17.
+Package epstopdf Info: Output file is already uptodate.
+<Diagrams/Elastic-eps-converted-to.pdf, id=167, 597.23125pt x 845.1575pt>
+File: Diagrams/Elastic-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Diagrams/Elastic-eps-converted-to.pdf>
+Package pdftex.def Info: Diagrams/Elastic-eps-converted-to.pdf used on input li
+ne 17.
+(pdftex.def)             Requested size: 123.76369pt x 170.71788pt.
+Package epstopdf Info: Source file: <Diagrams/SD.eps>
+(epstopdf)                    date: 2006-10-06 00:37:26
+(epstopdf)                    size: 28966 bytes
+(epstopdf)             Output file: <Diagrams/SD-eps-converted-to.pdf>
+(epstopdf)                    date: 2011-12-01 12:47:37
+(epstopdf)                    size: 2886 bytes
+(epstopdf)             Command: <epstopdf --outfile=Diagrams/SD-eps-converted-t
+o.pdf Diagrams/SD.eps>
+(epstopdf)             \includegraphics on input line 17.
+Package epstopdf Info: Output file is already uptodate.
+
+<Diagrams/SD-eps-converted-to.pdf, id=168, 597.23125pt x 845.1575pt>
+File: Diagrams/SD-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Diagrams/SD-eps-converted-to.pdf>
+Package pdftex.def Info: Diagrams/SD-eps-converted-to.pdf used on input line 17
+.
+(pdftex.def)             Requested size: 123.76369pt x 170.71788pt.
+Package epstopdf Info: Source file: <Diagrams/DD.eps>
+(epstopdf)                    date: 2006-10-06 00:37:28
+(epstopdf)                    size: 29503 bytes
+(epstopdf)             Output file: <Diagrams/DD-eps-converted-to.pdf>
+(epstopdf)                    date: 2011-12-01 12:47:37
+(epstopdf)                    size: 2922 bytes
+(epstopdf)             Command: <epstopdf --outfile=Diagrams/DD-eps-converted-t
+o.pdf Diagrams/DD.eps>
+(epstopdf)             \includegraphics on input line 17.
+Package epstopdf Info: Output file is already uptodate.
+
+<Diagrams/DD-eps-converted-to.pdf, id=169, 597.23125pt x 845.1575pt>
+File: Diagrams/DD-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Diagrams/DD-eps-converted-to.pdf>
+Package pdftex.def Info: Diagrams/DD-eps-converted-to.pdf used on input line 17
+.
+(pdftex.def)             Requested size: 123.76369pt x 170.71788pt.
+
+
+LaTeX Warning: Citation `Ingelman:1984ns' on page 33 undefined on input line 23
+.
+
+[33 <E:/PhD/1st_Year_09-10/Reports/Thesis/Manchester Thesis Template/Diagrams/E
+lastic-eps-converted-to.pdf> <E:/PhD/1st_Year_09-10/Reports/Thesis/Manchester T
+hesis Template/Diagrams/SD-eps-converted-to.pdf> <E:/PhD/1st_Year_09-10/Reports
+/Thesis/Manchester Thesis Template/Diagrams/DD-eps-converted-to.pdf>]
+
+LaTeX Warning: Citation `Aktas:2006hy' on page 34 undefined on input line 33.
+
+
+LaTeX Warning: Citation `Aktas:2006hy' on page 34 undefined on input line 37.
+
+
+LaTeX Warning: Citation `unknown:2006hx' on page 34 undefined on input line 37.
+
+
+Package epstopdf Info: Source file: <Diagrams/Pomerons.eps>
+(epstopdf)                    date: 2006-10-28 18:57:34
+(epstopdf)                    size: 39062 bytes
+(epstopdf)             Output file: <Diagrams/Pomerons-eps-converted-to.pdf>
+(epstopdf)                    date: 2011-12-01 12:47:38
+(epstopdf)                    size: 6060 bytes
+(epstopdf)             Command: <epstopdf --outfile=Diagrams/Pomerons-eps-conve
+rted-to.pdf Diagrams/Pomerons.eps>
+(epstopdf)             \includegraphics on input line 42.
+Package epstopdf Info: Output file is already uptodate.
+<Diagrams/Pomerons-eps-converted-to.pdf, id=179, 597.23125pt x 845.1575pt>
+File: Diagrams/Pomerons-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Diagrams/Pomerons-eps-converted-to.pdf>
+Package pdftex.def Info: Diagrams/Pomerons-eps-converted-to.pdf used on input l
+ine 42.
+(pdftex.def)             Requested size: 276.4156pt x 170.71788pt.
+) [34] [35 <E:/PhD/1st_Year_09-10/Reports/Thesis/Manchester Thesis Template/Dia
+grams/Pomerons-eps-converted-to.pdf>]
+Chapter 3.
+
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\Detector/LHC.
+tex"
+
+LaTeX Warning: Citation `unknown:1995mi' on page 36 undefined on input line 3.
+
+
+LaTeX Warning: Citation `Vos:2000by' on page 36 undefined on input line 15.
+
+[36
+
+]
+
+LaTeX Warning: Citation `unknown:1995mi' on page 37 undefined on input line 20.
+
+
+
+LaTeX Warning: Citation `Cudell:2002sy' on page 37 undefined on input line 27.
+
+)
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\Detector/ATLA
+S.tex"
+
+LaTeX Warning: Citation `:1999fq' on page 37 undefined on input line 3.
+
+
+LaTeX Warning: Reference `ATLAS' on page 37 undefined on input line 3.
+
+[37]
+
+LaTeX Warning: Citation `:1999fq:Chapter1' on page 38 undefined on input line 1
+0.
+
+Package epstopdf Info: Source file: <Diagrams/atlas.eps>
+(epstopdf)                    date: 2006-06-01 12:30:42
+(epstopdf)                    size: 12876142 bytes
+(epstopdf)             Output file: <Diagrams/atlas-eps-converted-to.pdf>
+(epstopdf)                    date: 2011-12-01 12:47:48
+(epstopdf)                    size: 254673 bytes
+(epstopdf)             Command: <epstopdf --outfile=Diagrams/atlas-eps-converte
+d-to.pdf Diagrams/atlas.eps>
+(epstopdf)             \includegraphics on input line 24.
+Package epstopdf Info: Output file is already uptodate.
+<Diagrams/atlas-eps-converted-to.pdf, id=201, 1660.2025pt x 1281.78876pt>
+File: Diagrams/atlas-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Diagrams/atlas-eps-converted-to.pdf>
+Package pdftex.def Info: Diagrams/atlas-eps-converted-to.pdf used on input line
+ 24.
+(pdftex.def)             Requested size: 412.56496pt x 318.52966pt.
+
+
+LaTeX Warning: Citation `:1999fq' on page 38 undefined on input line 25.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter1' on page 38 undefined on input line 3
+0.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter3' on page 38 undefined on input line 3
+0.
+
+[38] [39 <E:/PhD/1st_Year_09-10/Reports/Thesis/Manchester Thesis Template/Diagr
+ams/atlas-eps-converted-to.pdf>] [40]
+
+LaTeX Warning: Citation `:1999fq:Chapter3' on page 41 undefined on input line 7
+4.
+
+[41]
+
+LaTeX Warning: Citation `:1999fq:Chapter3' on page 42 undefined on input line 9
+2.
+
+
+LaTeX Warning: Reference `trackrec' on page 42 undefined on input line 92.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter1' on page 42 undefined on input line 9
+7.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter4' on page 42 undefined on input line 9
+7.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter5' on page 42 undefined on input line 9
+7.
+
+[42]
+
+LaTeX Warning: Reference `EMendcap' on page 43 undefined on input line 109.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter4' on page 43 undefined on input line 1
+17.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter1' on page 43 undefined on input line 1
+39.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter1' on page 43 undefined on input line 1
+39.
+
+[43]
+
+LaTeX Warning: Reference `EMendcap' on page 44 undefined on input line 150.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter5' on page 44 undefined on input line 1
+53.
+
+[44]
+
+LaTeX Warning: Reference `hadronres' on page 45 undefined on input line 157.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter5' on page 45 undefined on input line 1
+71.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter5' on page 45 undefined on input line 1
+71.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter1' on page 45 undefined on input line 1
+77.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter6' on page 45 undefined on input line 1
+77.
+
+
+LaTeX Warning: Reference `ATLAS' on page 45 undefined on input line 177.
+
+[45]
+
+LaTeX Warning: Citation `:1999fq:Chapter6' on page 46 undefined on input line 1
+85.
+
+[46]
+
+LaTeX Warning: Citation `:1999fq:Chapter1' on page 47 undefined on input line 1
+93.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter11' on page 47 undefined on input line 
+193.
+
+[47]
+
+LaTeX Warning: Reference `menulvl1' on page 48 undefined on input line 199.
+
+
+LaTeX Warning: Reference `menulvl1' on page 48 undefined on input line 200.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter11' on page 48 undefined on input line 
+220.
+
+
+LaTeX Warning: Citation `:1999fq:Chapter11' on page 48 undefined on input line 
+220.
+
+[48])
+("E:\PhD\1st_Year_09-10\Reports\Thesis\Manchester Thesis Template\Detector/FP42
+0.tex"
+
+LaTeX Warning: Citation `Cox:2005tb' on page 49 undefined on input line 3.
+
+
+LaTeX Warning: Reference `cryostat420' on page 49 undefined on input line 5.
+
+Package epstopdf Info: Source file: <Diagrams/Cryostat.eps>
+(epstopdf)                    date: 2006-11-06 15:10:30
+(epstopdf)                    size: 43267018 bytes
+(epstopdf)             Output file: <Diagrams/Cryostat-eps-converted-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=Diagrams/Cryostat-eps-conve
+rted-to.pdf Diagrams/Cryostat.eps>
+(epstopdf)             \includegraphics on input line 13.
+runsystem(epstopdf --outfile=Diagrams/Cryostat-eps-converted-to.pdf Diagrams/Cr
+yostat.eps)...executed (allowed).
+
+Package epstopdf Info: Result file: <Diagrams/Cryostat-eps-converted-to.pdf>
+(epstopdf)                    date: 2011-12-01 12:57:21
+(epstopdf)                    size: 232217 bytes.
+<Diagrams/Cryostat-eps-converted-to.pdf, id=239, 362.35374pt x 379.4175pt>

@@ -1,0 +1,65 @@
+\section{Introduction}
+
+The LHC collimation system is a key part of the machine protection system in the LHC. Due to extremely high stored beam and magnetic energy in the LHC [cite], amounting to some 160MJ of beam energy and 3GJ of stored magnetic energy, it is neccessary to keep close control on the losses experienced by the system. In the LHC this is done by a combination of monitoring the losses within the machine, carefully controlled losses by the collimation system, and a rigorous interlock system designed to dump the beam safely in the event of the development of dangerous behaviour by the circulating beam [LHC machine protection].
+
+The collimation system in the LHC is a four-stage system, composed primarily of primary (TCP), secondary (TCS), and tertiary (TCT) collimators. These serve to scatter the particle halo, then further scatter and absorb the scattered particles. Further protection is provided by absorbers (TCLA), collimators at the injection regions (TCLI and TDI) and at the extraction region (TCDQA). In particular the TCTs are placed near the experimental IPs to protect the inner triplet magnets (used for final focusing of the beam before collision). In total the collimation system is broken down into two IRs; IR3 for betatron cleaning, in which there are:
+
+\begin{enumerate}
+\item{1 primary collimator}
+\item{4 secondary collimators}
+\item{4 absorbers}
+\end{enumerate}
+
+per beam and IR7 for momentum cleaning, which is composed of:
+
+\begin{enumerate}
+\item{3 primary collimators}
+\item{11 secondary collimators}
+\item{5 absorbers}
+\end{enumerate}
+
+per beam, with an additional 8 tertiary collimators (2 per experimental IP) per beam. In addition to the collimators at the injection and extraction region each beam is exposed to 44 different moveable collimators per circulation of the machine. The primary and secondary collimators presently all have a jaw material carbon reinforced graphite (conductivity $\sigma_{graphite} = 7 \times 10^{4} S m^{-1} $). This material was chosen due to the requirement for a robust jaw material (mechanically stable under large thermal shock) from a machine protection point of view, however not optimised from a beam impedance point of view.
+
+The current collimation system has demonstrated to be exceptionally effective at it's job of providing machine protection to the LHC [cite Chamonix 2012 MP presentation], however it has been shown to be a limiting factor in the luminousity of the LHC due to the large contribution to the transverse beam coupling impedance by the primary, and especially the numerous secondary collimators in the system, which are also almost double the length of the primary collimators[cite]. 
+
+The phase 1 collimator (those presently (as of 2012) in place in the LHC) designs have a number of design features that are designed to reduce the beam coupling impedance of each device. Although the resistive wall contribution to the beam coupling impedance due to the poorly conducting jaw material is significant, the use of longitudinal RF fingers in the transition between the beam pipe to the collimator jaws and of a system of sliding contact fingers to isolate the beam from seeing the collimator vacuum tank (see Fig~\{fig:phase-1-rf} for more details). These function well as impedance reduction techniques, however have some limitations from a mechanical point of view. In particular, the sliding contacts have been suspected to be a significant producer of dust in the LHC due to the moving physical contact during collimator alignment [cite]. 
+
+\begin{figure}
+\subfigure[]{
+\label{fig:phase-1-col-longitudinal-rf}
+}
+\subfigure[]{
+\label{fig:phase-1-col-sliding-contacts}
+}
+\label{fig:pĥase-1-rf}
+\caption{Different components the impedance reduction measures in the phase 1 collimator design. \ref{fig:phase-1-col-longitudinal-rf} shows the longitudinal RF fingers, ensuring a good conducting path for the beam image currents, and \ref{fig:phase-1-col-sliding-contacts} shows the sliding RF contacts on the collimators jaw. These are intended to minimise the volume seen by the beam, thus making any cavity modes that may be excited by the beam at very high frequencies where the beam power spectrum is very small.}
+\end{figure}
+
+Due to these factors (high transverse impedance due to the resistive wall impedance and problems of dust due to sliding contacts) a phase 2 upgrade of the LHC collimation system has been proposed. This entails two components;
+
+\begin{enumerate}
+\item{The replacement of the current secondary collimators (the prime contributor to the large transverse impedance) by a phase 2 design using a good conducting material as the jaw material. There will be some loss of mechnical robustness but it is thought that this will not be detrimental to the requirements of machine protection with a suitable choice of material.}
+\item{Replacing the existing sliding RF contacts with a contactless RF system (shown in Fig.~\ref{fig:rf-system-phase-2}). This is designed to remove the problem of dust caused by the sliding RF contacts in the phase 1 system by removing the moving physical contacts. This increase the volume of the cavity visible to the particle beam, decreasing the frequency of the lowest cavity modes. To counteract these new resonances, ferrite is placed in the cavity to decrease the resulting Q of the resonances.}
+\end{enumerate}
+
+\begin{figure}
+\caption{The RF system for use in the phase 2 collimation system. The sliding RF contacts of the phase 1 design are replaced with a ferrite damping system. The RF contacts are removed, allowing the beam to see the entire RF cavity, causing resonances at lower frequencies. The Q of these resonances are decreased by the use of ferrite damping tiles.}
+\end{figure}
+
+In this chapter shall be presented an comparison of the different jaw materials proposed for use in the phase 2 secondary collimators, in particular a combination of jaw materials aimed at combining extremely robust materials with highly conductive metals, and the results of full 3D simulations of a TCTP collimator - a tertiary collimator for use in the LHC - which is incorporates the ferrite damping system in comparison to the sliding contacts of the phase 1 RF system. 
+
+
+
+%
+% Introduction to the new collimator design - Old collimator design, problems with sliding rails, new design, new material possibilities
+% Material Evaluation - Comparison of CST simulations
+% Whole collimator simulations of phase 2 secondary - Transverse and longitudinal modes with ferrite - compared to that from phase 1
+% Sims in CST PS, GdFidl and HFSS
+% Heating calculations also
+%
+%
+%
+%
+%
+
+

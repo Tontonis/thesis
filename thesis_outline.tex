@@ -1,0 +1,132 @@
+\documentclass[12pt,PhD]{Thesis}
+
+
+
+% ******** vmargin settings *********
+\usepackage{vmargin} %This give you full control over the used page area, it maybe not the idea method in Latex to do so, but I wanted to reduce to amount of white space on the page
+\setpapersize{A4}
+%\setmargins{3.5cm}%			%linker Rand, left edge
+%	  {1cm}%     %oberer Rand, top edge
+%           {14.7cm}%		%Textbreite, text width
+%           {23.42cm}%   %Texthoehe, text hight
+%           {14pt}%			%Kopfzeilenhöhe, header hight
+%           {1cm}%   	  %Kopfzeilenabstand, header distance
+%           {0pt}%				%Fußzeilenhoehe footer hight
+%           {2cm}%    	  %Fusszeilenabstand, footer distance   
+
+
+%Defining text font profile
+\usepackage{t1enc} % as usual
+\usepackage[latin1]{inputenc} % as usual
+\usepackage{times}	
+\usepackage{mathcomp, subfigure}
+\usepackage{amsmath}
+\usepackage[pdftex]{graphicx}
+
+\pagestyle{plain}
+%\renewcommand{\topfraction}{0.99}
+%\renewcommand{\bottomfraction}{0.99}
+%\renewcommand{\textfraction}{0}
+
+
+\dept{School of Physics and Astronomy}
+\submitdate{2012}
+
+\begin{document}
+%Plan
+%
+\title{Measurements and Simulations of Impedance Reduction Techniques in Particle Accelerators}
+%%%%% To be considered? Impedance reduction is still a constant part of all work (MKIs, TCTP, RF fingers, heat loads on ferrites), but not directly applicable as my work for any but MKI.
+%%%%% What are the new things presented in the thesis
+\author{Hugo Alistair Day}
+\principaladviser{Dr. Roger Jones}
+
+
+\beforeabstract
+\prefacesection{Abstract}
+A review of the first two years of study are presented. These topics consist of; Simulations of coaxial wire measurements of the impedance of asymmetric devices, coaxial wire measurements of ferrite kicker magnets for use in the SPS and LHC and impedance studies of a number of potential collimator upgrades for the LHC, focusing on the phase 2 secondary collimators for the LHC. Also disucssed is future work towards completion of the PhD and a timetable of writing to ensure timely completion.
+\afterabstract
+\afterpreface
+
+
+\tableofcontents
+
+% What is new in the thesis:
+% Wire measurements of asymmetric structures
+% LMCI with SC and BB impedances - reconstructing Kell-Schnell diagram
+% Simulations of wire measurements of structures
+% Simulations of large structures (3m of magnets/kicker magnets)
+%
+%
+%
+
+What is new that is presented in thesis?
+\begin{itemize}
+\item{Localisation of heat loss in trapped modes/damping trapped modes with ferrite}
+\begin{itemize}
+\item{Localising heat loss using loss density plots in HFSS}
+\item{Investigating the effect of ferrite in damping cavity modes - where does the heat loss go and how does R/Q change with the addition of ferrite.}
+\end{itemize}
+\item{Using the coaxial wire method to measure the quadrupolar impedance of symmetric and asymmetric structures (also the constant transverse term?)}
+\item{Simulations of complex devices (is this really that new or exciting?)}
+\end{itemize}
+
+Whether this is sufficient, only Crom will tell
+
+
+\begin{enumerate}
+\item{Introduction}
+\item{Wakefields, Impedances and the associated Beam Dynamics Effects}
+\begin{enumerate}
+\item{Theory - Covering the definitions and assumptions of wakefield and impedance studies. Also some simple examples, i.e. resistive wall instability and cavity modes}
+\item{Examples of Effects}
+\begin{itemize}
+\item{Beam-induced heating}
+\item{Single bunch and coupled bunch instabilities in the longitudinal and transverse planes - To be introduced and summarised. No in depth analysis needed - others have done it before and better than you can at the moment.}
+\item{Example - LMCI with broadband (and space charge - maybe explain implementation) impedances studied in HEADTAIL.}
+\item{Comments - Beam induced heating is important to a lot of the work so will be explained in some detail, including reviewing the effects of bunch spectra/bunch length, narrow band, broadband impedances. Also commented on will be location of heating. Will be expanded on further in the examples chapter (TCTP and RF fingers for examples).}
+\end{itemize}
+\end{enumerate}
+\item{Impedance Evaluation Tools (title likely to change)}
+\begin{enumerate}
+\item{Simulations}
+\begin{itemize}
+\item{Time Domain}
+\item{Frequency Domain - Including eigenmode simulations AND simulations of the coaxial wire technique. Covering symmetric and asymmetric structures}
+\end{itemize}
+\item{Impedance Measurements (Frequency domain primarily)}
+\begin{itemize}
+\item{Bench Top}
+\begin{itemize}
+\item{High Q impedances}
+\item{Low Q impedances}
+\end{itemize}
+\item{Machine Measurements - to demonstrate some knowledge of beam dynamics and because it fits with the section - NOT ALL EQUIPMENT CAN BE MEASURED ON A BENCH}
+\begin{itemize}
+\item{Longitudinal Measurements (RF phase slippage)}
+\item{Transverse Measurements (Tune shift)}
+\end{itemize}
+\end{itemize}
+\end{enumerate}
+
+\item{Impedance Reduction Techniques}
+\begin{enumerate}
+\item{Resistive Wall Impedance - material conductivity. Using coatings, adjusting material impedance peaks. Phase 2 jaw material as an example}
+\item{Gaps - TCTP for geometric, Phase 2 for resistive}
+\item{Tapering Angles - TCTP as example (for example the change of tapering angle causing a broadband impedance increase)}
+\item{RF fingers - Simulations of RF fingers making the impedance of cavities/transitions}
+\item{Damping materials - i.e. the use of ferrite to lower the Q value of resonances. Description of placement and material choice}
+\item{Serigraphy - For use on ferrite kicker magnets}
+\item{Ceramic chambers - LHC-MKI}
+\item{Others}
+\end{enumerate}
+\item{Indepth studies of 2 Impedance Reduction Techniques}
+\begin{enumerate}
+\item{LHC-MKI - Particular attention to be paid to the limitations of the technique (electrical breakdown), the measurements and also to a comparison of beam induced heating with different configurations and beam spectrum measurements}
+\item{LHC Phase 2 Collimator Design - Secondary collimator and TCTP, comparison to current collimator}
+\end{enumerate}
+\item{Conclusion}
+\end{enumerate}
+
+
+\end{document}

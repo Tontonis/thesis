@@ -1,0 +1,285 @@
+\section{Central Exclusive $H \rightarrow b\bar{b}$ at ATLAS} 
+
+The aim of this section is to determine whether it is possible to see the $H\rightarrow b\bar{b}$ channel in central exclusive production at ATLAS. The choice of jet algorithm will affect the reconstructed exclusive variables and hence the choice of cut required to remove the background. The strategy below is to firstly extract the best kinematic matching cuts for each jet algorithm and determine whether a particular algorithm performs better than the others. Further possible exclusivity requirements are then examined in order to reduce the non-exclusive backgrounds further. Finally, the cross section for exclusive $H \rightarrow b \bar{b}$ is given, along with the impact of current experimental triggers.
+
+\subsection{Backgrounds}
+
+The backgrounds to the central exclusive $H\rightarrow b\bar{b}$ channel are divided into 3 categories; central exclusive, double pomeron exchange and overlap. The central exclusive backgrounds are $b\bar{b}$ and gg production and are simulated, along with the Higgs signal, using the ExHuME Monte Carlo. The $b\bar{b}$ background will have identical kinematic matching properties to the signal and so cannot be reduced from information from FP420. However, equation \ref{exclusivediquark} shows that the exclusive di-quark background is, at a given central mass, strongly peaked in the large pseudo-rapidity region. Hence an $E_T$ and $\eta$ cut will reduce this background. The $gg$ background can be reduced in a similar way. 
+
+The double pomeron exchange processes were simulated using the POMWIG Monte Carlo. There are 3 processes that act as background - Higgs, $b\bar{b}$ and $jj$ where the $j$ are light quark or gluon jets. These backgrounds have 2 intact protons in the final state and a jet-like central system. However, the kinematics of the 2-jet event measured in the ATLAS detector should not match the kinematics measured in FP420 because of the presence of pomeron remnants in the final state. Section \ref{kinematicmatch} deals with the correct identification of these events.
+
+The overlap background involves 2 single diffractive (SD) events plus a QCD event all in one bunch crossing at the LHC. The QCD events are again $b\bar{b}$ and $jj$. However, the protons from the SD events have absolutely no relation to the QCD event and as such, one would expect the kinematics to very rarely match between FP420 and the central ATLAS detector. Furthermore, the protons that gave rise to the QCD event have broken up and this deposits extra energy in the central detector and leaves extra tracks in the central detector. This type of background estimated in section \ref{overlap}.
+
+\subsection{Jet Algorithm effects and Kinematic Matching Cuts}\label{kinematicmatch}
+
+Starting with just the $H\rightarrow b\bar{b}$ events, the two types of jet algorithm were applied. Event were only retained if the highest transverse energy jet had $E_T > 40$GeV. The effects of the cone and inclusive $K_T$ algorithm on the reconstructed $R_{jj}$
+distribution are shown in figure \ref{higgsrjj}.
+The $R_{jj}$ distribution has a peak close to 1.0 but a long tail to medium $R_{jj}$ values. This is due to hard final state radiation from one of the $b$ quarks not being recovered by the jet algorithm. The effect of reducing the cone radius results in less of the energy being reconstructed in the 2-jet system and a flatter $R_{jj}$ distribution as expected. Reducing the $K_T$ R parameter has a similar effect.
+
+
+
+\begin{figure} 
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/HiggsRJJDiffCone.eps,width=0.5\textwidth,height = 6cm}}
+	\subfigure[]{\epsfig{figure=Diagrams/HiggsRJJDiffKTR.eps,width=0.5\textwidth,height = 6cm}}
+}
+\caption{The reconstructed $R_{jj}$ distribution using the cone (a) and inclusive $K_T$ (b) jet-finding algorithms. The effect of changing $R_{cone}$ or $R_{K_T}$ is also shown. \label{higgsrjj}}
+\end{figure}
+
+In contrast, the variable $R_j$ is defined to be not as affected by very hard radiation from one of the jets.
+The $R_j$ distribution shown in figure \ref{higgsrj} is a narrower peak than the $R_{jj}$ distribution with the long tail removed. Furthermore, changing the cone radius, or inclusive $K_T$ R-parameter, has less effect on the distribution. This makes $R_j$ a robust variable for defining exclusive events. The inclusive $K_T$ algorithm performs slightly better than the cone algorithm because the distribution is less susceptible to changes in the $R_{K_T}$. Both algorithms produce similar shapes of distribution.
+
+
+\begin{figure} 
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/HiggsRJDiffCone.eps,width=0.5\textwidth,height = 6cm}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/HiggsRJDiffKTR.eps,width=0.5\textwidth,height = 6cm}}
+	%\includegraphics[width=0.5\textwidth]{Diagrams/HiggsRJDiffKTR.eps}
+	}
+\caption{The reconstructed $R_{j}$ distribution using the cone (a) and inclusive $K_T$ (b) jet-finding algorithms. The $R_j$ distribution is not as effected as $R_{jj}$ when the cone radius or $K_T$ R Parameter is changed.\label{higgsrj}}
+\end{figure}
+
+
+The final kinematic matching variable is $\Delta y$ shown in figure \ref{higgsdeltay}. Again, the $K_T$ algorithm is less susceptible to changes in $R_{K_T}$. Both distributions have the majority of events concentrated in the region $\Delta y < 0.1$. The upshot of all this is that the $R_j$ and $\Delta y$ variables are extremely good at defining the exclusive event. Furthermore, it is possible to choose small values of $R_{cone}$ or $R_{K_T}$ without too much change in the reconstructed signal. This will be important in high luminosity running at the LHC with multiple pile-up events. Smaller values of $R_{cone}$ and $R_{K_T}$ will result in less particles from these overlap events being wrongly added into the events of interest.
+
+\begin{figure} 
+\centering
+	\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/HiggsDeltaEtaDiffCone.eps,width=0.5\textwidth,height = 6cm}}
+	\subfigure[]{\epsfig{figure=Diagrams/HiggsDeltaEtaDiffKTR.eps,width=0.5\textwidth,height = 6cm}}
+	}
+\caption{The reconstructed $\Delta y$ distribution using the cone (a) and inclusive $K_T$ (b) jet-finding algorithms.\label{higgsdeltay}}
+\end{figure}
+
+The objective now is to define a set of exclusivity cuts which keeps as much of the signal as possible, whilst rejecting a large fraction of the background. The $R_{jj}$, $R_j$ and $\Delta y$ distributions for the central exclusive Higgs is plotted in figure \ref{fig:higgsvsdpebb} against the $b\bar{b}$ background produced via double pomeron exchange. A cone radius of 0.4 and a $K_T$ R-parameter of 0.55 was used. The distributions are normalised to 1.0 to show the general shape of the two different distributions. It should be noted that at this stage the double pomeron $b\bar{b}$ background is approximately 380 times larger in cross section than the signal although spread over a larger mass range. 
+
+\begin{figure} 
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/HiggsvsDPEbbCONE_RJJ.eps,width=0.5\textwidth,height = 6cm}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/HiggsvsDPEbbKTR_RJJ.eps,width=0.5\textwidth,height = 6cm}} 
+	}
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/HiggsvsDPEbbCONE_RJ.eps,width=0.5\textwidth,height = 6cm}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/HiggsvsDPEbbKTR_RJ.eps,width=0.5\textwidth,height = 6cm}}
+	}
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/HiggsvsDPEbbCONE_DeltaEta.eps,width=0.5\textwidth,height = 6cm}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/HiggsvsDPEbbKTR_DeltaEta.eps,width=0.5\textwidth,height = 6cm}}
+}
+\caption{The normalised $R_{jj}$, $R_j$ and $\Delta y$ distributions for exclusive Higgs and double pomeron $b\bar{b}$ production using a cone radius of 0.4 (a, c, e) and inclusive $K_T$ R-parameter of 0.55 (b, d, e).\label{fig:higgsvsdpebb}}
+\end{figure}
+
+The values $R_{cone}=0.4$ and $R_{K_T} = 0.55$ are chosen for two reasons. Firstly they produce similar distributions and do not give a false impression that one algorithm is superior. Secondly, smaller values of $R_{cone}$ and $R_{K_T}$ are less likely to reconstruct di-jets containing some of the pomeron remnants. This is desirable as we are wanting to reconstruct the hard-scattering part of the double pomeron exchange process.
+
+Using $R_j$ instead of $R_{jj}$ has some interesting effects. Firstly, as expected, the low $R_{jj}$ tail is not present in the $R_j$ distribution for both the signal and background. This initially leads us to presume that the $R_j$ variable is better at reconstructing the mass of the hard-scatter than $R_{jj}$. However, for the double pomeron $b\bar{b}$ events, the $R_j$ distribution extends to larger values than $R_{jj}$. Some of this increase can be attributed to the highest $E_T$ jet having a bit of pomeron remnant in it. This extra energy is then counted twice in the $R_j$ reconstrcution. This problem is reduced by the use of small values of $R_{cone}$ and $R_{K_T}$ but can never be completely removed.
+The second effect of using the $R_j$ variable is that there seems to be a sharper, more distinct, separation between the signal and background. This is mainly due to the removal of the long tail of the signal in the $R_j$ distribution. The $\Delta y$ distribution is also well reconstructed. Smaller values of $R_{cone}$ or $R_{K_T}$ lead to a broader distribution with a long tail to large values of $\Delta y$. This is because hard radiation in the parton showering phase would lead to a significant change in direction of one of the jets if the energy from the radiation is reconstructed as a third jet.
+
+The distributions presented in \ref{fig:higgsvsdpebb} give us a feel for the loosest possible cuts in those distributions. The loose cut is defined as the point at which the normalised signal and background distributions cross over. For example, a cut of $R_j >$ 0.85 can be applied to di-jets reconstructed using the inclusive $K_T$ algorithm with $R_{K_T}=0.55$. Shifting this cut to the left will include a larger fraction of background with only a very small gain in signal. This loose cut is not the optimum cut for the analysis because the background is so much larger than the signal; it only tells us the region of interest for further study. The best cut will be found by later by requiring the best possible signal to all background ratio.
+%\afterpage{
+%\clearpage
+
+\begin{figure}
+\centering
+\mbox{ 
+	\subfigure[]{\epsfig{figure=Diagrams/ConeDijetMassFractionCut.eps,width =.5\textwidth}}
+	\subfigure[]{\epsfig{figure=Diagrams/KTDijetMassFractionCut.eps,width=.5\textwidth}}
+	}
+\caption{The dependence of the $R_{jj}$ and $R_{j}$ cuts as a function of $R_{cone}$ (a) and $R_{K_T}$ (b).\label{dijetmasscutsvsparam}}
+\end{figure}
+%}
+
+The cut value depends on the values of $R_{cone}$ or $R_{K_T}$ used to reconstruct the di-jets. Figure \ref{dijetmasscutsvsparam} shows how the cut values of $R_{jj}$ and $R_{j}$ change with the jet algorithm parameter. 
+Using the $K_T$ algorithm as an instructive example, it is clear that the $R_j$ cut is less dependent on $R_{K_T}$ than the $R_{jj}$ cut - which changes less than 0.02 over the range of $R_{K_T}$ used. The steep dependence of the $R_{jj}$ cut with $R_{K_T}$ is easily understood because the signal is reconstructed with larger $R_{jj}$ when $R_{K_T}$ is increased. Furthermore, the background will also be reconstructed with larger $R_{jj}$ as it is just as susceptible to parton showering. Therefore the cut naturally increases to keep the signal efficiency high and the background efficiency low. A similar effect is found for the cone algorithm, but the dependence is less steep with $R_{cone}$
+
+The $R_j^{cut}$ however, is almost entirely dependent on the background reconstruction. Figure \ref{higgsrj} showed that the reconstructed signal is almost $R_{K_T}$ independent. If the background followed the same trend then one would expect no $R_{K_T}$ dependence. The weak dependence arises because of the pomeron remnants. Again large values of $R_{K_T}$ are more likely to pull in some of the remnants, thus the cut increases to keep the background efficiency low. The performance of the cone algorithm is similar for the range of $R_{cone}$ used.
+
+The $\Delta _y^{cut}$ is always less than 0.1 and decreases as $R_{K_T}$  increases due to there being less chance of the radiation escaping and changing the direction of the second jet.  The cut on $\Delta y$ is not examined further because this cut is lower than the granularity of the towers in the hadronic calorimeter. It is not certain that the direction of a jet can be measured more accurately than the tower granularity, therefore the exclusivity cut is set at $\Delta y < 0.1$ for the rest of the analysis.
+
+The reconstructed signal and background efficiencies as a function of $R_{cone}$ and $R_{K_T}$ is shown in figure \ref{dijetmasscutefficiency}. For each jet algorithm parameter, the preferred cuts given in figure \ref{dijetmasscutsvsparam} are used. For the signal, the performance of the cone and $K_T$ algorithms are very similar. For $R_j$, the signal efficiency is virtually independent of both $R_{cone}$ and $R_{K_T}$ being flat at about $87\%$. For $R_{jj}$, the efficiency of the signal increases with $R_{cone}$ and $R_{K_T}$. In all cases, the signal efficiency is always better for loose cuts on $R_{j}$ than $R_{jj}$. 
+
+The reconstructed double pomeron background is more interesting. For the cone algorithm, the background efficiency is similar for cuts on $R_j$ and $R_{jj}$ and decreases with cone radius. 
+The $K_{T}$ algorithm on the other hand shows completely different dependence on $R_{K_T}$ depending on whether $R_{jj}$ or $R_{j}$ is used. The background efficiency decreases with $R_{K_T}$ if a cut on $R_{jj}$ is made. However, smaller values of $R_{K_T}$ are preferred if a cut on $R_{j}$ is made.
+
+\begin{figure} 
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/ConeDijetMassFractionSignalEfficiency.eps,width =.5\textwidth}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/ConeDijetMassFractionBackgroundEfficiency.eps,width =.5\textwidth}}
+	}
+	\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/KTDijetMassFractionSignalEfficiency.eps,width =.5\textwidth}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/KTDijetMassFractionBackgroundEfficiency.eps,width =.5\textwidth}}
+}
+\caption{The dependence of the $R_{jj}$ and $R_{j}$ cuts as a function of $R_{cone}$ (a, b) and $R_{K_T}$ (c, d).\label{dijetmasscutefficiency}}
+\end{figure}
+
+
+With all of the information on jet algorithm and kinematic matching variables investigated it is now possible to choose the best jet algorithm and basic kinematic matching cuts and then continue with the analysis. It is not a good idea however to simply pick the best signal to background performance, one must take into account the environment of ATLAS and the LHC. An example of this is the $\Delta y^{cut}$ which could not be set below 0.1 because of the granularity of the hadron calorimeter. 
+
+The resolution of the ATLAS detector could play a big part in rejecting some cuts. 
+In \cite{}, the reconstructed jet $\sigma_{E_T}/E_T$ was found to be approximately $5-8\%$ depending on pseudo-rapidity and jet algorithm parameter. The resolution of the $R_j$ variable will be dominated by this $E_T$ resolution because FP420 has typically small values of $\sigma_x/x$. This means that $R_j$ variable should not be constrained by a window smaller than $0.92<R_j<1.08$ and the $R_{jj}$ window will be larger as it depends on the measurement of two transverse energies. In addition to detector effects, particles from pile-up events at the LHC can be wrongly reconstructed in the di-jet system. This problem can never be removed completely, but the best way to avoid pulling particles into jets is to use smaller $R_{cone}$ or $R_{K_T}$.  
+
+Taking all factors into account, the following choices are made:
+\begin{enumerate}
+\item The jet algorithm parameters $R_{cone} = 0.4$ and $R_{K_T}=0.55$ are chosen for the rest of the analysis. These small values are chosen to minimise the effect of pile-up and reduce the amount of pomeron remnant reconstructed in the dijet sample. 
+\item The small jet finding parameters result in the loose exclusivity cuts being defined as $0.82< R_j < 1.15$ for the cone algorithm and $0.85<R_j<1.15$ for the $K_T$ algorithm. The $\Delta y < 0.1$ cut is imposed for both algorithm choices. No cuts are made at this point on $R_{jj}$.
+\end{enumerate}
+Although these choices lead to a higher percentage of DPE passing the cuts, the signal efficiency is unaffected. Furthermore, the $R_j$ cuts can be tightened later to reduce the background if necessary.
+
+\subsection{Simulation of the Overlap Background}\label{overlap}
+
+The pile-up background cross section, $\sigma_{pile}$, can be estimated by 
+\begin{equation}
+\sigma_{pile} = 0.5\left(N-1\right)\left( N-2\right) P_i^2 Q \sigma_{QCD}
+\end{equation}
+where N is the number of interactions per bunch crossing, $P_i$ is the probability of an event at the LHC being a single diffractive event which will cause a hit in FP420 and $Q$ is the QUARTIC rejection factor. The input cross section, $\sigma_{QCD}$, is the cross section of normal inclusive events ($b\bar{b}$ or light jets,$jj$) generated by the HERWIG event generator \cite{herwig}. 
+
+The number of interactions per bunch crossing at the LHC is luminosity dependent as given in equation \ref{lumilhc}. The relationship is linear, starting at an average of 3.5 interactions per bunch crossing at a luminosity of 10$^{33}$cm$^{-2}$s$^{-1}$ and rising to 35 at 10$^{34}$cm$^{-2}$s$^{-1}$ .
+The QUARTIC rejection factor is calculated by picking three random vertices according to a gaussian distribution of width 5.6cm about the z=0 point. The 5.6cm is the longitudinal beam spot size at the LHC. Two of these vertices correspond to the SD events and the average corresponds to the fake vertex measured by QUARTIC. If the final vertex, which corresponds to the primary QCD event, is within 2.1mm of the fake vertex then the event will pass the QUARTIC measurement. It is found that only 2.5\% of overlap events will pass this requirement. This is in good agreement with \cite{brandt}.
+$P_{i}$ is estimated by 
+\begin{equation}
+P_i = \frac{\sigma_{SD}\epsilon_{SD}}{\sigma_{TOT}}
+\end{equation}
+where $\sigma_{TOT}$ and $\sigma_{SD}$ are the total and single diffractive cross sections at the LHC obtained from the PYTHIA event generator \cite{pythia}. The protons from the SD events are then passed to the FPTRACK program \cite{pb} to obtain, $\epsilon_{SD}$, the percentage of single diffractive events that produce a hit in FP420. The result is $P_i = 0.012$. 
+
+The total pile-up cross section can then be reduced by kinematic matching. The overlap background events are constructed in two steps. The QCD event is generated using the HERWIG Monte Carlo. The protons are then constructed using Monte Carlo methods. The pomeron flux factor given in section \ref{pomeron flux} is an analytic function in both $x$ and $t$. The values of $x$ and $t$ are then distributed between [$x_{min}$, $x_{max}$] and [$t_{min}$, $t_{max}$] (determined by the acceptance of FP420) using the techniques presented in section \ref{mcmethods} to give the correct distributions. 
+
+\subsection{Results}\label{finalresultshbb}
+
+It is now possible to estimate the signal to background ratio for this analysis. The following cuts are then made on the MC samples:
+\begin{enumerate}
+\item The $K_T$ jet algorithm is used with $R_{K_T} = 0.55$.
+\item The highest transverse energy jet must satisfy $E_T > 40GeV$  
+\item The longitudinal momentum loss of each proton must lie in the range $0.002<x_i<0.015$.
+\item The di-jet mass fraction must be in the range $0.85 < R_j <1.15$.
+\item $\Delta y < 0.1$.
+\end{enumerate}
+The first requirement is the choice of jet finding parameter discussed in section \ref{kinematicmatch}. Cut 3 limits the protons to hit the pots at 420m. The final 2 cuts are the reduction of background by kinematic matching as discussed in section \ref{kinematicmatch}.  The analysis is also done with the cone algorithm setting $R_{cone} = 0.4$, but all plots presented here are from the $K_T$ algorithm. The final results are presented for both cone and $K_T$. The input cross sections, defined as cuts 1-3 in the list above, are shown in table \ref{inputxs}. The large $gg$ and $jj$ backgrounds are reduced by b-tagging. The ATLAS detector is capable of identifying $b$ jets with an efficiency of 0.6 but with a mis-tag of just 0.01. Thus the cross sections presented in table \ref{inputxs} have to be multiplied by 0.36 or $10^{-4}$ (depending on the process involved) to reflect this. 
+
+\begin{table}[htdp]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Generator & Process & Cross section (fb) \\
+\hline
+ExHuME & $H\rightarrow b\bar{b}$ & 0.21 \\
+ &$b\bar{b}$ & 10.10\\
+ & $gg$ & 12.37\\
+POMWIG & $b\bar{b}$ & 14.36\\
+& $jj$ & 0.64\\
+HERWIG + SD & $b\bar{b}$ & 149.46 \\
+& $jj$ & 1.13 \\     
+\hline
+\end{tabular}
+\caption{The input cross sections for signal and background. All samples have had a $E_T > 40$ GeV cut applied to the highest transverse energy jet after jet finding with the $K_T$ algorithm with an R parameter of 0.55. The proton momentum loss have also been restricted to the range 0.002 - 0.015. The overlap background is defined at a luminosity of $2\times10^{33}$cm$^{-2}$s$^{-1}$\label{inputxs}}
+\end{table}%
+
+The backgrounds can be reduced by cutting a mass window around the Higgs peak. The mass resolution of FP420 is taken to be $\sigma_{M_X} = 0.02M_X$ which is a sensible estimate of the FP420 mass resolution given in section \ref{fp420}. The mass distributions for the signal and background are shown in figure \ref{massafterkinematics} after smearing the value of $M_X$ by a gaussian of width $0.02M_X$. The backgrounds are all continuous across the region of interest, thus a mass window of 4GeV either side of the Higgs peak is applied to the sample. It is clear that after such a cut, the dominant background is the $b\bar{b}$ overlap background. Furthermore, the $b\bar{b}$ DPE background is still larger than the signal and the two exclusive backgrounds, $b\bar{b}$ and $gg$, are approximately the same size as the signal.
+
+%The $R_j$ distribution, after the cut on the mass measured in the pots, is shown in figure \ref{massafterkinematics}. It is clear that the $R_j$ window will have to be tightened to remove more background.
+
+\begin{figure}
+\centering
+\mbox{
+	%\subfigure[]{
+	\epsfig{figure=Diagrams/All_Masskti0.55.eps,width =\textwidth}%}
+	%\subfigure[]{\epsfig{figure=Diagrams/All_RJAfterCutskti0.55.eps, width =.5\textwidth}}
+	}
+\caption{The mass distributions of signal and background events as measured by FP420 (a). The mass, $M_X$, has been smeared by a gaussian of width 0.02$M_X$ to approximate the resolution of FP420. 
+\label{massafterkinematics}}
+\end{figure}
+
+The overlap background can be reduced further by cutting on the number of charged tracks outside the two main jets. An exclusive event will only have tracks originating from the $b\bar{b}$ associated with the primary jet vertex. The overlap events however have an inclusive QCD event as the primary vertex. This means that there will be particles from the break up of the protons themselves. If these particles are charged and lie within the pseudo-rapidity coverage of the inner detector, it will be possible to make a cut on them. The number of charged tracks in the pseudo-rapidity range $|\eta| < 2.5$ with a $p_T>0.5GeV$ is shown in figure \ref{nchargedtracks} for the central exclusive Higgs, the DPE $b\bar{b}$ background and the $b\bar{b}$ overlap background. The central exclusive $b\bar{b}$ and $gg$ have a similar distributions to the Higgs, with the $gg$ distribution being slightly broader.
+
+\begin{figure}
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/All_NChargedkti0.55.eps,width=0.5\textwidth,height = 6cm}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/NChargedBBQCD_pt.eps,width=.5\textwidth,height = 6cm}}
+	}
+\caption{The number of charge tracks associated with the primary vertex that have $p_T>0.5GeV$ and lie in the range $|\eta|<2.5$ (a). Also shown (b) is the effect on the $b\bar{b}$ overlap distribution of changing the minimum $p_T$ that a particle can have in order to produce hits in the inner detector.\label{nchargedtracks}}
+\end{figure}
+
+Clearly the number of charged tracks outside of the jets is a good discriminator for all diffractive events, not just exclusive ones. Figure \ref{nchargedtracks} (a) indicates that the maximum number of charged tracks associated with the vertex but outside of the jets should be 4. This cut however, is dependent on the performance of the inner detector, specifically the lowest $p_T$ a particle can have and still be reconstructed as a track. The effect of changing the minimum $p_T$ of particles is shown in figure \ref{nchargedtracks} (b). It is of crucial importance that the inner detector be able to pick up particles with $p_T\approx0.5$GeV, otherwise the overlap background could increase by an order of magnitude.
+%%some ref that it can......
+
+The cut on charged tracks outside of jets will not work at all if an inclusive pile-up event is close enough to the primary vertex to make the two vertices indistinguishable. In this scenario, the exclusive events would have too many charged tracks outside of the jets and would be identified as overlap events. This means that the cut will be of limited use at higher luminosities where the probability of a pile-up event being close to the primary vertex will be larger as the number of interactions per bunch crossing increases. Thus a vertex window cut is required and the size of the window depends on the accuracy of the vertex reconstruction. The vertex resolution of the inner detector was given in equation \ref{trackrec} and is both pseudo-rapidity and $p_T$ dependent. For a particle with $p_T = 0.5$GeV, the vertex resolution is 0.32mm, 0.68mm and 3.60mm for a pseudo-rapidity of 0.0,1.25 and 2.5 respectively. Figure \ref{probpileupvertex} (a) shows the rapidity distribution of the charged particles with $p_T>0.5$GeV that are outside of jets in the overlap $b\bar{b}$ background events. The distribution is peaked at zero and falls away at higher rapidities. One would hope therefore that a vertex window of $\pm$5mm would not lose too much information at lower luminosities.
+
+\begin{figure}
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/EtaDistNCharge.eps,width=0.5\textwidth, height = 6cm}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/NChargedProbability.eps,width=.5\textwidth,height=6cm}}
+	}
+\caption{The $\eta$ distribution of charged particles outside of the jets for the $b\bar{b}$ overlap background (a). The probability (b) of a pile-up event being close enough to the primary vertex to make the event fail the charged track cut. Three different vertex resolutions are shown.  \label{probpileupvertex}}
+\end{figure}
+
+The probability of a pile-up event being within $\pm$5mm of the primary event can be estimated as a function of luminosity in the same way that the QUARTIC rejection factor was estimated in section \ref{overlap}. Firstly, N vertices are created (using a gaussian of width 5.6cm) to mimic the number of interactions per bunch crossing at a particular luminosity. The first vertex represents the primary vertex and the others the pile-up events. If any of the pile-up events are within $\pm$5mm of the primary vertex, then the event would have to be thrown away. The probability of an event being removed in this way is shown in figure \ref{probpileupvertex} (b). In addition the dependence of this probability on vertex window size is also shown. As expected, the larger the vertex window, the more chance there is of a pile-up event ruining the cut. The interesting point is that, at a luminosity of 5$\times$10$^{33}$cm$^{-2}$s$^{-1}$, half of the central exclusive events will have a pile-up event within $\pm$5mm and the event will potentially fail a cut on charged track multiplicity. 
+
+Finally, before estimating the signal-to-background ratio, there a few more cuts remaining. The backgrounds can be reduced by cuts on
+\begin{equation}
+\Delta\eta = | \eta_1 - \eta_2 |
+\qquad \quad
+\Delta\phi =  \phi_1 - \phi_2 
+\end{equation}
+where $\eta_i$ and $\phi_i$ are the pseudo-rapidity and azimuthal angle of jet $i$. Figure \ref{jetdirections} (a) shows the $\Delta\eta$ of the signal and some of the backgrounds after the mass window cut. The requirement $\Delta\eta < 1.0$ will remove more background than signal. Similarly, the $\Delta\phi$ distributions are shown in figure \ref{jetdirections} (b). The overlap background could be significantly reduced by cutting on 2.9$<\Delta\phi<$3.3 whilst leaving the signal relatively unaffected. The central exclusive events are back to back in $\phi$ because they have very little overall transverse boost, due to the the $t$ dependence of the cross section (equation \ref{xsebt}). The central exclusive $gg$ distribution can be wider than the signal because of the possibility of more radiation outside of the jet.
+
+\begin{figure}
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/All_JetEtakti0.55.eps,width=0.5\textwidth,height = 6cm}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/All_JetPhikti0.55.eps,width=.5\textwidth,height = 6cm}}
+	}
+\caption{The $\Delta\eta$ and $\Delta\phi$ distributions of signal plus relevant backgrounds. The $\Delta\eta$ cut is meant to remove the central exclusive backgrounds, whereas the $\Delta\phi$ cut is meant to remove the overlap background.
+%% something her on bkgd not put in??
+\label{jetdirections}}
+\end{figure}
+
+Finally, the $R_j$ cut must be tightened as much as possible. Figure \ref{rjlast} (a) shows the $R_j$ distribution for signal and the DPE $b\bar{b}$ and CEP $gg$ backgrounds. The optimum cut to remove 
+the DPE events is approximately $R_j>$0.94. This however, is not possible due to the $E_T$ resolution of the ATLAS calorimeter and the minimum $R_j$ is therefore set to 0.9. Again, parton showering results in a large proportion of the CEP $gg$ background being removed by the cut. In figure \ref{rjlast} (b), the same distribution is shown but using a cone algorithm with $R_{cone}=0.4$. The cone algorithm has less DPE events in the region $R_j>0.9$. This means that, due to detector resolution effects, the cone algorithm will out perform the $K_T$ algorithm in removing DPE events.
+
+\begin{figure}
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/All_RJAfterCutskti0.55.eps,width=0.5\textwidth,height = 6cm}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/All_RJAfterCutskti0.55.eps,width=.5\textwidth,height = 6cm}}
+	}
+\caption{The $R_j$ distribution after a mass window cut (a). Also shown is the same distribution but using a cone algorithm with $R_{cone}=0.4$ (a). \label{rjlast}}
+\end{figure}
+
+The effect of all these cuts combined is shown in table \ref{ktcuteff}.  More comments here.....
+
+\begin{table}[htdp]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+& \multicolumn{3}{c|}{CEP} &  \multicolumn{2}{c|}{DPE} &  \multicolumn{2}{c|}{Overlap}\\
+\cline{2-8}
+Cut & H & $b\bar{b}$ & $gg$ & $b\bar{b}$ & $jj$ & $b\bar{b}$ & $jj$\\
+\hline \hline
+$116<M_X<124$ & 0.899 & 0.069 & 0.107& 0.143 & 0.127 & 0.109 & 0.092\\
+$R_j > 0.9$ & 0.919& 0.922 & 0.681 & 0.361 & 0.295 & 0.851 & 0.734\\
+$2.9<\Delta\phi<3.3$ & 0.949 & 0.964& 0.914 & 0.980 & 1.00 & 0.442 & 0.358 \\
+$\Delta\eta < 1.0$ & 0.672& 0.461 & 0.582 & 0.382 & 0.435& 0.411 & 0.425 \\
+$N_C < 4$ & 0.846 & 0.772 & 0.563 & 0.615 & 0.500 & 0.023 & 0.021  \\
+\hline \hline
+All & 0.446 & 0.022 & 0.022 & 0.012 & 0.008 & 4.8$\times10^{-4}$ & 2.2$\times10^{-4}$\\
+\hline
+\end{tabular}
+\caption{Efficiency of cuts presented in this section. The first cut is relative to the input cross section defined in table \ref{inputxs} using the $K_T$ algorithm. Each subsequent cut is then relative to the previous cut in the table.\label{ktcuteff}}
+\end{table}%
+
+%%
+
+
+%   systematics.
+%%
+
+
+
+\subsection{Trigger Consideration}
+
+%%what the trigger does to our events........

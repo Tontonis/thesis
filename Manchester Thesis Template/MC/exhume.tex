@@ -1,0 +1,254 @@
+\section{ExHuME}
+
+%\subsection{Design}
+%%c++ design, weighting function choice.
+
+The ExHuME generator \cite{Monk:2005ji} is a direct implementation of the Durham model of central exclusive production. When new processes are developed, the usual prescription is to insert the hard subprocess into a standard event generator using the Les Houches accord \cite{Boos:2001cv}. This allows all the existing machinery of the event generator to be used. 
+For each event, the developer is required to pass the hard subprocess particle types and momenta, the specific colour connections and an event weight to the generator. The event weight tells the generator the probability of this point in phase space occuring. The generator then treats the hard subprocess particles in the way described in section \ref{eventgenerators} to produce the final state. 
+
+In the case of the ExHuME generator, this approach is not used. Firstly, initial state radiation is not required because of the Sudakov suppression factor, which explicitly forbids radiation from the incoming gluon. Secondly, the effective luminosity of the incoming gluons depends on the skewed, unintegrated parton density functions rather than the integrated parton density functions used in standard event generators. Thus the parton density treatment is different for central exclusive event generators. Finally, the protons themselves remain intact and have no secondary scatters. All that is required for a central exclusive generator is that the final state be passed through parton showering and hadronisation algorithms.
+
+ExHuME was designed in a modular way using C++ and is built upon six main class types: \texttt{Event}, \texttt{CrossSection}, \texttt{Weight}, \texttt{Random}, \texttt{Particle} and  \texttt{PhaseSpace}.  The \texttt{Random} class provides uniformly distributed random numbers in the region $\{0, 1\}$ using the RandFlat class contained in CLHEP \cite{Lonnblad:1994kt}. A \texttt{Weight} class is provided that can be used to numerically distribute random numbers for any one dimensional function, using the method outlined in section \ref{mcnumerical}. The \texttt{Particle} class contains information such as 4-momentum, vertex, particle type (given by the PDG Monte Carlo numbering scheme \cite{Eidelman:2004wy}) and colour flow (given by the Les Houches accord).
+
+The \texttt{Event} class handles the generator on an event-by-event basis by picking the random numbers required to generate the phase space of an event. There are six variables that are required for every subprocess; $M$, $y$, $t_1$, $t_2$ and the azimuth of the outgoing protons, $\phi_1$ and $\phi_2$. These variables correspond to the five phase space variables of $2\rightarrow3$ scattering in addition to an overall azimuthal rotation. The three outgoing objects at this stage are the two protons and the central system as a whole.
+
+The $\phi_1$ and $\phi_2$ distributions are flat and are picked in the range $\{0, 2\pi\}$. The $t$ dependence of the cross section is given by equation \ref{tdep} and the Monte Carlo does not lose any efficiency if a weight function of the form 
+\begin{equation}
+w(t_1,t_2) = e^{b(t_1 + t_2 - t_{1}^{max} - t_{2}^{max})}
+\end{equation}
+is used. The range that the $t_i$ are picked in, $\{t_i^{min},t_i^{max}\}$, can be specified by the user before event generation. The $y$ distribution of the central exclusive process is relatively flat \cite{Khoze:2001xm}, and a uniform probability distribution results in a 40\% efficient Monte Carlo. Such a choice is not optimal, but allows the mass distribution to be estimated numerically using the  \texttt{Weight} class, which implements the technique developed at the end of section \ref{mcnumerical}. This technique recursively adds points in the regions of largest integral and, as such, is extremely efficient at picking out the narrow mass peak of a single central object such as the Higgs boson. The mass range is defined by the user before event generation and the rapidity range is calculated on an event by event basis. 
+
+The \texttt{CrossSection} class calculates the differential cross section. It is an abstract class that contains the calculation of the differential luminosity given by equation \ref{ceplumi}. 
+LHAPDF \cite{Whalley:2005nh} is used for the parton density functions. This allows different PDFs to be used in the calculation, which could lead to changes in both the cross section value and the differential cross section distribution \cite{Forshaw:2005qp}. 
+
+If the central system consists of two or more particles, then additional variables are required
+to generate the complete phase space of the final state. The subprocesses inherit from \texttt{CrossSection} via an intermediate set of \texttt{PhaseSpace} classes. These define the appropriate weight functions and boundaries of any phase space variables that are not covered in the \texttt{Event} class. For example, a central system containing two particles  requires an extra two variables 
+that define the solid angle of one of the outgoing particles in the centre-of-mass frame.  
+These variables are picked uniformly in the range $\{0, 1\}$ by the \texttt{Event} class and passed to the subprocess. 
+
+At present, there are four subprocesses released in the ExHuME package - Higgs, $gg$, $q\bar{q}$ and $\gamma \gamma$. However, new processes can be added easily by inheritance from the appropriate \texttt{PhaseSpace} class. To complete the event generator, the central system is decayed, parton showered and hadronised using the appropriate functions in Pythia. In this way a fully hadronic system is created. 
+
+ExHuME can be set to run at the LHC or at the Fermilab Tevatron. The default soft-survival is chosen to be 0.03 (0.045) at the LHC (Tevatron) in accordance with the Durham model. Similarly, the default value of the skewness parameter, $R_g$, is chosen to be 1.2 and 1.4 at the LHC and Tevatron respectively. Details on the practical use of the ExHuME generator are given in \cite{Monk:2005ji}. All results presented in the following sections are for the LHC. 
+%For more information on the practical details of using ExHuME, refer to \cite{Monk:2005ji}.
+
+\subsection{General Distributions}
+
+ExHuME has a number of run control parameters that the user can change to alter the calculation and these are listed in Appendix \ref{appendixa}. For example, the value of the soft survival factor can be changed, although this simply re-scales the cross section and does not alter any distributions. The issue of a lower bound in the integral of equation \ref{ceplumi}, which calculates the effective luminosity of the incoming gluons, is more important however. Formally, the integral requires a lower bound to avoid the pole in the calculation of $\alpha_S$ (equation \ref{alpha_la}).
+
+%the integral converges due to the Sudakov suppression factor. However, the one loop calculation of $\alpha_S$ has to be frozen before the divergence at $\Lambda$ (equation \ref{alpha_la}), and thus a lower bound in $Q_T$ is introduced which can be changed by the user. 
+
+\begin{figure} 
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/QTEtaDependence.eps,width=0.5\textwidth,height = 6cm}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/QTMassDependence.eps,width=0.5\textwidth,height = 6cm}}
+	}
+\caption[The integrand of equation \ref{ceplumi} as calculated by ExHuME]{The integrand of equation \ref{ceplumi} which calculates the luminosity of the proton-gluon vertices is shown in (a) as a function of $Q_T$ for different values of the central system rapidity. The effect on the integrand of producing a lower central system mass is shown in (b). \label{qtintegrand}}
+\end{figure}
+
+Figure \ref{qtintegrand} (a) shows the integrand of equation \ref{ceplumi} as calculated by ExHuME at a central mass of 120~GeV. The peak of the distribution is above 1.0 and quickly falls to zero as $Q_T \rightarrow 1.0$, due to the Sudakov suppression factor. There is a noticeable kink in the distribution which arises because the integrated PDF's are frozen to stop the DGLAP evolution entering regions where there is no available data \cite{Whalley:2005nh}. The unintegrated gluon density function, given by equation \ref{uPDF}, is a derivative of the product of the Sudakov factor and the integrated gluon distribution. Thus, when the PDF's are frozen, the term which is a derivative of the integrated PDF vanishes, but the overall integrand does not fall to zero because of the term containing the derivative of the Sudakov factor.
+
+The lower bound on $Q_T$ must be small enough to contain the majority of the integral, yet large enough so that the perturbative calculation is applicable. 
+%% estimate of perturbative applicability - hera data set??, say what Q_T is
+The default lower bound in ExHuME is chosen to be $Q_{T} = 0.8$, which is justified by figure \ref{qtintegrand} (a) for all rapidity values at a central mass of 120~GeV. Figure \ref{qtintegrand} (b) shows the $Q_T$ dependence of the integrand at a  lower mass. Again, the integrand is above 1.0 and the lower bound justified.
+
+\begin{figure} 
+\centering
+%\mbox{
+\epsfig{figure=Diagrams/LumivsMass.eps,width=0.67\textwidth,height = 6cm}
+%	}
+\caption[The luminosity of the incoming gluons as calculated by ExHuME]{The luminosity of the proton-gluon vertices at $y=0$ for three different parton density functions, MRST2002 (NLO and NNLO) and CTEQ6M. \label{exhumelumi}}
+\end{figure}
+
+In addition to the minimum value of $Q_T$, the choice of parton density function can have a major impact on the central exclusive cross section. Figure \ref{exhumelumi} shows the effective luminosity of the incoming gluons as a function of mass for three different PDF choices - MRST2002 (NLO and NNLO) and CTEQ6M. 
+%The choice of PDF not only affects the magnitude of the luminosity but also the shape - MRST2002NLO is the steepest of the three distributions.
+The ExHuME default was chosen to be MRST2002NLO to keep the default ExHuME predictions matching that of the Durham model. However, the other PDFs reflect the uncertainty due to the choice of parton density function.
+
+\begin{figure} 
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/protonT1.eps,width=0.5\textwidth,height = 6cm}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/protonPHI1.eps,width=0.5\textwidth,height = 6cm}}
+	}
+	\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/protonPT1.eps,width=0.5\textwidth,height = 6cm}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/deltaPTX.eps,width=0.5\textwidth,height = 6cm}}
+	}
+\caption[The proton $t$, $\phi$ and $p_T$ distributions and the transverse momentum of the central system as produced by ExHuME]{ The proton $t$, $\phi$ and $p_T$ distributions are shown in (a), (b) and (c) respectively. Figure (d) shows the transverse momentum of the central system, $p_T^X$, as produced by ExHuME.\label{protonpt}}
+\end{figure}
+
+The proton $t$ and $\phi$ distributions for 100000 dummy events are shown in figures \ref{protonpt} (a) and (b). The dummy subprocess has no extra phase space parameters and these distributions represent general ExHuME production for all subprocesses. As expected, the $t$ distribution is strongly peaked at zero and the $\phi$ distribution is flat. 
+The transverse momentum distribution of the outgoing protons is shown in figure \ref{protonpt} (c)
+%Since the $p_Z$ of the protons is almost always $>6300GeV$, this demonstrates the extremely small angles through which the proton is scattered. \marginpar{Some comment on $q_{i,T}\ll Q_T$ and spin zero - do theory section first then update} 
+and the typical value is less than 1.0. 
+The peak value of the proton transverse momentum, in conjunction with the peak $Q_T$ value given in figure \ref{qtintegrand} (a), leads to a typical value of $\frac{p_T^2}{Q_T^2}$ of 0.1 and satisfies the criteria for the $J_z=0$ selection rule. 
+
+For the central exclusive process, momentum conservation implies that all of this transverse momentum, in addition to the transverse momentum from the other proton, is transferred to the central system. 
+This means that the transverse momentum of the central system, $p_T^X$, will also be very small regardless of the subprocess chosen. This is verified in figure \ref{protonpt} (d), where the transverse momentum of the central system peaks at 0.5~GeV. 
+
+
+
+\begin{figure} 
+\centering
+%\mbox{
+\epsfig{figure=Diagrams/FP420Acceptance.eps,width=0.67\textwidth,height = 6cm}
+%	\subfigure[]{\epsfig{figure=Diagrams/QTMassDependence.eps,width=0.5\textwidth,height = 6cm}}
+%	}
+\caption[Reproduced FP420 acceptance as a function of central system mass]{The FP420 acceptance as a function of the mass of the central system for silicon detectors placed 5~mm from the beam. \label{fp420acceptance}}
+\end{figure}
+
+Finally, it is possible to reproduce the acceptance of the FP420 sub-detectors using the maximum and minimum values of $\xi$ presented in section \ref{fp420}, which correspond to the detectors being 5~mm from the beam. Figure \ref{fp420acceptance} shows the acceptance of FP420 as a function of the mass of the central system for the MRST2002NLO parton density function. FP420 has almost zero acceptance for central masses above 200~GeV and the peak acceptance for this configuration is approximately 35\% at a central mass of 90~GeV. 
+The acceptance is found to be the same for the CTEQ6M and MRST2002NNLO parton density  functions. Note that the acceptance in figure \ref{fp420acceptance} is smaller than the acceptance presented in \cite{Cox:2005tb}. Therefore, any results obtained using the $\xi$ cuts to estimate FP420 acceptance should be considered to be conservative.
+
+\subsection{Higgs Boson Production}
+
+\begin{figure} 
+\centering
+%\mbox{
+	\epsfig{figure=Diagrams/SigmaHiggs.eps,width=0.67\textwidth,height = 6cm}
+%	\subfigure[]{\epsfig{figure=Diagrams/QTMassDependence.eps,width=0.5\textwidth,height = 6cm}}
+%	}
+\caption[The central exclusive Higgs cross section as a function of Higgs boson mass at the LHC]{The central exclusive Higgs cross section, $\sigma_{H}$, as a function of Higgs boson mass, $M_H$, at the LHC.\label{higgsXS}}
+\end{figure}
+
+The colour singlet, $J_z=0$ cross section for $gg \rightarrow H$ is given \cite{Khoze:2001xm} by
+\begin{equation}
+\hat{\sigma}_{gg\rightarrow H} = \frac{2\pi^2 K \, \Gamma_0 \left(H\rightarrow gg \right)}{M_H^3}
+%\frac{\sqrt{2} G_{F}~\alpha_S }{9\pi^2} 
+\, \delta \left( 1- \frac{M_H^2}{M^2}\right)
+\end{equation}
+where $K$ is a next to leading order correction factor ($K\approx 1.5$), 
+$\Gamma_0\left(H \rightarrow gg \right)$ is the two-gluon partial width of the Higgs resonance \cite{Gunion:1989we}
+ and $M_H$ is the mass of the Higgs boson. In ExHuME, the delta function is replaced by the Higgs boson lineshape given in \cite{Seymour:1995qg}. 
+The production cross section is shown as a function of mass in figure \ref{higgsXS} for three choices of parton density function. The choice of PDF changes the cross section by up to a factor of two, which implies a $\pm50\%$ uncertainty on the more central (default) PDF. This is somewhat larger than the estimated contribution to the Higgs cross section uncertainty from the PDFs, which was $\pm 22\%$  \cite{DeRoeck:2002hk}.
+
+The central mass and rapidity distributions for a 120~GeV Higgs Boson are shown in figures \ref{higgsmassandrapidity} (a) and (b) respectively. The distributions are in agreement with the numerical results of the Durham group \cite{Khoze:2001xm} 
+%%ways to discover..........
+and further demonstrate the validity of the ExHuME generator. It is also apparent from the rapidity distribution why FP420 has a low acceptance of 25\% for a central mass of 120~GeV. Using the bounds of the FP420 $\xi$ acceptance with equations \ref{missingmass} and \ref{ceprapidity} gives the rapidity acceptance for a 120~GeV Higgs boson to be $-0.7<y<0.4$. The rapidity distribution in figure \ref{higgsmassandrapidity} (b) however, extends up to $|y| = 4$, which means that FP420 measures a thin slice of the central region.
+
+\begin{figure}
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/HiggsMass.eps,width=0.5\textwidth,height = 6cm}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/HiggsRapidity.eps,width=0.5\textwidth,height = 6cm}}
+	}
+\caption[The mass and rapidity distributions for a 120~GeV Higgs boson]{The mass (a) and rapidity (b) distributions for a 120~GeV Higgs boson.\label{higgsmassandrapidity}}
+\end{figure}
+
+\begin{figure}
+\centering
+%\mbox{
+	\epsfig{figure=Diagrams/BQuarkPT.eps,width=0.5\textwidth,height = 6cm}
+%	\subfigure[]{\epsfig{figure=Diagrams/QTMassDependence.eps,width=0.5\textwidth,height = 6cm}}
+%	}
+\caption{The transverse energy distribution of the $b$ quark from the $H \rightarrow b \bar{b}$ process if the Higgs boson has a mass of 120~GeV.\label{bquarket}}
+\end{figure}
+
+The transverse energy of the quark in the $H\rightarrow b \bar{b}$ decay channel is shown in figure \ref{bquarket}. The Higgs boson is a scalar particle and decays uniformly in solid angle in its own rest frame. This results in a sin$\theta$ distribution in polar angle, which explains the peak at large transverse energy when $\theta=\frac{\pi}{2}$. 
+The sharp edge occurs because the transverse momentum of the central system is typically very small, giving no transverse energy boost to the quark to values greater than $\frac{m_H}{2}$.
+
+\subsection{Production of $gg$ and $q\bar{q}$}
+
+The leading order, colour singlet, $J_z=0$ cross section for $gg \rightarrow gg$ production is given \cite{Khoze:2001xm} by
+\begin{equation}\label{cepgg}
+\left(\frac{d\hat{\sigma}}{d\Omega}\right)_{CM}=%_{gg\rightarrow gg}}{d\phi~d\cos\theta} =  %\left({g^Pg^P\rightarrow gg}\right) = 
+\frac{9}{16}\frac{M^2~\alpha_{S}^2}{p_T^4}
+\end{equation}
+where $\Omega$ is the solid angle of one of the outgoing gluons in the centre-of-mass (CM) frame. The corresponding cross section for $gg\rightarrow q\bar{q}$ production is given by
+\begin{equation}\label{cepqqbar}
+\left(\frac{d\hat{\sigma}}{d\Omega}\right)_{CM}=%\frac{d^2\hat{\sigma}_{gg\rightarrow q\bar{q}}}{d\phi~d\cos\theta} = %\left({g^Pg^P\rightarrow q\bar{q}}\right) = 
+\frac{1}{24}\frac{m_q^2~\alpha_S^2~\beta^3}{\left(m_q^2 + p_T^2\right)^2}
+\end{equation}
+where $\beta$ is given by
+\begin{equation}
+\beta = \sqrt{1 - 4\frac{m_q^2}{M^2}}
+\end{equation}
+and $m_q$ is the mass of the produced quark. The strong coupling is evaluated at $\frac{M}{2}$ in line with the Durham calculation \cite{Khoze:2001xm}. The $q\bar{q}$ cross section contains a suppression factor of $\frac{m_q^2}{M^2}$, which is a consequence of the $J_z=0$ projection of the initial state. 
+
+%divergence and implementation in ExHuME.
+Within ExHuME, both of these subprocesses derive from the two-particle phase space class. In the discussion that follows, both $\theta$ and $\phi$ are defined in the subprocess CM frame. The two-particle final state has a flat $\phi$ dependence and as such the weight function for $\phi$ is uniform over the range $\{0, 2\pi\}$. The $\cos\theta$ dependence of the final state depends on the subprocess involved and the \texttt{Weight} class is used to determine the one-dimensional weight function upon initialisation.
+This results in 100\% efficiency in the case of the $gg$ final state because the $\cos\theta$ dependence completely factorises from the central mass dependence. 
+
+For heavy quarks however, this is not the case. 
+The maximum possible value of the cos$\theta$ distribution is always at $|$cos$\theta|=1$, where the denominator of equation \ref{cepqqbar} is proportional to $m_q^{4}$. The minimum always occurs at cos$\theta=0$, where the denominator is proportional to $\frac{M^4}{16}$. The weight function for cos$\theta$ must therefore be calculated at the lowest possible value of central mass that can be generated, to ensure the weight function criterion, $w(\text{cos}\theta) \geq f(\text{cos}\theta)$.
+The minimum mass was originally chosen to be threshold, $2m_q$, to remove the possibility during event generation of the central mass being picked below the value at which the cos$\theta$ distribution was evaluated. The problem with this approach was poor efficiency far from threshold. Because of this, the minimum value of central mass is supplied by the user when the mass range is set, which results in greater efficiency during event generation. 
+Finally, the $gg$ cross section diverges at low transverse momentum, i.e when $|$cos$\theta| \rightarrow 1$, and to avoid this a maximum value of $|$cos$\theta|$ is required. This can be set by the user before event generation but defaults to $|$cos$\theta| \leq 0.95$ if not set.
+
+The divergence of the $gg$ cross section at low transverse momentum is not a cause for concern because perturbative QCD is not applicable for such soft, long-range physics. All event generators have a minimum cut on the transverse momentum of the outgoing partons to remove these divergences.  Nevertheless, when generating the $gg$ final state, care should be taken to make sure that areas of the phase space are not being neglected. More importantly, the observable of interest should not depend upon the maximum value of cos$\theta$ used in the event generation.
+
+\begin{figure} 
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/ETGG.eps,width=0.5\textwidth,height = 6cm}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/MassDiParton.eps,width=0.5\textwidth,height = 6cm}}
+	}
+\caption[The transverse energy dependence of the $gg$ final state on the  $\cos\theta$ cut used in event generation by ExHuME. Also shown is the mass distribution for the $gg$ and $q\bar{q}$ final states]{The transverse energy distribution dependence of the $gg$ final state on the $\cos\theta$ (CM) cut for central exclusive masses in the range $40\leq M \leq 400$ (a). Figure (b) shows the mass distribution for both the $gg$ and $b\bar{b}$ subprocesses with a $|\cos\theta|<0.95$ cut imposed for comparative purposes.\label{dipartonplots}}
+\end{figure}
+
+An example of this is the differential cross section above a minimum transverse energy. Figure \ref{dipartonplots} (a) shows the effect on the differential cross section when the maximum cos$\theta$ cut is changed. The mass range was chosen to be $\{40, 400\}$ and the transverse energy of the outgoing gluons was restricted to $E_T>20$~GeV. In this example, the difference between the cross sections are within the statistical uncertainty of the samples. This would not be the case however, if the minimum transverse energy was chosen to be 5~GeV, because a central mass of 40~GeV would produce final state gluons with $|$cos$\theta|>0.95$. 
+
+The mass distributions for the $gg$ and $b\bar{b}$ subprocesses are shown in figure \ref{dipartonplots} (b). A $|\cos\theta| < 0.95$ cut was imposed on both cross sections for comparative purposes. The $J_z=0$ suppression of the $q\bar{q}$ cross section is apparent in the steeper $b\bar{b}$ distribution. %and the fact that the $b\bar{b}$ cross section is already much smaller than the $gg$ cross section for $M>40$GeV.
+
+
+\subsection{Di-Photon Production}
+
+\begin{figure} 
+\centering
+%\mbox{
+	\epsfig{figure=Diagrams/gluglugammagammaexclusive.eps,width=0.5\textwidth,height = 6cm}
+%	\subfigure[]{\epsfig{figure=Diagrams/diphotonet.eps,width=0.5\textwidth,height = 6cm}}
+%	}
+\caption[The leading order central exclusive diagram for $gg \rightarrow \gamma \gamma$]{The leading order diagram for $gg \rightarrow \gamma \gamma$. The incoming gluons are labelled 1 and 2 and the outgoing photons are labelled 3 and 4 so that the helicity structure of the amplitude is well described. \label{diphotonfeyn}}
+\end{figure}
+
+The central exclusive di-photon cross section is calculated using the $\gamma \gamma \rightarrow \gamma \gamma$ helicity amplitudes given in \cite{Bern:2001dg}. Figure \ref{diphotonfeyn} shows the leading order Feynman diagram for the central exclusive process, $gg\rightarrow \gamma \gamma$, where the incoming gluons have been labelled as 1 and 2 and the outgoing photons as 3 and 4.
+%This is extremely similar to the leading order $\gamma\gamma\rightarrow\gamma\gamma$ diagram, with the simple replace ment of the incoming gl
+The colour singlet $gg \rightarrow \gamma \gamma$ helicity amplitude, $\mathcal{M}$, is related to the $\gamma \gamma \rightarrow \gamma \gamma$ amplitude, $\mathcal{M}^{\gamma \gamma}$, by 
+\begin{equation}
+\mathcal{M}_{\lambda_1 \lambda_2 \lambda_3 \lambda_4} = 
+\frac{1}{2}\frac{\alpha_S}{\alpha}\frac{1}{Q^2N}
+\mathcal{M}^{\gamma \gamma}_{\lambda_1 \lambda_2 \lambda_3 \lambda_4}
+\end{equation}
+where $\lambda_{1,2}$ and $\lambda_{3,4}$ denote the helicities of the incoming gluons and outgoing photons respectively, $Q$ is the fractional charge of the quark in the loop, $\alpha$ is the fine structure constant and $N=3$. The relation is calculated by exchanging two photon-quark vertices with gluon-quark vertices and imposing the colour singlet condition (equation \ref{csinglet}) on the incoming gluons.
+The $J_z=0$, colour singlet $gg\rightarrow \gamma \gamma$ cross section is then given by
+\begin{equation}
+\left(\frac{d\hat{\sigma}}{d\Omega}\right)_{CM} =
+\frac{34}{81}\frac{\alpha^2~\alpha_S^2}{4\pi^2~M^2}\left(\frac{B^2}{2} + 2\right)
+\end{equation}
+where the factor of $34/81$ comes from the sum of the fractional charges of the quarks in the loop. $B$ is obtained from the results in \cite{Bern:2001dg} and is given by
+\begin{equation}
+B = 
+\mathcal{M}_{++++} + \mathcal{M}_{--++} = 
+-\frac{1}{2}\frac{t^2 + u^2}{s^2}
+\left[\ln^2\left(\frac{t}{u}\right) + \pi^2 \right]
+-\frac{t-u}{s}\ln\left(\frac{t}{u}\right).
+\end{equation}
+The Mandelstam variables, $t$ and $u$, for $2\rightarrow 2$ scattering are given by
+\begin{eqnarray}
+ t & = & \left(k_3 -k_1  \right)^2 = \left(k_4 -k_2  \right)^2  \quad \text{and} \\
+ u & = &  \left(k_4 -k_1 \right)^2 = \left(k_3 -k_2  \right)^2   
+\end{eqnarray}
+ where $k_i$ is the momentum of particle $i$.
+
+\begin{figure} 
+\centering
+\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/diphotonmass.eps,width=0.5\textwidth,height = 6cm}}\quad
+	\subfigure[]{\epsfig{figure=Diagrams/diphotonet.eps,width=0.5\textwidth,height = 6cm}}
+	}
+\caption[The mass and transverse energy distributions of the $gg\rightarrow \gamma \gamma$ process in ExHuME]{The mass distribution (a) of the central exclusive $\gamma \gamma$ process in the mass region of interest for studies using FP420. A $\cos\theta<0.95$ cut has been imposed. Figure (b) shows the transverse energy of a photon from all events that have a central mass of 10~GeV or greater. \label{massdiphot}}
+\end{figure}
+
+The mass distribution for this subprocess is shown in figure \ref{massdiphot} (a), where a maximum $|$cos$\theta|$ of 0.95 has been imposed. The cross section for the mass range $60<M<120$~GeV is 0.83~fb, which implies that FP420 can be used to identify the process as the acceptance is approximately 30\% in this region. 
+The relevant low luminosity trigger at ATLAS is two photons with transverse energy greater than 15~GeV (table \ref{menulvl1}). It is found that 85\% of the di-photon events in the sample pass this requirement, 
+which means that 2.1 events would be observed every year at low luminosity with forward proton tagging. At high luminosity, the trigger threshold for two photons is increased to $E_T>20$~GeV \cite{:1999fq:Chapter11}. This would result in 17.4 di-photon events observed every year with forward proton tagging.
+
+An alternative strategy would be to study di-photon production at lower central masses, for photons with smaller transverse energy, and not use FP420 to tag the protons.
+The transverse energy distribution of the photons is shown in figure \ref{massdiphot} (b) for events with a central mass greater than 10~GeV. The cross section for two photons with $E_T>10$~GeV is 60~fb. This suggests a possible study at a machine luminosity of $10^{32}$~cm$^{-2}$~s$^{-1}$, where the expected number of pile-up events is zero. The photon transverse energy trigger could then be lowered in conjunction with a lack of activity, or rapidity gap, in the rest of the calorimeters. A trigger of two photons with transverse energy greater than 10~GeV would result in 6 events per year. If the photon transverse energy could be lowered to 5~GeV then the cross section would increase to 998~fb, giving approximately 100 events per year at this luminosity. 
+
+
+
+
+%\subsection{Three Particle final states }
+
+

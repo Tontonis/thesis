@@ -1,0 +1,68 @@
+\subsection{Beam Instabilities}
+
+Beam Instabilities is the collective term for a various group of mechanisms which attribute to the degradation of beam properties during the circulation of a beam within a synchrotron. These can typically be into a number of different subgroups, summarised below:
+
+\begin{enumerate}
+\item{Coherent Effects - Occuring due to the bulk oscillation of the bunch(es)}
+\item{Incoherent Effects - Occuring due to a mechanism that effects particles dependent on their position within in the bunch}
+\item{Single-Bunch - Occuring only on the scale of a single bunch}
+\item{Multi-Bunch - Occuring due to coupling of the motion between multiple bunches}.
+\end{enumerate}
+
+The mechanisms driving these instabilities are multitudinous and of which beam coupling impedance is just one. Others include space charge effects (both direct and indirect)[cite], beam-beam interactions [cite], electron cloud [cite], IBS [cite] amongst others. Here we shall give a brief overview of how these effects cause a degradation in beam operation.
+
+\subsubsection{Tune Shift and Tune Spread} 
+
+As seen in Sec. [ref introduction transverse motion], the transverse equation of motion can be viewed as an oscillatory system. If the particles experience an additional force $ F^{pert}_{x}$ due an external mechanism, not due to the machine optics, it's equation of motion (in the horizontal plane, for example) can be written as
+
+\begin{equation}
+\frac{d^{2}x}{ds^{2}} + \left(\frac{Q_{0,x}}{R}\right)^{2} x = \frac{F^{pert}_{x}}{\beta^{2} E_{total}}.
+\end{equation}
+
+This subsequently leads to a perturbed oscillation frequency, characterised by the equation
+
+\begin{equation}
+\frac{d^{2}x}{ds^{2}} + \left(\frac{Q_{0,x}+ \Delta Q_{pert,x}}{R}\right)^{2} x = 0.
+\end{equation}
+
+where $\Delta Q_{pert,x}$ is the part of the betatron frequency caused by the perturbing force. The perturbed tune may also be subsequently be further divided into coherent (the motion of the bunch centroid) and incoherent (motion of individual particles), such that $\Delta Q_{pert,x} = \Delta Q^{coh}_{pert, x} + \Delta Q^{incoh}_{pert, x}$. This seperation leads to the creation of a tune spread in a machine, in which the tune of the beam covers an area of the tune diagram as shown in Fig.~\ref{fig:tune_diag_tune_shift}. In this case particles may be lost when this tune shift causes them to lie upon a major resonance of the beam optics, there by causing cpherent oscillation growth and ultimately particle loss. This leads to negative effects such as emittance growth and lower beam lifetimes.
+
+\begin{figure}
+\caption{A tune diagram illustrating the unperturbed tune of a machine, and the resulting perturbed tune and the tune spread as a result of an impedance source. Note that the tune spread has caused some particle to lie upon a major resonance harmonic.}
+\label{fig:tune_diag_tune_shift}
+\end{figure}
+
+\subsubsection{Longitudinal Single Bunch Instabilities}
+
+Similar to the change in the equations of motion for transverse particles, considering the induced fields in the longitudinal plane produces a perturbation in the longitudinal motion also. This can be thought of as an additional force alongside the electromagnetic force applied by the accelerating cavities. This leads to two interesting phenomenon; potential well distortion, occuring at bunch intensities below some stability criteria, and longitudinal mode coupling instability, or LMCI, above some stability criteria.
+
+The potential well distortion is a direct effect of the incoherent synchrotron tune shift (again, similar in nature to the tune shifts experienced in the transverse plane), which is responsible for a growth in the stable emittance of the bunch. This reveals itself from measurements by a change in the bunch length with increasing bunch intensity, as shown in Fig.~\ref{fig:pot_well_dist}. It should be noted that depending on the source of impedance, the bunch length may increase or decrease depending on whether the bunch is above or below the transition energy of the accelerator.
+
+\begin{figure}
+\caption{The change in the bunch length of a proton beam in an SPS like machine due to the effects of a broadband resonator impedance (). Note that the bunch length increases when the beam is above transition, and decreases below transition, as the bunch intensity is increase}
+\label{fig:pot_well_dist}
+\end{figure}
+
+LMCI occurs when a certain intensity threshold is crossed in the accelerator, leading to a regime known as \emph{turbulent bunch lengthening}. In this mechanism the eigenfrequencies of the natural modes of oscillation of the particles within the RF bucket are shifted due to the changing potential due to the induced wakefield. In high intensity bunches two neighbouring modes may have their frequencies shifted to such an extent that the modes merge into one, thus leading to a case where the modes no longer have only a damped solution, but also a exponentially growing solution. This subsequently leads to the bunch oscillations becoming unstable.
+
+\subsubsection{Transverse Single Bunch Instabilities}
+
+In the transverse plane a number of instability mechanisms apply, which maybe seperated into two forms, those that occur on a time scale much shorter than the synchrotron period, and those that occur on a longer time scale than the synchrotron period. In both cases the leading particles of the bunch, often called the head of the bunch, drives and oscillation in the end, or tails of the bunch. This gives these instabilities their names, the fast head-tail instability, or transverse mode coupling instability (TMCI) and the head-tail instability.
+
+In the case of the fast head-tail instability, the are a number of transverse oscillation modes (see Fig.~\ref{fig:trans_oscillations} for examples), which as with the LMCI experience some frequency shift due to the presence of a wakefield. If the shift is large enough, two of these modes may again couple together, causing an exponential growth of the transverse size of the bunch to occur.
+
+\begin{figure}
+
+\caption{Examples of a number of modes of transverse oscillation. Note that radial and azimuthal modes may occur, as may coupled modes in which the motion of the horizontal and vertical planes is coupled.}
+\label{fig:trans_oscillations}
+\end{figure}
+
+
+In the case of the head-tail instability, the movement of a particle from the head of the bunch to the tail and vice versa become important in determining the rate of growth of any unstable modes, and whether any stabilisation mechanisms have sufficient time to damp the growth. This means that the chromaticity of the beam now takes on a great importance, as this relates the betatron tune to the longitudinal motion. This leaves the option of changing the chromaticity of the beam to act as an additional stability mechanism.
+
+\subsubsection{Coupled Bunch Instabilities}
+
+In addition to single bunch instabilities, it is possible in machines where multiple bunches circulate, and possessing wakefields that do not damp in the spacing between bunches (typically caused by high Q resonant impedances), that the motion of the bunch centroids themselves may become coupled together, thus driving what are called coupled bunch instabilities (TCBI for the transverse plane, LCBI for the longitudinal plane). 
+
+This can be understood by imagining the bunch train as a possessing M bunches. This train will then have M possible modes of oscillation with a characteristic frequency of $\omega_{M}$, which may be driven by an impedance at some frequency $\omega_{0}$. If $\omega_{0} \approx n\omega_{M}$ where n is an integer, then the wakefield due to the impedance may drive the oscillation either in a damped fashion (wakefield is out of phase with the oscillation of the mode) or an anti-damped fashion (wakefield is in phase with the oscillation of the mode). In the latter case, this driven oscillation may cause particle losses unless the oscillation is damped via an external mechanism, such as Landau damping or the use of a damper. This motion can occur in both the longitudinal and transverse planes of motion.
+

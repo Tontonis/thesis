@@ -1,0 +1,47 @@
+\section{Time Domain Simulations}
+
+\begin{itemize}
+\item{A VERY general introduction to time domain simulations codes. This is not a thesis of computational methods, only one thing you may do with them. Write this way}
+\item{General experience - advantages of time domain methods (speed, memory footprint). Weaknesses (mesh resolution of structure, CPU limitation, long simulations times for high-Q resonances)}
+\end{itemize}
+
+\subsection{Direct Simulation of a Particle Beam}
+
+\begin{itemize}
+\item{Introduction to time domain code - simulation of a generic time signal, and the integration path}
+\item{How we can subsequently simulate various types of impedance as a result}
+\begin{itemize}
+\item{Longitudinal - At various displacements}
+\item{Transverse - dipolar/quadrupolar/constant with displacements of either the signal or the integration path, and subsequently taking gradient of resulting impedance}
+\end{itemize}
+\end{itemize}
+
+\section{Frequency Domain Simulations}
+
+\begin{itemize}
+\item{Advantages of frequency domain - good resolution of structure by meshing, fast solution for individual modes, accurate for resonant structures. Weaknesses - Very memory intensive. Very time consuming to characterise structures over a large frequency ranges}
+\end{itemize}
+
+\subsection{Eigenmode Simulations}
+
+\begin{itemize}
+\item{To identify cavity modes of structures}
+\item{Extract the resonant frequency and Q of cavity modes}
+\item{fields on axis/off axis to extract R/Q, transverse R/Q}
+\end{itemize}
+
+\subsection{The Coaxial Wire Method by Simulation}
+\begin{itemize}
+\item{port solutions for driven modal simulations}
+\item{Allow the extraction of S21}
+\item{Evaluate as in previous section}
+\end{itemize}
+
+\subsection{Simulation of the particle beam}
+
+\begin{itemize}
+\item{Refer back to the nature of the EM field surrounding a charged particle beam (TEM-like)}
+\item{We can enforce a TEM like profile on emitted radiation of a surface}
+\item{With a TEM source with no wire - basically a particle beam}
+\item{Evaluation as mentioned in Oleksey's paper}
+\end{itemize}

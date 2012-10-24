@@ -1,0 +1,37 @@
+\section{Central Exclusive Jet Variables} \label{excvars}
+
+Assuming the outgoing protons are tagged, there are a number of kinematic variables that can be measured in the central system and matched to the information from FP420. In this section, the variables of interest in a di-jet analysis are introduced. The fraction of proton momentum that enters the hard-subprocess can be estimated by
+\begin{equation}
+x_{1, 2} \simeq \frac{1}{\sqrt{s}} \sum_i E_{T}^i e^{\pm \eta_i}
+\end{equation}
+where the sum is over the highest two transverse energy jets \cite{Collins:1997nm, Affolder:2000hd} and $s$ is the collision centre-of-mass energy of the incoming beams. The values of $x_1$ and $x_2$ can be combined to obtain the di-jet mass $M_{jj}^2 \simeq x_1x_2s$. The variable $R_{jj}$, given by
+\begin{equation}
+R_{jj} = \frac{M_{jj}}{M},
+\end{equation}
+measures the fraction of the central system mass that is contained in the di-jets \cite{Affolder:2000hd}. The measurement of the mass, $M$, by FP420 is given by equation \ref{missingmass}. Therefore, the central exclusive condition , $x=\xi$, should result in $R_{jj}=1$. In practice, parton showering and jet finding inefficiencies result in the actual $R_{jj}$ being somewhat less than 1.0 and in the case of hard final state radiation, the value of $R_{jj}$ could be much lower than 1.0.
+
+To combat the problem of hard final state radiation, a new measure of the di-jet mass fraction has been introduced \cite{Khoze:2006iw}. The new variable, $R_j$, is motivated by the knowledge that the highest transverse energy jet in the event will have been least affected by hard final state parton showering. $R_j$ is defined as 
+\begin{equation}
+R_j = \frac{2E_T}{M}\cosh\left(\eta_j - y \right)
+\end{equation}
+where $\eta_j$ and $E_T$ are the pseudorapidity and transverse energy  of the leading (highest transverse energy) jet and $y$ is the rapidity of the central system given by equation \ref{ceprapidity}.
+
+A further consequence of tagging the outgoing protons is
+that the rapidity of the central system can be measured by both FP420 and the central detector. The difference in these measurements, $\Delta y$, given by 
+\begin{equation}\label{deltaydef}
+\Delta y = y - \frac{\left(\eta_1 + \eta_2 \right)}{2}    ,
+\end{equation}
+should be approximately zero for the exclusive final state. Note the use of pseudo-rapidity for the jets in the central system. Pseudo-rapidity is a good approximation to rapidity if the transverse momentum of the jet satisfies $p_T \gg m$, where $m$ is the mass of the parton in the hard scatter that produces the jet.
+%where the approximation $y\rightarrow\eta$ has been used assuming $p_T \gg m_b$. 
+The first term on the right hand side of equation \ref{deltaydef} is the rapidity of the central system measured by FP420, whilst the second term is simply the average pseudo-rapidity of the highest two transverse energy jets.
+
+Finally, it is possible to examine the activity outside of the di-jet system. In central exclusive and double pomeron exchange events, the protons are not colour connected to the central system. This results in rapidity gaps between the outgoing protons and the central system. In the absence of pile-up, the rapidity gaps can be used to identify these events by requiring low activity in the calorimeters in the high rapidity regions. However, at nominal low luminosity running at the LHC, there are on average 3.5 interactions per bunch crossing, which can destroy the rapidity gap.
+
+This does not mean that one cannot look at activity outside of the di-jet system. The excellent vertex resolution of the ATLAS detector allows charged tracks to be associated with specific vertices, even in the presence of pile-up. Because the protons remain intact, there are no multiple interactions and one would expect few extra tracks, $N_C$, associated with the di-jet vertex but outside of the di-jet system. The exact cut off will be jet parameter dependent. 
+A better measure of the activity outside of the di-jets could be the number of charged tracks, $N_{C}^{\perp}$, that are transverse to the leading jet. $N_{C}^{\perp}$ is defined as the number of charged tracks in the ranges 
+\begin{equation} \label{ncperp}
+\frac{\pi}{3}<|\phi_{k} -\phi_j|<\frac{2\pi}{3} \quad \text{and} \quad \frac{4\pi}{3}<|\phi_{k} -\phi_j|<\frac{5\pi}{3}  
+\end{equation}
+where $j$ labels the leading jet and $k$ a charged track associated with the di-jet vertex.
+%%ncharged
+%%ncharged CDF

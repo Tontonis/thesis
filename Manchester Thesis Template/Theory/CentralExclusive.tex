@@ -1,0 +1,105 @@
+\section{Central Exclusive Production}
+
+\subsection{Kinematics}
+
+Central exclusive production (CEP) is defined as the process $p p \rightarrow p + X + p$, where the protons remain intact and $X$ is a central system typically produced in a hard scatter. The term `exclusive' demands that the central system consists of just the products of the hard scatter and no other activity. The outgoing protons lose a fraction, $\xi$, of their longitudinal momentum during the interaction and this momentum loss can, in principle, be measured. The longitudinal direction is given by the trajectory of the incoming protons. 
+
+If the outgoing proton momenta are measured, then the mass, $M$, of the central system can be calculated using the missing mass method \cite{Albrow:2000na}. This states that the mass is given by
+\begin {equation}\label{missingmass}
+M^2 = \left(p_1 + p_2 - p_{1}^{\prime} - p_2^{\prime} \right)^2 \approx \xi_1 \xi_2  s
+\end{equation}
+where $p_i$ and $p_i^{\prime}$ are the momenta of the incoming and outgoing protons respectively and $\xi_i$ is the longitudinal momentum loss of proton $i$. The outgoing proton momenta can also be used to calculate the rapidity of the central system. The rapidity, $y$, of an object is defined by
+\begin{equation}\label{rapidity}
+y = \frac{1}{2}\text{ln}\left( \frac{E + p_z}{E - p_z} \right) 
+\end{equation}
+where $E$ and $\textbf{p}$ are the energy and momentum of the object and $z$ is the longitudinal component.
+%The rapidity of an object is a particularly useful quantity in hadron-hadron collisions because rapidity differences are unchanged by longitudinal boosts. 
+The rapidity of the central system can be written as
+\begin{equation}\label{ceprapidity}
+y \approx \frac{1}{2}\text{ln}\left(\frac{\xi_1}{\xi_2} \right)
+\end{equation}
+which again is expressed entirely in terms of the proton momenta.
+Finally, the momentum transfer of each proton, $t_i$, is given by
+\begin{eqnarray}
+%\begin{equation}
+ t_i  & = &  \left( p_{i}^{\prime} - p_{i} \right)^2   \\
+  & = & 2 \left( m_p^2 - E E^{\prime} + |\textbf{p}| \, |\textbf{p}^{\prime}| \left(1-\cos\theta \right) \right)       \nonumber
+\end{eqnarray}
+where $m_p$ is the proton mass and $\theta$ is the angle through which the proton is scattered. 
+%This is the Mandelstam variable $t$ for $2\rightarrow2$ scattering.
+
+\subsection{The Durham Model}
+
+The Durham model of central exclusive production \cite{Khoze:2001xm, Khoze:1997dr, Khoze:2000cy} is shown in figure \ref{centralexclusive} for Higgs boson production. In this model, gluons from each proton fuse to produce the central hard scatter. However, a second, colour-screening gluon is passed between the interacting protons, which allows the proton to remain intact. The central exclusive cross section is factorised into the form
+\begin{equation}
+d\sigma = S^2 \,  \frac{\partial^2 \mathcal{L}}{\partial M^2 \partial y} \, d\hat{\sigma}
+\end{equation}
+where $\mathcal{L}$ is the effective luminosity function of the incoming gluons and $S^2$ is the soft-survival factor. The interaction shown in figure \ref{centralexclusive} has a large rapidity gap between the outgoing protons and the central system if $\xi_{1,2} \ll 1$. The soft-survival factor is the probability that the rapidity gaps are not filled with additional particles that originate from the soft scattering of spectator partons in the protons.
+%soft-survival is 0.03 at LHC
+
+\begin{figure} 
+\centering
+%\mbox{
+	\epsfig{figure=Diagrams/KMR.eps,width=0.67\textwidth,height = 6cm}\quad
+%	\subfigure[]{\epsfig{figure=Diagrams/diphotonet.eps,width=0.5\textwidth,height = 6cm}}
+%	}
+\caption{Central exclusive Higgs boson production. \label{centralexclusive}}
+\end{figure}
+
+The dependence of the cross section on the proton momentum transfer is assumed to be given by 
+\begin{equation} \label{tdep}
+\frac{\partial \sigma}{\partial t_1 \partial t_2} \propto e^{b\left(t_1 + t_2 \right)}
+\end{equation}
+where $b$ is called the slope parameter. The slope parameter is process dependent and the Durham group estimate that $b\sim$4~GeV$^{-2}$ for central exclusive production of a Standard Model Higgs of mass $\simeq100$~GeV.
+
+The effective luminosity of the incoming gluons is given by
+\begin{equation} \label{ceplumi}
+M^2 \frac{\partial^2 \mathcal{L}}{\partial M^2 \partial y} = \frac{1}{b^2} \left[ 
+\frac{\pi}{8} \int \frac{dQ_T^2}{Q_T^4}
+\ f_g  \left(x_1,x_1^{\prime},Q_T^2, \mu \right)
+\ f_g  \left(x_2,x_2^{\prime},Q_T^2, \mu \right)
+\right]^2
+\end{equation}
+where $Q_T$ is the transverse momentum of the screening gluon, $\mu$ is the scale of the hard scatter  and $f_g(x_i,x_i^{\prime},Q_T^2,\mu^2)$ is the off-diagonal, skewed, unintegrated gluon distribution in the proton. These distributions give the probability amplitude to find the two gluons in the proton with momentum fractions $x_i$ and $x_i^{\prime}$.
+The $f_g$ distributions are given by
+\begin{equation}\label{uPDF}
+f _g\left(x_i,x_i^{\prime},Q_T^2,\mu \right) = R_g \frac{\partial}{\partial \, \text{ln} \, Q_T^2}
+\left( \sqrt{T\left(Q_T, \mu \right)} \, x_i \, g \left(x_i, Q_T^2 \right)
+\right)
+\end{equation}
+where $g(x_i, Q_T^2)$ is the standard (integrated) gluon density function of the proton and $R_g$ is a skewness parameter that is required because $x_i^{\prime} \ll x_i$. The Sudakov factor, $T$, suppresses radiation from the gluons that enter the hard scatter. This preserves the exclusivity of the interaction, namely $x_i=\xi_i$, which simply states that all of the momentum lost from the proton enters the hard scatter. The Sudakov factor is given by
+\begin{equation}
+T\left(Q_T,\mu \right)= \text{exp} 
+\left(
+- \, \int_{Q_T^2}^{\mu^2} \frac{\alpha_s\left( k_T^2 \right)}{2\pi} \frac{dk_T^2}{k_T^2}
+\, \int_0^{1 - \Delta} \left[ z P_{gg}\left( z \right) + \sum_q P_{qg}\left(z\right)\right] \, dz
+\right)
+\end{equation}
+where $P_{ab}$ are Altarelli-Parisi splitting functions that give the probability of parton $a$ being produced from parton $b$ with transverse momentum, $k_T$, and a fraction, $z$, of parton $b$'s momentum. 
+
+There are two conditions imposed on the central system. Firstly, as the protons remain intact, the central system must be in a colour singlet state and the scattering amplitude is given by
+\begin{equation}\label{csinglet}
+\mathcal{M} = \frac{1}{N_C^2 -1} \sum_{a,b} \mathcal{M}^{ab}\delta_{ab}
+\end{equation}
+where $a$ and $b$ indicate the colour of the incoming gluons. The second condition is that the hard scatter is produced in a $J_z = 0$ state. The amplitude is thus given by
+\begin{equation}
+\mathcal{M} = \frac{1}{2} \sum_{\lambda_1, \lambda_2} \mathcal{M}^{\lambda_1 \lambda_2} 
+\delta_{\lambda_1 \lambda_2}
+\end{equation}
+where $\lambda_1$ and $\lambda_2$ are the helicity states of the incoming gluons. This condition is exact for zero angle scattering. The condition remains valid if the transverse momentum of the protons satisfy $p_{T, i}^2 \ll Q_T^2$.
+
+\subsection{Higgs Boson Production}\label{cephiggs}
+
+The central exclusive process can be used for Higgs searches. The advantage of central exclusive production is that, because the protons remain intact, the mass of the Higgs boson can be determined from the outgoing proton momenta using equation \ref{missingmass}. The disadvantage is that the production cross section in CEP is usually small compared to the inclusive case. It has been shown in previous studies, that a Standard Model Higgs with $m_H\simeq140$ GeV will be observable in the $gg \rightarrow H \rightarrow WW^{*}$ channel \cite{Cox:2005if}. 
+
+For Higgs masses below 140 GeV however, the only option is to use the $gg \rightarrow H \rightarrow b\bar{b}$ channel. Normally at hadron colliders, the $gg \rightarrow b\bar{b}$ background is too large for this channel to be observable, which is why the Higgs is studied in associated production or the $gg \rightarrow H \rightarrow \gamma \gamma$ channel. In central exclusive production however, the $b\bar{b}$ final state is suppressed by the colour singlet and spin-0 selection rules. It has been estimated by the Durham group \cite{DeRoeck:2002hk}, that this channel will be observable if the experimental conditions are favourable. 
+
+For central exclusive Higgs production in the MSSM, the Durham group have focussed on the so-called intense coupling region, with $m_A\sim 130$ GeV and large values of tan$\beta$ \cite{Kaidalov:2003ys}. In this region of parameter space, the three neutral Higgs bosons have similar mass and the coupling of the Higgs to the photon, W and Z bosons is suppressed. This means that conventional searches using associated production would have a reduced cross section. They evaluated the tan$\beta=$30 (tan$\beta=$50) scenario and found that the cross section of the lightest Higgs boson increased by a factor of 2.91 (7.64) relative to the Standard Model Higgs boson in the $b\bar{b}$ decay channel. Because of this, it was concluded that central exclusive production would be the ideal tool to discover the Higgs if the intense coupling region was realised in nature.
+
+
+%\subsection{Higgs Boson Production}
+
+
+
+
+%%

@@ -1,0 +1,121 @@
+\section{CDF Run I Results} \label{cdfrun1}
+
+%%plan
+
+%%data sample defined by by...
+The CDF data sample for DPE di-jet production was defined \cite{Affolder:2000hd} by
+\begin{equation} 
+E_T^{1,2}  >  7 \text{ GeV} 
+\end{equation}
+\begin{equation}
+-4.2 \leq \eta_{1,2} \leq 2.4
+\end{equation}
+\begin{equation}\label{run1kinematicsxipbar}
+0.035 \leq   \xi_{\bar{p}} \leq 0.095 
+\end{equation}
+\begin{equation}\label{run1kinematicst}
+|t_{\bar{p}}|  < 1\text{ GeV}^2 
+\end{equation}
+\begin{equation}
+2.4 \leq \eta_{gap} \leq 5.9
+\end{equation}
+where 1 and 2 specify the two leading jets and $\eta_{gap}$ is a lack of hadronic activity in the specified pseudo-rapidity region.
+The jets were defined using a cone algorithm with radius 0.7 and overlap parameter of 0.75. At CDF, the momentum loss fractions are defined as $\xi_p$ (proton) and $\xi_{\bar{p}}$ (anti-proton) respectively. 
+%In terms of the previously defined variables in this thesis, $\xi_{p} = \xi_{1}$ and $\xi_{\bar{p}}=\xi_2$.
+As large values of $\xi_{\bar{p}}$ are allowed, the \Pom \Pom \, processes are supplemented by additional reggeon (\Reg) exchange diagrams as explained in section \ref{dpetheory}. The POMWIG event generator includes \Pom \Pom \, and \Reg \Reg \, fusion, but does not allow production via \Pom \Reg \, or \Reg \Pom \, fusion. Therefore, contributions from these diagrams will be absent in the MC samples. The pomeron valence partons are defined to be gluons for the reasons given in section \ref{higgsxsuncertainties}. The reggeon valence partons however, are defined to be quarks because it is known that mesons ($q\bar{q}$) lie on the Regge trajectories \cite{Forshaw:1997dc}.%% jeff + ross.
+
+The CDF collaboration did not fully correct the Run I data for detector effects. In order to compare the MC samples to the published data, the energy and momenta of the final state particles are smeared by the detector resolution quoted in the CDF technical design reports \cite{Blair:1996kx,Bertolucci:1987zn}. CDF also applied a noise suppression cut, $E < 100$~MeV, to the calorimeter towers. This cut is applied to the smeared energies of the final state particles in the Monte Carlo samples before jet finding.
+
+The CDF detector has a forward anti-proton detector, Roman Pot (RP), that is capable of measuring the anti-proton fractional momentum loss and momentum transfer in the ranges given by equation \ref{run1kinematicsxipbar} and \ref{run1kinematicst}. CDF does not have a forward detector on the outgoing proton side and the analysis relies on the observation of a large rapidity gap to define the DPE sample. The gap was defined by demanding no particle hits in the Beam-Beam Counters (BBC), which cover the pseudo-rapidity range $3.2 < \eta < 5.9$, and no energy deposit  greater than 1.5~GeV in the forward calorimeters, which cover the range $2.4 < \eta < 4.2$.
+
+The presence of a rapidity gap implied that no pile-up events were present in the central detector. This means that the fractional momentum loss of the proton and anti-proton could be reconstructed by
+\begin{equation} \label{xical}
+\xi_{p,\bar{p}}^{CAL} = \frac{1}{\sqrt{s}} \sum E_T^i e^{\pm \eta_i}
+\end{equation}
+where the sum is over all calorimeter towers. For the MC samples, equation \ref{xical} is calculated using all final state particles that satisfy $|\eta|<4.2$, which is the coverage of the CDF calorimeters \cite{Blair:1996kx}. CDF then compared the fractional momentum loss of the anti-proton measured in the calorimeter ($\xi_{\bar{p}}^{CAL}$) to that measured in the Roman Pot ($\xi_{\bar{p}}^{RP}$). 
+
+\begin{figure}[t]
+\centering
+	\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/ExHuME_XI_P_Run1.eps,width=0.5\textwidth,height = 6cm}}
+	\subfigure[]{\epsfig{figure=Diagrams/ExHuME_XI_PBAR_Run1.eps,width=0.5\textwidth,height = 6cm}}
+	}
+\caption[The event generator $\xi_p$ and $\xi_{\bar{p}}$ distributions compared to CDF data]{The $\xi_p$ and $\xi_{\bar{p}}$ distributions compared to the CDF data. $\xi_{\bar{p}}$ is measured directly in the RP, which has a coverage of $0.035 < \xi_{\bar{p}} < 0.095$. $\xi_p$ is measured in the calorimeter and a correction factor of 1.2 applied. \label{cdfmomentumloss}}
+\end{figure}
+
+CDF found that the calorimeter measurement of the anti-proton fractional momentum loss should be multiplied by a correction factor of 1.7 in order to reproduce the measurement in the RP. This in turn implied that the proton momentum loss as measured in the calorimeter was also a factor of 1.7 too small. The procedure was repeated in this analysis and a smaller correction factor of 1.2 was found. It is possible that extra detector effects, such as particles losing energy before the calorimeters or missing the calorimeters entirely, could account for some of the difference between the correction factors. Furthermore, the CDF Run I sample had very low statistics which could also affect the correction factor. In the remainder of the Run I comparison, the smaller correction factor of 1.2 is used for the MC samples to account for kinematical problems in reconstructing the proton momentum loss. The fractional momentum losses are then given by
+\begin{eqnarray}
+\xi_{p} & = & 1.2 \, \xi_{p}^{CAL} \\
+\xi_{\bar{p}} & = & \xi_{\bar{p}}^{RP}.
+\end{eqnarray}
+
+The $\xi_p$ and $\xi_{\bar{p}}$ distributions produced by POMWIG are compared to the CDF data in figure \ref{cdfmomentumloss}.  The $\xi_p$ distribution describes the data well and the differences in certain bins are attributed to statistical fluctuations in the data. The $\xi_{\bar{p}}$ distribution however, seems flatter than the data. There is a possibility that a \Pom \Reg \, contribution could be the difference in this distribution. This is because the RP accepts anti-protons with large values of $\xi_{\bar{p}}$, where there is a significant reggeon contribution. The rapidity gap however, favours events with low $\xi_p$, which is dominated by pomeron exchange. Thus the addition of a \Pom \Reg \, term, with the pomeron originating from the proton, would increase the high $\xi_{\bar{p}}$ region in figure \ref{cdfmomentumloss} (b) and also pass the rapidity gap cuts. The conclusion is that the effects are due to a missing \Pom \Reg \, contribution in addition to low statistics.
+
+\begin{figure} [t]
+\centering
+	\mbox{
+	\subfigure[]{\epsfig{figure=Diagrams/ExHuME_ETRun1.eps,width=0.5\textwidth,height = 6cm}}
+	\subfigure[]{\epsfig{figure=Diagrams/ExHuME_etaRun1.eps,width=0.5\textwidth,height = 6cm}}
+	}
+\caption[The event generator average jet pseudo-rapidity and transverse energy distributions compared to CDF Run I data]{The average transverse energy (a) and average pseudo-rapidity (b) distributions of the two leading jets compared to the CDF Run I data. \label{cdfjetvars}}
+\end{figure}
+
+The average transverse energy and average pseudo-rapidity of the two jets,
+\begin{equation}\label{cdfjetavg}
+E_T^{*} = \frac{E_{T}^{1}+ E_{T}^{2}}{2}
+\quad \text{and} \quad
+\eta^{*} = \frac{\eta_{1}+ \eta_{2}}{2},
+\end{equation}
+are compared with the CDF data in figures \ref{cdfjetvars} (a) and (b) respectively. Reasonable agreement is found between MC and data, with the differences attributed to extra detector effects and statistical fluctuations in the data. The ExHuME contribution is very small and the data is just as well described by POMWIG alone. This was also the conclusion of a previous analysis presented in \cite{Appleby:2001xk}.
+
+
+
+The cross section was defined by CDF to be the DPE sample restricted to the kinematic region $0.01 \leq \xi_p \leq 0.03$. If this is imposed on the MC samples, it is found that POMWIG overestimates the cross section by a factor of approximately 4. This leads to an `effective' soft-survival factor of 0.27. It should be noted that this is not the real soft-survival, $S^2$, but accounts for both the soft-survival and the missing \Pom \Reg \, contributions. The normalisation of POMWIG is now fixed for the remainder of the analysis. 
+
+\begin{figure} [t]
+\centering
+	\epsfig{figure=Diagrams/ExHuME_RJJ_Run1.eps,width=0.6\textwidth,height = 6cm}
+\caption[The di-jet mass fraction, $R_{jj}$, compared to the CDF Run I data]{The $R_{jj}$ distribution  compared to the CDF Run I data. \label{cdfrjjrun1}}
+\end{figure}
+
+Figure \ref{cdfrjjrun1} shows the $R_{jj}$, distribution for the MC samples. It seems that the POMWIG distribution has the same shape as the data, but is shifted to larger values of $R_{jj}$. There are two possible explanations for this. 
+Firstly, the $\xi_{\bar{p}}$ distribution is different between data and MC. The data suggest larger values of $\xi_{\bar{p}}$ are present and this was attributed, in this section, to a \Pom \Reg \, contribution in conjunction with low statistics. The larger values of $\xi_{\bar{p}}$ in the data naturally result in lower values of $R_{jj}$. Secondly, the CDF correction factor for $\xi_p^{CAL}$ was much larger than the factor calculated for the MC samples. If, due to low statistics, this factor has been overestimated, the values of $R_{jj}$ in the data will be correspondingly underestimated. The conclusion is that the shift in $R_{jj}$ is due to a combination of the two effects. 
+
+%Firstly, the CDF correction factor of 1.7 for the $\xi_p$ measurement could be too large as it was estimated using low statistics. If a  larger correction factor was used in the MC samples, the $R_{jj}$ distribution would shift to smaller values.
+%Secondly, larger $\xi_{\bar{p}}$ values are present in the data as shown in figure \ref{cdfmomentumloss} (b). This would also shift the  $R_{jj}$ distribution to lower values if present in the MC samples. The overall conclusion is that the difference in the $R_{jj}$ distribution between data and MC, along with the other Run I kinematic differences, is due to extra detector effects, low statistics and the missing \Pom \Reg \, contribution in the MC samples. 
+
+The cross section for the MC samples is shown after detector smearing, in table \ref{cdfrun1xs}. CDF give two cross section measurements, which were defined by the minimum transverse energy of the leading jet being   7~GeV and 10~GeV respectively. For $R_{jj} > 0.8$, POMWIG does not generate many events and the cross section is dominated by the exclusive $gg$ events generated by ExHuME. The combined MC result for $ R_{jj} > 0.8$ is consistent with the CDF upper limit of 3.7~nb. 
+
+\begin{table}[t]
+\centering
+\begin{tabular}{| c | c | c | c |}
+\hline
+& $E_{T, min}$ (GeV)   & $\sigma_{TOT}$ (nb) & $\sigma_{R_{JJ} > 0.8}$ (nb) \\
+\hline 
+CDF & 7 & 43.6$\pm$4.4$\pm$21.6  & $<$ 3.7 \\
+POMWIG & 7 & 42.53  & 0.01 \\ 
+ExHuME & 7 &  0.59 & 0.03\\
+%DPEMC & 7 &  1.29 & 0.09\\
+POMWIG + ExHuME & 7 & 43.12 &  0.04  \\ 
+%POMWIG + DPEMC & 7 & 43.8 &  0.10 \\ 
+
+\hline
+CDF & 10 & 3.4$\pm$1.0$\pm$2.0 & - \\
+POMWIG & 10 & 6.91 &  $<$ 0.01\\ 
+ExHuME & 10 & 0.28 &  0.03\\
+%DPEMC & 10 & 0.60 &  0.09\\
+POMWIG + ExHuME & 10 & 7.19 &  0.03  \\ 
+%POMWIG + DPEMC & 10 & 7.52 &  0.09  \\ 
+\hline
+\end{tabular}
+\caption[CDF Run I cross sections for POMWIG and ExHuME]{The cross section predictions from POMWIG (with an effective gap survival factor $\tilde{S^2} = 0.27$) and ExHuME in the CDF Run I kinematic range described in the text, with detector smearing included. Also shown are the CDF Run I 
+published cross sections, taken from \cite{Affolder:2000hd}.\label{cdfrun1xs}}
+\end{table}
+
+
+ %%detector set up run 1
+
+%%processes in pomwig and exhume (i.e DPE PP RR and gg), note on soft survival factors.
+%% generator level results.......(a)
+%% detector smearing to outgoing particles....
+%% final results
