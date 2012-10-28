@@ -2,6 +2,7 @@
 
 
 \subsection{Potential Well Distortion with Bunch Intensity}
+\label{sec:pot-well-dist}
 
 The equation for the longitudinal motion of a charged particle in an RF bucket can be linearised and solved to find the so called incoherent synchrotron frequency, that is it's oscillation in energy and phase, given by,
 
@@ -44,6 +45,7 @@ If we consider an ultrarelativistic beam ($\gamma \rightarrow 1$), the space cha
 Generalisation of this method to a general complex impedance shows that it is the imaginary component of the longitudinal impedance that contributes the induced voltage, thus being the component of the impedance measured using this method.
 
 \subsection{Synchronous Phase Shift}
+\label{sec:syn-phase-shift}
 
 As discussed in Section [ref beam induced heating], a particle circulating in circular accelerator losses energy due to interacting with impedances in the machine. If the particle is not undergoing acceleration, it can be seen that to keep the same energy, the particle must have a phase relative to the RF that ensures that the energy losses due to wakefields are equal to the energy gained during the traversal of the RF cavities, given by the equivalence of the energy gain by transit and the energy loss by traversal,
 
@@ -77,7 +79,7 @@ When a bunch is exposed to a tranverse inmpedance $Z_{\perp}$, it undergoes a co
 where $N_{p}$ is the number of particles in the bunch, $E$ is the energy, $T_{0}$ is the revolution frequency, $\sigma_{t} = \sigma_{z}/c$ is the bunch length, $\omega_{\beta} = 2\pi{}Q f_{rev}$ is the betatron frequency and $\left( Z_{\perp} \right)_{eff}$ is the effective transverse impedance. This is given by the impedance convolved with a weighting function h which is determined by the longitudinal bunch profile given by
 
 \begin{equation}
-\left( Z_{\perp} \right)_{eff} \left( \omega_{\xi} \right) = \int_{-\infty}^{\infty} Z_{\perp} \left( \omega \right) h){m} \left(  \omega - \omega_{\xi} \right) d\omega.
+\left( Z_{\perp} \right)_{eff} \left( \omega_{\xi} \right) = \int_{-\infty}^{\infty} Z_{\perp} \left( \omega \right) h_{m} \left(  \omega - \omega_{\xi} \right) d\omega.
 \end{equation}
 
 As an example, for the 0-mode coherent bunch oscillation and assuming a gaussian bunch profile the weighting function can be written as
@@ -96,6 +98,7 @@ It can be seen from Eqn.~\ref{eqn:weighting_func} that the function is centred o
 Eqn~\ref{eqn:complex_tun_shift} indicates that the imaginary component of the effective transverse impedance contributes to a real coherent tune shift, which the real component to an imaginary tune shift, visible as a growth/decay time in the oscillation. For a broadband impedance ($Q=1$), at low frequencies it is possible to assume that $\Im{}m\left(  Z_{\perp} \right) \approx const.$ It then follows that this is directly proportional to the real tune shift which can be obtained by measuring the coherent tune as a function of bunch intensity.
 
 \subsection{Tune shift change with bunch intensity}
+\label{sec:tune-shift-bunch-int}
 
 The real component of the solution to Eqn~\ref{eqn:complex_tun_shift} can be related to the integer betatron tune by
 
@@ -106,6 +109,7 @@ The real component of the solution to Eqn~\ref{eqn:complex_tun_shift} can be rel
 where $\Omega$ is the measured betatron frequency. It can easily be seen that by altering the bunch population the tune shift $\Delta Q$ can be measured also and subsequently the value for $\Im{}m\left(  Z_{\perp} \right)$ can be obtained.
 
 \subsection{Growth time change with chromaticity}
+\label{sec:growth-time-chrom}
 
 Similarly to the tune shift measurements, we consider the imaginary component of the solution. Similarly to a harmonic oscillator, the imaginary part of the solution denotes a damping time of the oscillation, $\tau$, in this case given by
 
