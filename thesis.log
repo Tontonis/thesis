@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.2.24)  28 OCT 2012 17:29
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.2.24)  29 OCT 2012 19:30
 entering extended mode
 **C:/Users/hugo/Documents/GitHub/thesis/thesis.tex
 (C:/Users/hugo/Documents/GitHub/thesis/thesis.tex
@@ -382,9 +382,9 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 8.
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [2
 
-] [3])
+] [3] [4])
 \tf@toc=\write3
- [4]
+
 [5] (C:\Users\hugo\Documents\GitHub\thesis\thesis.lot)
 \tf@lot=\write4
  [6
@@ -1062,7 +1062,7 @@ line 42.
 erial.tex [91]
 
 LaTeX Warning: Reference `fig:phase2-jaw-designs' on page 92 undefined on input
- line 15.
+ line 16.
 
 
 <LHC_Collimation_Upgrades/figures/mo-geo.png, id=1477, 302.63063pt x 376.40625p
@@ -1070,7 +1070,7 @@ t>
 File: LHC_Collimation_Upgrades/figures/mo-geo.png Graphic file (type png)
  <use LHC_Collimation_Upgrades/figures/mo-geo.png>
 Package pdftex.def Info: LHC_Collimation_Upgrades/figures/mo-geo.png used on in
-put line 36.
+put line 37.
 (pdftex.def)             Requested size: 192.34288pt x 239.23355pt.
 
 <LHC_Collimation_Upgrades/figures/mo-mocd-geo.png, id=1478, 298.86656pt x 362.1
@@ -1078,7 +1078,7 @@ put line 36.
 File: LHC_Collimation_Upgrades/figures/mo-mocd-geo.png Graphic file (type png)
  <use LHC_Collimation_Upgrades/figures/mo-mocd-geo.png>
 Package pdftex.def Info: LHC_Collimation_Upgrades/figures/mo-mocd-geo.png used 
-on input line 40.
+on input line 41.
 (pdftex.def)             Requested size: 192.34288pt x 233.04343pt.
  [92] [93 <C:/Users/hugo/Documents/GitHub/thesis/LHC_Collimation_Upgrades/figur
 es/mo-geo.png> <C:/Users/hugo/Documents/GitHub/thesis/LHC_Collimation_Upgrades/
@@ -1089,7 +1089,7 @@ File: LHC_Collimation_Upgrades/figures/longitudinal.pdf Graphic file (type pdf)
 
  <use LHC_Collimation_Upgrades/figures/longitudinal.pdf>
 Package pdftex.def Info: LHC_Collimation_Upgrades/figures/longitudinal.pdf used
- on input line 60.
+ on input line 61.
 (pdftex.def)             Requested size: 213.71576pt x 150.62135pt.
 
 <LHC_Collimation_Upgrades/figures/horizDipolar.pdf, id=1486, 757.02826pt x 487.
@@ -1098,7 +1098,7 @@ File: LHC_Collimation_Upgrades/figures/horizDipolar.pdf Graphic file (type pdf)
 
  <use LHC_Collimation_Upgrades/figures/horizDipolar.pdf>
 Package pdftex.def Info: LHC_Collimation_Upgrades/figures/horizDipolar.pdf used
- on input line 64.
+ on input line 65.
 (pdftex.def)             Requested size: 213.71576pt x 137.71333pt.
 
 <LHC_Collimation_Upgrades/figures/vertDipolar.pdf, id=1487, 754.31813pt x 526.6
@@ -1106,7 +1106,7 @@ Package pdftex.def Info: LHC_Collimation_Upgrades/figures/horizDipolar.pdf used
 File: LHC_Collimation_Upgrades/figures/vertDipolar.pdf Graphic file (type pdf)
  <use LHC_Collimation_Upgrades/figures/vertDipolar.pdf>
 Package pdftex.def Info: LHC_Collimation_Upgrades/figures/vertDipolar.pdf used 
-on input line 68.
+on input line 69.
 (pdftex.def)             Requested size: 213.71576pt x 149.21783pt.
 
 <LHC_Collimation_Upgrades/figures/horizQuadrupolar.pdf, id=1488, 701.01903pt x 
@@ -1115,7 +1115,7 @@ File: LHC_Collimation_Upgrades/figures/horizQuadrupolar.pdf Graphic file (type
 pdf)
  <use LHC_Collimation_Upgrades/figures/horizQuadrupolar.pdf>
 Package pdftex.def Info: LHC_Collimation_Upgrades/figures/horizQuadrupolar.pdf 
-used on input line 72.
+used on input line 73.
 (pdftex.def)             Requested size: 213.71576pt x 144.03316pt.
 
 <LHC_Collimation_Upgrades/figures/vertQuadrupolar.pdf, id=1489, 671.20764pt x 4
@@ -1124,29 +1124,29 @@ File: LHC_Collimation_Upgrades/figures/vertQuadrupolar.pdf Graphic file (type p
 df)
  <use LHC_Collimation_Upgrades/figures/vertQuadrupolar.pdf>
 Package pdftex.def Info: LHC_Collimation_Upgrades/figures/vertQuadrupolar.pdf u
-sed on input line 76.
+sed on input line 77.
 (pdftex.def)             Requested size: 192.34288pt x 139.01347pt.
 
-Overfull \hbox (14.28001pt too wide) in paragraph at lines 60--78
+Overfull \hbox (14.28001pt too wide) in paragraph at lines 61--79
 [][] []
  []
 
 
-Overfull \hbox (14.28001pt too wide) in paragraph at lines 60--78
+Overfull \hbox (14.28001pt too wide) in paragraph at lines 61--79
 [] []
  []
 
 
 LaTeX Warning: Reference ` fig:phase-2-vertquad' on page 1 undefined on input l
-ine 81.
+ine 82.
 
 
 LaTeX Warning: Reference ` fig:phase-2-horzquad' on page 1 undefined on input l
-ine 81.
+ine 82.
 
 
 LaTeX Warning: Reference ` fig:phase-2-vertdip' on page 1 undefined on input li
-ne 81.
+ne 82.
 
 
 <LHC_Collimation_Upgrades/figures/vertDipolarZoom.pdf, id=1490, 578.16pt x 433.
@@ -1155,60 +1155,55 @@ File: LHC_Collimation_Upgrades/figures/vertDipolarZoom.pdf Graphic file (type p
 df)
  <use LHC_Collimation_Upgrades/figures/vertDipolarZoom.pdf>
 Package pdftex.def Info: LHC_Collimation_Upgrades/figures/vertDipolarZoom.pdf u
-sed on input line 87.
+sed on input line 88.
 (pdftex.def)             Requested size: 299.20076pt x 224.39859pt.
- [94] [95 <C:/Users/hugo/Documents/GitHub/thesis/LHC_Collimation_Upgrades/figur
-es/longitudinal.pdf> <C:/Users/hugo/Documents/GitHub/thesis/LHC_Collimation_Upg
-rades/figures/horizDipolar.pdf> <C:/Users/hugo/Documents/GitHub/thesis/LHC_Coll
-imation_Upgrades/figures/vertDipolar.pdf> <C:/Users/hugo/Documents/GitHub/thesi
-s/LHC_Collimation_Upgrades/figures/horizQuadrupolar.pdf> <C:/Users/hugo/Documen
-ts/GitHub/thesis/LHC_Collimation_Upgrades/figures/vertQuadrupolar.pdf>])
+)
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_Collimation_Upgrades/tctp_collimator
-/introduction.tex)
+/introduction.tex [94] [95 <C:/Users/hugo/Documents/GitHub/thesis/LHC_Collimati
+on_Upgrades/figures/longitudinal.pdf> <C:/Users/hugo/Documents/GitHub/thesis/LH
+C_Collimation_Upgrades/figures/horizDipolar.pdf> <C:/Users/hugo/Documents/GitHu
+b/thesis/LHC_Collimation_Upgrades/figures/vertDipolar.pdf> <C:/Users/hugo/Docum
+ents/GitHub/thesis/LHC_Collimation_Upgrades/figures/horizQuadrupolar.pdf> <C:/U
+sers/hugo/Documents/GitHub/thesis/LHC_Collimation_Upgrades/figures/vertQuadrupo
+lar.pdf>]
+Overfull \hbox (174.13556pt too wide) in paragraph at lines 18--23
+ [] 
+ []
+
+)
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_Collimation_Upgrades/tctp_collimator
 /impedance_simulation_results.tex)
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_Collimation_Upgrades/tctp_collimator
 /transverse_impedance_concerns.tex)
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_Collimation_Upgrades/tctp_collimator
 /beam_induced_heating.tex) [96 <C:/Users/hugo/Documents/GitHub/thesis/LHC_Colli
-mation_Upgrades/figures/vertDipolarZoom.pdf>]
+mation_Upgrades/figures/vertDipolarZoom.pdf>] [97]
 Chapter 8.
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/introduction.tex)
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/observations_during_operation.te
 x)
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/comparisons_15_simulations_measu
-rements.tex [97
+rements.tex [98
 
-] [98] [99])
+] [99] [100])
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/impedance_behaviour_components.t
-ex [100])
+ex [101])
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/considerations_besides_impedance
-_for_new_designs.tex [101] [102])
+_for_new_designs.tex [102] [103])
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/new_beam_screen_designs.tex
-[103])
+[104])
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/measurements_observation_19_scre
-en_conductors.tex [104] [105] [106])
-(C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/plans_after_ls1.tex [107]
-[108] [109]) [110]
+en_conductors.tex [105] [106] [107] [108])
+(C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/plans_after_ls1.tex [109]
+[110] [111]) [112]
 Chapter 9.
-(C:\Users\hugo\Documents\GitHub\thesis\thesis.bbl [111
+(C:\Users\hugo\Documents\GitHub\thesis\thesis.bbl [113
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 24.
 
-)
-
-! LaTeX Error: \begin{itemize} on input line 92 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.138 \end{document}
-                    
-? 
-[112
+) [114
 
 ] (C:\Users\hugo\Documents\GitHub\thesis\thesis.aux
 ! Missing \endcsname inserted.
@@ -1243,22 +1238,18 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
  )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 92 (\begingroup)
-### bottom level
 (\end occurred when \ifx on line 441 was incomplete)
 (\end occurred when \ifx on line 441 was incomplete)
 (\end occurred when \ifx on line 440 was incomplete)
 (\end occurred when \ifx on line 440 was incomplete) 
 Here is how much of TeX's memory you used:
- 5045 strings out of 494045
- 96909 string characters out of 3148390
+ 5050 strings out of 494045
+ 97041 string characters out of 3148390
  183783 words of memory out of 3000000
- 8104 multiletter control sequences out of 15000+200000
+ 8109 multiletter control sequences out of 15000+200000
  47319 words of font info for 70 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 28i,13n,24p,1957b,346s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,13n,24p,1957b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.
 9/fonts/enc/dvips/fontname/8r.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/
 cm-super/cm-super-t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
@@ -1277,9 +1268,9 @@ y6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C
 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on thesis.pdf (112 pages, 1829009 bytes).
+Output written on thesis.pdf (114 pages, 1831249 bytes).
 PDF statistics:
- 2056 PDF objects out of 2073 (max. 8388607)
+ 2062 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
