@@ -66,14 +66,15 @@
 \contentsline {section}{\numberline {7.1}Introduction}{88}
 \contentsline {section}{\numberline {7.2}LHC Phase 2 Secondary Collimator Jaw Material}{91}
 \contentsline {subsection}{\numberline {7.2.1}Impedance Studies and Analysis}{92}
-\contentsline {section}{\numberline {7.3}TCTP Impedance Studies}{94}
-\contentsline {chapter}{\numberline {8}LHC Injection Kicker Magnet}{98}
-\contentsline {section}{\numberline {8.1}LHC Injection Kicker Magnet}{98}
-\contentsline {section}{\numberline {8.2}LHC Phase 2 Collimator Designs}{101}
-\contentsline {section}{\numberline {8.3}LHC Injection Kicker Magnet}{102}
-\contentsline {section}{\numberline {8.4}LHC Injection Kicker Magnet}{106}
-\contentsline {section}{\numberline {8.5}LHC Phase 2 Collimator Designs}{108}
-\contentsline {section}{\numberline {8.6}LHC Injection Kicker Magnet}{109}
-\contentsline {section}{\numberline {8.7}LHC Phase 2 Collimator Designs}{111}
-\contentsline {chapter}{\numberline {9}Conclusions}{113}
-\contentsline {chapter}{Bibliography}{114}
+\contentsline {section}{\numberline {7.3}TCTP Impedance Studies}{96}
+\contentsline {subsection}{\numberline {7.3.1}TCTP Collimator - Design and Geometry}{98}
+\contentsline {chapter}{\numberline {8}LHC Injection Kicker Magnet}{99}
+\contentsline {section}{\numberline {8.1}LHC Injection Kicker Magnet}{99}
+\contentsline {section}{\numberline {8.2}LHC Phase 2 Collimator Designs}{102}
+\contentsline {section}{\numberline {8.3}LHC Injection Kicker Magnet}{103}
+\contentsline {section}{\numberline {8.4}LHC Injection Kicker Magnet}{107}
+\contentsline {section}{\numberline {8.5}LHC Phase 2 Collimator Designs}{109}
+\contentsline {section}{\numberline {8.6}LHC Injection Kicker Magnet}{110}
+\contentsline {section}{\numberline {8.7}LHC Phase 2 Collimator Designs}{112}
+\contentsline {chapter}{\numberline {9}Conclusions}{114}
+\contentsline {chapter}{Bibliography}{115}
