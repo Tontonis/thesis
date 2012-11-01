@@ -26,18 +26,23 @@ Total Broadband at collisions with squeezed optics (7TeV) & 0.076 & 2.67 \\ \hli
 
 \subsection{TCTP Collimator - Design and Geometry}
 
-The TCTP is a tertiary type collimator with a jaw made of tungsten. 
 
 
 \begin{figure}
 \subfigure[]{
-
+\includegraphics[width=0.45\textwidth]{LHC_Collimation_Upgrades/figures/ferrite_circuit.png}
 \label{fig:cross-sec-ferr}
 }
 \subfigure[]{
-
+\includegraphics[width=0.45\textwidth]{LHC_Collimation_Upgrades/figures/rf-fingers.png}
 \label{fig:cross-sec-rf-fingers}
 }
 \label{fig:tctp-figure}
-\caption{}
+\caption{The TCTP collimator has a number of important impedance reduction techniques present in its design. The RF system, \ref{fig:cross-sec-ferr}, replaces the sliding RF contacts of the phase 1 design, using ferrite tiles (shown in black) to reduce the resonant Q of the structure. The longitudinal RF fingers, shown in \ref{fig:cross-sec-rf-fingers}, provide a good conducting path for the beam image current in the transition from the beam pipe to the collimator jaw.}
 \end{figure}
+
+The TCTP is a tertiary type collimator with a jaw made of tungsten. The principle components of interest from a beam impedance reduction point of view are the longitudinal RF fingers that cover the transition from the beam pipe to the collimator structure, and the RF system utilising ferrite blocks and a screen structure, shown in Fig.~\ref{fig:cross-sec-ferr}.
+
+The RF system is designed to work in the following way, where comparison is given to the phase 1 RF system to clarify the differences and the design choices made. The phase 1 sliding contacts adequately masked the surrounding vacuum cavity from the beam, causing the resonant modes of the structure to be dominated by the geometry of the internal structure of the collimator jaw. Due to the small dimensions this volume the resonant frequencies are thus very high (in the realm of gigahertz) where the beam spectrum is very small and thus the beam-structure interaction is relatively small thus avoiding both impedance driven instabilities due to cavity modes and beam-induced heating. However the sliding contacts are believed to produce a large quantity of dust which is problematic for beam losses.
+
+Conversely, the TCTP RF system removes the sliding contacts to remove the dust problem. This allows the beam to 'see' the entire vacuum tank of the collimator. This increases the characteristic dimensions driving the resonant frequency modes, thus lowering the minimum frequency of the cavity modes. This moves the frequency of the cavity modes into an area over the beam power spectrum where the spectrum is comparable to the DC beam current in the machine. To counteract this the Q of the cavity modes is reduced by the placement of ferrite tiles in the device to act as a damping material. This strongly reduces the peak height of the impedances thus reducing their effect on both instability and beam-induced heating.

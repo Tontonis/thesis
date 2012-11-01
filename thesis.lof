@@ -81,9 +81,9 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{86}
 \contentsline {figure}{\numberline {6.13}{\ignorespaces The power loss due to a beam with $1.15 \times 10^{11}$ particles per bunch, 288 bunches, a ring circumference 6911m and a bunch length $4\sigma = 0.04m$ assuming a gaussian bunch distribution in the screened cavity.}}{86}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Different components the impedance reduction measures in the phase 1 collimator design. 7.1(a)\hbox {} shows the longitudinal RF fingers, ensuring a good conducting path for the beam image currents, and 7.1(b)\hbox {} shows the sliding RF contacts on the collimators jaw. These are intended to minimise the volume seen by the beam, thus making any cavity modes that may be excited by the beam at very high frequencies where the beam power spectrum is very small.}}{90}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{90}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{90}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Different components the impedance reduction measures in the phase 1 collimator design. 7.1(a)\hbox {} shows the longitudinal RF fingers, ensuring a good conducting path for the beam image currents, and 7.1(b)\hbox {} shows the sliding RF contacts on the collimators jaw. These are intended to minimise the volume seen by the beam, thus making any cavity modes that may be excited by the beam at very high frequencies where the beam power spectrum is very small.}}{89}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{89}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{89}
 \contentsline {figure}{\numberline {7.2}{\ignorespaces The RF system for use in the phase 2 collimation system. The sliding RF contacts of the phase 1 design are replaced with a ferrite damping system. The RF contacts are removed, allowing the beam to see the entire RF cavity, causing resonances at lower frequencies. The Q of these resonances are decreased by the use of ferrite damping tiles.}}{91}
 \contentsline {figure}{\numberline {7.3}{\ignorespaces A number of the proposed jaw designs for the phase 2 secondary collimators. 7.3(a)\hbox {} shows the jaw made entirely from molybdenum. Glidcop maybe substituted for molybdenum in this design. 7.3(b)\hbox {} shows the jaw made from a mixture of molybdenum diamond composite with a 2mm coating of molybdenum on the surface. The composite ensure a mechanically strong jaw, whilst the coating screens the higher resistivity composite and provides a smooth surface on the beam-facing part of the jaw. In this case the composite maybe substituted with copper diamond composite, and likewise the coating may be replaced with GlidCop.}}{93}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{93}
@@ -96,5 +96,8 @@
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{95}
 \contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{95}
 \contentsline {figure}{\numberline {7.6}{\ignorespaces The real component of the vertical dipolar impedance of the various collimator jaw materials assuming a 2mm half gap.}}{96}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces The TCTP collimator has a number of important impedance reduction techniques present in its design. The RF system, 7.7(a)\hbox {}, replaces the sliding RF contacts of the phase 1 design, using ferrite tiles (shown in black) to reduce the resonant Q of the structure. The longitudinal RF fingers, shown in 7.7(b)\hbox {}, provide a good conducting path for the beam image current in the transition from the beam pipe to the collimator jaw.}}{98}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{98}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{98}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
