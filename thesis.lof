@@ -99,5 +99,9 @@
 \contentsline {figure}{\numberline {7.7}{\ignorespaces The TCTP collimator has a number of important impedance reduction techniques present in its design. The RF system, 7.7(a)\hbox {}, replaces the sliding RF contacts of the phase 1 design, using ferrite tiles (shown in black) to reduce the resonant Q of the structure. The longitudinal RF fingers, shown in 7.7(b)\hbox {}, provide a good conducting path for the beam image current in the transition from the beam pipe to the collimator jaw.}}{98}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{98}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{98}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces The different RF systems considered for the TCTP collimator. 7.8(a)\hbox {} shows an RF system similar to the phase 1 RF system. In these simulations the sliding RF contacts are replaced by a perfect connection - for frequencies lower than 2-3GHz this is a good approximation and greatly simplifies the smulation model. 7.8(b)\hbox {} shows the RF circuit complete with ferrite. 7.8(c)\hbox {} shows the phase 2 RF circuit but without any ferrite present.}}{100}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{100}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{100}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{100}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
