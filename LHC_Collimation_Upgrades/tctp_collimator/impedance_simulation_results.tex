@@ -1,4 +1,5 @@
 \subsection{Impedance Simulations and Results}
+\label{sec:imp-sims-tctp}
 
 The impedance of the TCTP collimator is examined through the use of simulation codes. In order to verify the simulation results it was decided to use both a time domain and a frequency domain code, in this case CST Particle Studio[cite] for the time domain and Ansoft HFSS[cite] for the frequency domain. Due to the reduced simulation time for time domain simulations compared to frequency domain simulations (which must be evaluated mode by mode to correctly evaluate the eigenmodes), the preliminary comparisons are done using the time domain code and the most promising solutions are subsequently investigated in depth using the frequency domain model.
 
@@ -10,7 +11,6 @@ For this comparison we investigate a number of different designs of the RF syste
 \item{The proposed RF system without the ferrite damping tiles. This is too investigate the benefit of including the ferrite tiles.}
 \end{enumerate}
 
-The three different systems are shown in Fig.~\ref{fig:rf-systems-tctp}. 
 
 \begin{figure}
 \subfigure[]{
@@ -26,6 +26,10 @@ The three different systems are shown in Fig.~\ref{fig:rf-systems-tctp}.
 \label{fig:rf-circuit-no-ferrite}
 }
 \label{fig:rf-systems-tctp}
-\caption{The different RF systems considered for the TCTP collimator. \ref{fig:sliding-contacts} shows an RF system similar to the phase 1 RF system. In these simulations the sliding RF contacts are replaced by a perfect connection - for frequencies lower than 2-3GHz this is a good approximation and greatly simplifies the smulation model. \ref{fig:rf-circuit-ferrite} shows the RF circuit complete with ferrite. \ref{fig:rf-circuit-no-ferrite} shows the phase 2 RF circuit but without any ferrite present.}
+\caption{The different RF systems considered for the TCTP collimator. \ref{fig:sliding-contacts} shows an RF system similar to the phase 1 RF system. In these simulations the sliding RF contacts are replaced by a perfect connection - for frequencies lower than 2-3GHz this is a good approximation and greatly simplifies the simulation model. \ref{fig:rf-circuit-ferrite} shows the RF circuit complete with ferrite. \ref{fig:rf-circuit-no-ferrite} shows the phase 2 RF circuit but without any ferrite present.}
 \end{figure}
+
+
+The three different systems are shown in Fig.~\ref{fig:rf-systems-tctp}. 
+
 

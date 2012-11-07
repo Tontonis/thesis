@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.2.24)  2 NOV 2012 18:03
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.2.24)  7 NOV 2012 17:33
 entering extended mode
 **C:/Users/hugo/Documents/GitHub/thesis/thesis.tex
 (C:/Users/hugo/Documents/GitHub/thesis/thesis.tex
@@ -1172,33 +1172,50 @@ Overfull \hbox (8.09985pt too wide) in paragraph at lines 27--27
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_Collimation_Upgrades/tctp_collimator
 /transverse_impedance_concerns.tex)
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_Collimation_Upgrades/tctp_collimator
-/beam_induced_heating.tex) [100]
+/beam_induced_heating.tex [100]
+
+LaTeX Warning: Reference `app:tctp-eigenmodes' on page 101 undefined on input l
+ine 15.
+
+
+<LHC_Collimation_Upgrades/figures/longitudinal-impedance-tctp-ferr-freq-dom.pdf
+, id=1985, 578.16pt x 433.62pt>
+File: LHC_Collimation_Upgrades/figures/longitudinal-impedance-tctp-ferr-freq-do
+m.pdf Graphic file (type pdf)
+
+<use LHC_Collimation_Upgrades/figures/longitudinal-impedance-tctp-ferr-freq-dom
+.pdf>
+Package pdftex.def Info: LHC_Collimation_Upgrades/figures/longitudinal-impedanc
+e-tctp-ferr-freq-dom.pdf used on input line 21.
+(pdftex.def)             Requested size: 299.20076pt x 224.39859pt.
+) [101] [102 <C:/Users/hugo/Documents/GitHub/thesis/LHC_Collimation_Upgrades/fi
+gures/longitudinal-impedance-tctp-ferr-freq-dom.pdf>]
 Chapter 8.
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/introduction.tex)
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/observations_during_operation.te
 x)
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/comparisons_15_simulations_measu
-rements.tex [101
+rements.tex [103
 
-] [102] [103])
+] [104] [105])
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/impedance_behaviour_components.t
-ex [104])
+ex [106])
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/considerations_besides_impedance
-_for_new_designs.tex [105] [106])
+_for_new_designs.tex [107] [108])
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/new_beam_screen_designs.tex
-[107])
+[109])
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/measurements_observation_19_scre
-en_conductors.tex [108] [109] [110] [111])
-(C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/plans_after_ls1.tex [112]
-[113] [114]) [115]
+en_conductors.tex [110] [111] [112] [113])
+(C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/plans_after_ls1.tex [114]
+[115] [116]) [117]
 Chapter 9.
-(C:\Users\hugo\Documents\GitHub\thesis\thesis.bbl [116
+(C:\Users\hugo\Documents\GitHub\thesis\thesis.bbl [118
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 24.
 
-) [117
+) [119
 
 ] (C:\Users\hugo\Documents\GitHub\thesis\thesis.aux)
 
@@ -1209,10 +1226,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5086 strings out of 494045
- 98434 string characters out of 3148390
+ 5098 strings out of 494045
+ 98978 string characters out of 3148390
  183783 words of memory out of 3000000
- 8141 multiletter control sequences out of 15000+200000
+ 8152 multiletter control sequences out of 15000+200000
  47319 words of font info for 70 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  28i,13n,24p,1957b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1231,9 +1248,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
 w/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (117 pages, 2084711 bytes).
+Output written on thesis.pdf (119 pages, 2122190 bytes).
 PDF statistics:
- 2094 PDF objects out of 2487 (max. 8388607)
+ 2161 PDF objects out of 2487 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
