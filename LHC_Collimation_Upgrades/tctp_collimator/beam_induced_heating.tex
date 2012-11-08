@@ -23,8 +23,43 @@ For these simulations we simulate half of the structure (due to the reflective s
 Here we shall evaluate the resonances as a whole, or a few key resonances from a heating point of view. For a complete listing of the eigenmodes please see App.~\ref{app:tctp-eigenmodes} for a complete breakdown of the TCTP eigenmode simulations. To have a comprehensive review of the heating we consider the following heating possibilities
 
 \begin{itemize}
-\item{A beam harmonic occuring exactly on the resonant frequency with a certain bunch profile. Here we consider gaussian and cos$^{2}$ bunch profiles}
-\item{Taking theoretical spectra for both 50ns and 25ns bunch spacings. In this case we consider the heating for both nominal operational parameters (1ns bunch length), running conditions from 2012 (bunch length between 1.2-1.4ns) and for HL-LHC parameters. These parameters are summarised in Tab~\ref{tab:lhc-tctp-heating-para}.}
+\item{A beam harmonic occuring exactly on the resonant frequency with a certain bunch profile. Here we consider gaussian and cos$^{2}$ bunch profiles. Parameters for a number of different beam operating modes (summarised in Tab.~\ref{tab:lhc-tctp-heating-para}) are considered.}
+\item{Taking theoretical spectra for both 50ns and 25ns bunch spacings. In this case we consider the heating for both nominal operational parameters (1ns bunch length), running conditions from 2012 (bunch length between 1.2-1.4ns) and for HL-LHC parameters. These parameters are summarised in Tab.~\ref{tab:lhc-tctp-heating-para}. Different bunch profiles are considered - gaussian, parabolic and cos$^{2}$ to account for high frequency lobes observed in measured beam spectra.}
 \item{Using measured multi-bunch spectra for 50ns bunch spacing measured in the LHC. These measurements are for the beam from injection, through the ramp to squeeze and finally collisions.}
 \end{itemize}
 
+\begin{table}
+\caption{The LHC operational parameters considered for heating estimates for the TCTP. Operational parameters include the nominal LHC parameters for 25ns bunch spacing, the peak operational intensity for 50ns bunch spacing used in 2012, and the two possible HL-LHC operational schemes, using both 25ns and 50ns bunch spacing. Here the bunch length is assumed to encompass the $4\sigma$ gaussian width.}
+\label{tab:lhc-tctp-heating-para}
+\begin{center}
+\begin{tabular}{c | c | c | c | c }
+Operational Mode & $\tau_{b}$ (ns) & $t_{bunch}$ (ns) & $N_{b}$ & $n_{bunches}$ \\ \hline
+50ns, 2012 LHC Operation & 1.2 & 50ns & $1.7 \times 10^{11}$ & 1380 \\ \hline
+25ns, Nominal LHC Operation & 1.0 & 25ns & $1.15 \times 10^{11}$ & 2808 \\ \hline
+HL-LHC 25ns & 1.0 & 25ns & $2.0 \times 10^{11}$ & 2808 \\ \hline
+HL-LHC 50ns & 1.0 & 50ns & $3.3 \times 10^{11}$ & 1380 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+The heating estimates assuming on resonance beam harmonics can be seen in Tab.~\ref{tab:on-res-heating-tctp} for a variety of bunch lengths between 1-1.5ns assuming gaussian and cos$^{2}$ bunch distributions.
+
+\begin{table}
+\caption{The power loss of a the TCTP collimator with ferrite for a number of operational modes in the LHC and HL-LHC. All losses are in watts using the parameters found in Tab.~\ref{tab:lhc-tctp-heating-para}}
+\begin{center}
+\begin{tabular}{c | c | c | c | c | c | c | c | c  }
+$\tau_{b}$ (ns) & \multicolumn{2}{| c |}{50ns, 2012} & \multicolumn{2}{| c |}{25ns nominal} & \multicolumn{2}{| c |}{50ns, HL-LHC} & \multicolumn{2}{| c }{25ns, HL-LHC} \\ \hline
+ & $P_{loss, g}$ & $P_{loss, c}$ & $P_{loss, g}$ & $P_{loss, c}$ & $P_{loss, g}$ & $P_{loss, c}$ & $P_{loss, g}$ & $P_{loss, c}$ \\ \hline
+1.0 & 2.8 & 7.1 & 5.3 & 13.5 & 10.5 & 26.7 & 16.1 & 40.9 \\ \hline
+1.1 & 1.9 & 5.1 & 3.6 & 9.8 & 7.2 & 19.4 & 11.0 & 29.5 \\ \hline
+1.2 & 1.3 & 3.7 & 2.5 & 7.0 & 5.1 & 13.9 & 7.7 & 21.1 \\ \hline
+1.3 & 1.0 & 2.7 &1.8 & 5.0 & 3.6 & 10.0 & 5.5 & 15.2 \\ \hline
+1.4 & 0.7 & 1.9 & 1.3 & 3.7 &2.6 & 7.3 & 4.0 & 11.1 \\ \hline
+1.5 & 0.5 & 1.4 & 1.0 & 2.7 & 1.9 & 5.4 & 2.9 & 8.2 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\subsubsection{Location of Power Deposition}
+
+Locations of power loss - heating on RF fingers and ferrite
