@@ -24,7 +24,7 @@ Here we shall evaluate the resonances as a whole, or a few key resonances from a
 
 \begin{itemize}
 \item{A beam harmonic occuring exactly on the resonant frequency with a certain bunch profile. Here we consider gaussian and cos$^{2}$ bunch profiles. Parameters for a number of different beam operating modes (summarised in Tab.~\ref{tab:lhc-tctp-heating-para}) are considered.}
-\item{Taking theoretical spectra for both 50ns and 25ns bunch spacings. In this case we consider the heating for both nominal operational parameters (1ns bunch length), running conditions from 2012 (bunch length between 1.2-1.4ns) and for HL-LHC parameters. These parameters are summarised in Tab.~\ref{tab:lhc-tctp-heating-para}. Different bunch profiles are considered - gaussian, parabolic and cos$^{2}$ to account for high frequency lobes observed in measured beam spectra.}
+\item{Taking theoretical spectra for both 50ns and 25ns bunch spacings. In this case we consider the heating for both nominal operational parameters (1ns bunch length), running conditions from 2012 (bunch length between 1.2-1.4ns) and for HL-LHC parameters. These parameters are summarised in Tab.~\ref{tab:lhc-tctp-heating-para}. Different bunch profiles are considered - gaussian and cos$^{2}$ to account for high frequency lobes observed in measured beam spectra.}
 \item{Using measured multi-bunch spectra for 50ns bunch spacing measured in the LHC. These measurements are for the beam from injection, through the ramp to squeeze and finally collisions.}
 \end{itemize}
 
@@ -42,10 +42,11 @@ HL-LHC 50ns & 1.0 & 50ns & $3.3 \times 10^{11}$ & 1380 \\ \hline
 \end{center}
 \end{table}
 
-The heating estimates assuming on resonance beam harmonics can be seen in Tab.~\ref{tab:on-res-heating-tctp} for a variety of bunch lengths between 1-1.5ns assuming gaussian and cos$^{2}$ bunch distributions.
+The heating estimates assuming on resonance beam harmonics can be seen in Tab.~\ref{tab:on-res-heating-tctp} for a variety of bunch lengths between 1-1.5ns assuming gaussian and cos$^{2}$ bunch distributions. The same data for the TCTP without the ferrite damping tiles can be seen in Tab.~\ref{tab:on-res-heating-tctp-no-ferr}. A number of things area immediately evident; 	The addition of the ferrite drastically reduces the power loss in the TCTP collimator, by a factor of $\approx$ 3. In addition, the consideration of the higher frequency lobes in the heating estimates for the TCTP is significant, as can be seen in Fig.~\ref{fig:tctp-heating-bunch-length-per-freq}. In this case the usefulness for the ferrites is clear.
 
 \begin{table}
-\caption{The power loss of a the TCTP collimator with ferrite for a number of operational modes in the LHC and HL-LHC. All losses are in watts using the parameters found in Tab.~\ref{tab:lhc-tctp-heating-para}}
+\label{tab:on-res-heating-tctp}
+\caption{The power loss of a the TCTP collimator with ferrite for a number of operational modes in the LHC and HL-LHC assuming each cavity mode falls upon a beam harmonic. All losses are in watts using the parameters found in Tab.~\ref{tab:lhc-tctp-heating-para}}
 \begin{center}
 \begin{tabular}{c | c | c | c | c | c | c | c | c  }
 $\tau_{b}$ (ns) & \multicolumn{2}{| c |}{50ns, 2012} & \multicolumn{2}{| c |}{25ns nominal} & \multicolumn{2}{| c |}{50ns, HL-LHC} & \multicolumn{2}{| c }{25ns, HL-LHC} \\ \hline
@@ -60,6 +61,68 @@ $\tau_{b}$ (ns) & \multicolumn{2}{| c |}{50ns, 2012} & \multicolumn{2}{| c |}{25
 \end{center}
 \end{table}
 
+\begin{table}
+\label{tab:on-res-heating-tctp-no-ferr}
+\caption{The power loss of a TCTP collimator without the ferrite damping tiles for a number of operational modes in the LHC and HL-LHC assuming each cavity mode falls upon a beam harmonic. All losses are in watts using the parameters found in Tab.~\ref{tab:lhc-tctp-heating-para}}
+\begin{center}
+\begin{tabular}{c | c | c | c | c | c | c | c | c  }
+$\tau_{b}$ (ns) & \multicolumn{2}{| c |}{50ns, 2012} & \multicolumn{2}{| c |}{25ns nominal} & \multicolumn{2}{| c |}{50ns, HL-LHC} & \multicolumn{2}{| c }{25ns, HL-LHC} \\ \hline
+ & $P_{loss, g}$ & $P_{loss, c}$ & $P_{loss, g}$ & $P_{loss, c}$ & $P_{loss, g}$ & $P_{loss, c}$ & $P_{loss, g}$ & $P_{loss, c}$ \\ \hline
+1.0 & 2.8 & 7.1 & 5.3 & 13.5 & 10.5 & 26.7 & 16.1 & 40.9 \\ \hline
+1.1 & 1.9 & 5.1 & 3.6 & 9.8 & 7.2 & 19.4 & 11.0 & 29.5 \\ \hline
+1.2 & 1.3 & 3.7 & 2.5 & 7.0 & 5.1 & 13.9 & 7.7 & 21.1 \\ \hline
+1.3 & 1.0 & 2.7 &1.8 & 5.0 & 3.6 & 10.0 & 5.5 & 15.2 \\ \hline
+1.4 & 0.7 & 1.9 & 1.3 & 3.7 &2.6 & 7.3 & 4.0 & 11.1 \\ \hline
+1.5 & 0.5 & 1.4 & 1.0 & 2.7 & 1.9 & 5.4 & 2.9 & 8.2 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{figure}
+\label{fig:tctp-heating-bunch-length-per-freq}
+\caption{The beam-induced heating of the TCTP with ferrite damping tiles for a number of different bunch lengths assuming both a gaussian and cos$^{2}$ distributions.}
+\end{figure}
+
+Considering the heating taking beam harmonics seperated the inverse of the bunch seperation (40$MHz$ for $t_{bunch} = 25ns$ and 20$MHz$ for $t_{bunch} = 50ns$) we acquire the results presented in Tab.~\ref{tab:heating-beam-harm-tctp-ferr} and Tab.~\ref{tab:heating-beam-harm-tctp-no-ferr} respectively, again for a variety of LHC operational parameters and assuming either a gaussian or a cos$^{2}$ longitudinal bunch profile. In this case it can be seen that the power loss for the ferrite case is larger than that experienced by the case without ferrite. This can be understood due to the fixed frequencies of the beam harmonics - if a high-Q resonance does not occur at or near a beam harmonic then the beam does not couple to the resonance. Due to the broad resonance peaks of the ferrite damped TCTP design the beam may couple to the resonance even if the resonance frequency of the cavity mode does not match the beam harmonic precisely due to the low-Q of the resonance.
+
+\begin{table}
+\label{tab:heating-beam-harm-tctp-ferr}
+\caption{The power loss of a TCTP collimator with ferrite for a number of operational modes in the LHC and HL-LHC assuming beam harmonics spaced at the reciprocal of the bunch spacing. All losses are in watts using the parameters found in Tab.~\ref{tab:lhc-tctp-heating-para}}
+\begin{center}
+\begin{tabular}{c | c | c | c | c | c | c | c | c  }
+$\tau_{b}$ (ns) & \multicolumn{2}{| c |}{50ns, 2012} & \multicolumn{2}{| c |}{25ns nominal} & \multicolumn{2}{| c |}{50ns, HL-LHC} & \multicolumn{2}{| c }{25ns, HL-LHC} \\ \hline
+ & $P_{loss, g}$ & $P_{loss, c}$ & $P_{loss, g}$ & $P_{loss, c}$ & $P_{loss, g}$ & $P_{loss, c}$ & $P_{loss, g}$ & $P_{loss, c}$ \\ \hline
+1.0 & 9.5 & 18.1 & 9.1 & 17.5 & 35.8 & 68.4 & 27.4 & 52.3 \\ \hline
+1.1 & 7.4 & 14.6 & 7.1 & 14.0 & 28.1 & 55.0 & 21.4 & 42.5 \\ \hline
+1.2 & 5.9 & 11.8 & 5.6 & 11.3 & 22.4 & 44.5 & 17.0 & 34.3 \\ \hline
+1.3 & 4.8 & 9.6 & 4.5 & 9.2 & 18.1 & 36.3 & 13.7 & 27.8 \\ \hline
+1.4 & 3.9 & 8.0 & 3.7 & 7.6 & 14.7 & 30.0 & 11.1 & 22.9 \\ \hline
+1.5 & 3.2 & 6.6 & 3.0 & 6.3 & 12.1 & 25.0 & 9.2 & 19.0 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}
+\label{tab:heating-beam-harm-tctp-no-ferr}
+\caption{The power loss of a TCTP collimator without ferrite for a number of operational modes in the LHC and HL-LHC assuming beam harmonics spaced at the reciprocal of the bunch spacing. All losses are in watts using the parameters found in Tab.~\ref{tab:lhc-tctp-heating-para}}
+\begin{center}
+\begin{tabular}{c | c | c | c | c | c | c | c | c  }
+$\tau_{b}$ (ns) & \multicolumn{2}{| c |}{50ns, 2012} & \multicolumn{2}{| c |}{25ns nominal} & \multicolumn{2}{| c |}{50ns, HL-LHC} & \multicolumn{2}{| c }{25ns, HL-LHC} \\ \hline
+ & $P_{loss, g}$ & $P_{loss, c}$ & $P_{loss, g}$ & $P_{loss, c}$ & $P_{loss, g}$ & $P_{loss, c}$ & $P_{loss, g}$ & $P_{loss, c}$ \\ \hline
+1.0 & 2.8 & 7.1 & 5.3 & 13.5 & 12.1 & 25.0 & 16.1 & 40.9 \\ \hline
+1.1 & 1.9 & 5.1 & 3.6 & 9.8 & 7.2 & 19.4 & 11.0 & 29.5 \\ \hline
+1.2 & 1.3 & 3.7 & 2.5 & 7.0 & 5.1 & 13.9 & 7.7 & 21.1 \\ \hline
+1.3 & 1.0 & 2.7 &1.8 & 5.0 & 3.6 & 10.0 & 5.5 & 15.2 \\ \hline
+1.4 & 0.7 & 1.9 & 1.3 & 3.7 &2.6 & 7.3 & 4.0 & 11.1 \\ \hline
+1.5 & 0.5 & 1.4 & 1.0 & 2.7 & 1.9 & 5.4 & 2.9 & 8.2 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
 \subsubsection{Location of Power Deposition}
+
+Due to the poor cooling available in vacuum (cooled by radiative heating only. Although surrounded by a housing/in contact with surrounded components, the thermal contact between different components within the collimator is poor) it is important to know of the proportion of beam-induced power loss that is lost in thermally sensitive areas. These are areas where large increases in temperature can either lead to direct physical damage (as is the case with RF fingers) or may lead to a worsening physical condition of the collimator (if the ferrite tiles go above their Curie temperature).
 
 Locations of power loss - heating on RF fingers and ferrite
