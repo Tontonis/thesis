@@ -154,10 +154,25 @@ Longitudinal RF Fingers & 4 \\
 \end{center}
 \end{table}
 
-The thermal behaviour as a result of this power load can be analysed using design software such as ANSYS[cite]. The results of these thermal simulations can be seen in [cite F. Carra/M. Garlasche colwg meeting], a summary of which is given in Fig.~\ref{fig:tctp-ferrite-temp-rise}.
+\begin{table}
+\label{tab:heating-ferr-power-load}
+\caption{The power loss in the ferrite of the TCTP collimator. The most pessimistic of the losses estimated in Tab.~\ref{tab:on-res-heating-tctp} and Tab.~\ref{tab:heating-beam-harm-tctp-ferr} for the 1.0ns case. All losses are in watts using the parameters found in Tab.~\ref{tab:lhc-tctp-heating-para}}
+\begin{center}
+\begin{tabular}{c | c | c | c | c }
+$\tau_{b}$ (ns) & 50ns, 2012 & 25ns nominal & 50ns, HL-LHC & 25ns, HL-LHC \\ \hline
+ &  $P_{loss, c}$  & $P_{loss, c}$ &  $P_{loss, c}$  & $P_{loss, c}$ \\ \hline
+1.0 & 1.8 & 1.7 & 6.8 & 5.2 
+\end{tabular}
+\end{center}
+\end{table}
+
+
+The thermal behaviour as a result of this power load can be analysed using design software such as ANSYS[cite]. The results of these thermal simulations can be seen in [cite F. Carra/M. Garlasche colwg meeting], a summary of which is given in Fig.~\ref{fig:tctp-ferrite-temp-rise}. The important figure of merit is in whether the temperature of the ferrite increases beyond its Curie temperature. For the TT2-111R, this 375$^{\circ}$C[cite data sheet]. The power loss for the worst cases of the nominal, HL-LHC and HL-LHC parameters without crab cavities (bunch length $0.5$ns rather than $1.0$ns) is considered, in this case with a factor of two margin of error included to be conservative (i.e. we assume double the power on the ferrite tiles), and it can be seen that the temperature increase for even the worst case results in the temperature being significantly below the Curie temperature for this material.
 
 \begin{figure}
-
+\begin{center}
+\includegraphics[width=0.75\textwidth]{LHC_Collimation_Upgrades/figures/temp_increase_tctp_col.png}
+\end{center}
 \label{fig:tctp-ferrite-temp-rise}
-\caption{The temperature increase of the ferrite damping tiles in the TCTP collimator under a number of beam operating conditions. Plot taken from [cite Carra and Garlasche]}
+\caption{The temperature increase of the ferrite damping tiles in the TCTP collimator under a number of beam operating conditions and for a number of different jaw support materials. Plot taken from [cite Carra and Garlasche].}
 \end{figure}

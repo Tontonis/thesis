@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.2.24)  10 NOV 2012 19:08
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.2.24)  11 NOV 2012 19:49
 entering extended mode
 **C:/Users/hugo/Documents/GitHub/thesis/thesis.tex
 (C:/Users/hugo/Documents/GitHub/thesis/thesis.tex
@@ -352,9 +352,9 @@ Overfull \hbox (21.20888pt too wide) in paragraph at lines 43--43
 m cou-pling impedance 
  []
 
-[10] [11] [12] [13])
+[10] [11] [12] [13] [14])
 \tf@lof=\write5
- [14] [15]
+ [15]
 (C:\Users\hugo\Documents\GitHub\thesis\Preface/abstract.tex) [16
 
 ] [17]
@@ -1210,33 +1210,45 @@ Overfull \hbox (8.65991pt too wide) in paragraph at lines 134--134
 LaTeX Warning: Reference `app:tctp-eigenmodes' on page 107 undefined on input l
 ine 142.
 
-) [107] [108]
+[107]
+<LHC_Collimation_Upgrades/figures/temp_increase_tctp_col.png, id=2068, 640.6434
+3pt x 421.575pt>
+File: LHC_Collimation_Upgrades/figures/temp_increase_tctp_col.png Graphic file 
+(type png)
+
+<use LHC_Collimation_Upgrades/figures/temp_increase_tctp_col.png>
+Package pdftex.def Info: LHC_Collimation_Upgrades/figures/temp_increase_tctp_co
+l.png used on input line 174.
+(pdftex.def)             Requested size: 320.57364pt x 210.95422pt.
+) [108]
+[109 <C:/Users/hugo/Documents/GitHub/thesis/LHC_Collimation_Upgrades/figures/te
+mp_increase_tctp_col.png>]
 Chapter 8.
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/introduction.tex)
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/observations_during_operation.te
 x)
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/comparisons_15_simulations_measu
-rements.tex [109
+rements.tex [110
 
-] [110] [111])
+] [111] [112])
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/impedance_behaviour_components.t
-ex [112])
+ex [113])
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/considerations_besides_impedance
-_for_new_designs.tex [113] [114])
+_for_new_designs.tex [114] [115])
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/new_beam_screen_designs.tex
-[115])
+[116])
 (C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/measurements_observation_19_scre
-en_conductors.tex [116] [117] [118] [119])
-(C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/plans_after_ls1.tex [120]
-[121] [122]) [123]
+en_conductors.tex [117] [118] [119] [120])
+(C:\Users\hugo\Documents\GitHub\thesis\LHC_MKI/plans_after_ls1.tex [121]
+[122] [123]) [124]
 Chapter 9.
-(C:\Users\hugo\Documents\GitHub\thesis\thesis.bbl [124
+(C:\Users\hugo\Documents\GitHub\thesis\thesis.bbl [125
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 24.
 
-) [125
+) [126
 
 ] (C:\Users\hugo\Documents\GitHub\thesis\thesis.aux)
 
@@ -1247,10 +1259,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5120 strings out of 494045
- 99635 string characters out of 3148390
+ 5129 strings out of 494045
+ 100040 string characters out of 3148390
  190783 words of memory out of 3000000
- 8174 multiletter control sequences out of 15000+200000
+ 8182 multiletter control sequences out of 15000+200000
  47319 words of font info for 70 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  28i,13n,24p,1957b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1269,9 +1281,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
 w/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (125 pages, 2136458 bytes).
+Output written on thesis.pdf (126 pages, 2179664 bytes).
 PDF statistics:
- 2180 PDF objects out of 2487 (max. 8388607)
+ 2184 PDF objects out of 2487 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 206 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 

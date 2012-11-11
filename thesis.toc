@@ -71,13 +71,13 @@
 \contentsline {subsection}{\numberline {7.3.2}Impedance Simulations and Results}{101}
 \contentsline {subsection}{\numberline {7.3.3}Beam-Induced Heating}{102}
 \contentsline {subsubsection}{Location of Power Deposition}{107}
-\contentsline {chapter}{\numberline {8}LHC Injection Kicker Magnet}{109}
-\contentsline {section}{\numberline {8.1}LHC Injection Kicker Magnet}{109}
-\contentsline {section}{\numberline {8.2}LHC Phase 2 Collimator Designs}{112}
-\contentsline {section}{\numberline {8.3}LHC Injection Kicker Magnet}{113}
-\contentsline {section}{\numberline {8.4}LHC Injection Kicker Magnet}{117}
-\contentsline {section}{\numberline {8.5}LHC Phase 2 Collimator Designs}{119}
-\contentsline {section}{\numberline {8.6}LHC Injection Kicker Magnet}{120}
-\contentsline {section}{\numberline {8.7}LHC Phase 2 Collimator Designs}{122}
-\contentsline {chapter}{\numberline {9}Conclusions}{124}
-\contentsline {chapter}{Bibliography}{125}
+\contentsline {chapter}{\numberline {8}LHC Injection Kicker Magnet}{110}
+\contentsline {section}{\numberline {8.1}LHC Injection Kicker Magnet}{110}
+\contentsline {section}{\numberline {8.2}LHC Phase 2 Collimator Designs}{113}
+\contentsline {section}{\numberline {8.3}LHC Injection Kicker Magnet}{114}
+\contentsline {section}{\numberline {8.4}LHC Injection Kicker Magnet}{118}
+\contentsline {section}{\numberline {8.5}LHC Phase 2 Collimator Designs}{120}
+\contentsline {section}{\numberline {8.6}LHC Injection Kicker Magnet}{121}
+\contentsline {section}{\numberline {8.7}LHC Phase 2 Collimator Designs}{123}
+\contentsline {chapter}{\numberline {9}Conclusions}{125}
+\contentsline {chapter}{Bibliography}{126}
