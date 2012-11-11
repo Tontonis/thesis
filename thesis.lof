@@ -1,109 +1,112 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The relative displacements and velocities of the source and test particles.}}{22}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces The relative displacements of the source and witness particle in the horizontal and vertical planes that identify the dipolar/driving and quadrupolar/detuning impedances.}}{28}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Cross section of a cylindrical pillbox cavity with an attached beam pipe}}{29}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces The equivalent RLC parallel circuit for a cavity resonance, driven by a current $i_{b}$, in this cas the beam current}}{30}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces The geometry of the classical thick wall formula.}}{31}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Examples of the longitudinal 2.6(a)\hbox {} and transverse 2.6(b)\hbox {} resistive wall impedance of a beam pipe of radius $a = 2cm$ made of both copper ($\sigma = 1 \times 10^{7} S m^{-1}$) and graphite ($\sigma = 7 \times 10^{4} S m^{-1}$.}}{32}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{32}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{32}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces A comparison of 2.7(a)\hbox {} a measured beam power spectrum and a gaussian bunch of the same bunch length in the frequency domain and 2.7(b)\hbox {} the resulting time domain beam profile. The gaussian has a bunch length (4$\sigma _{z}$ = 1.2ns) }}{35}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{35}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{35}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces The longitudinal bunch profile of a number of bunch distributions. Note that all of them are normalised to have a peak bunch current of 1. For the gaussian distribution the bunch length is the 4$\sigma $ value. The bunch length $\tau _{b} = 1.2ns$}}{36}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces The frequency domain 2.9(a)\hbox {} current spectrum and 2.9(b)\hbox {} power spectrum for a number of different bunch profiles with a bunch length $\tau _{b} = 1.2ns$.}}{36}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The relative displacements and velocities of the source and test particles.}}{23}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The relative displacements of the source and witness particle in the horizontal and vertical planes that identify the dipolar/driving and quadrupolar/detuning impedances.}}{29}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Cross section of a cylindrical pillbox cavity with an attached beam pipe}}{30}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces The equivalent RLC parallel circuit for a cavity resonance, driven by a current $i_{b}$, in this cas the beam current}}{31}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The geometry of the classical thick wall formula.}}{32}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Examples of the longitudinal 2.6(a)\hbox {} and transverse 2.6(b)\hbox {} resistive wall impedance of a beam pipe of radius $a = 2cm$ made of both copper ($\sigma = 1 \times 10^{7} S m^{-1}$) and graphite ($\sigma = 7 \times 10^{4} S m^{-1}$.}}{33}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{33}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{33}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces A comparison of 2.7(a)\hbox {} a measured beam power spectrum and a gaussian bunch of the same bunch length in the frequency domain and 2.7(b)\hbox {} the resulting time domain beam profile. The gaussian has a bunch length (4$\sigma _{z}$ = 1.2ns) }}{36}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{36}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{36}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces 2.10(a)\hbox {} The longitudinal profile and the 2.10(b)\hbox {} associated bunch power spectrum for a number of bunch lengths assuming a gaussian bunch profile.}}{37}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces The longitudinal bunch profile of a number of bunch distributions. Note that all of them are normalised to have a peak bunch current of 1. For the gaussian distribution the bunch length is the 4$\sigma $ value. The bunch length $\tau _{b} = 1.2ns$}}{37}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces The frequency domain 2.9(a)\hbox {} current spectrum and 2.9(b)\hbox {} power spectrum for a number of different bunch profiles with a bunch length $\tau _{b} = 1.2ns$.}}{37}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{37}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{37}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces 2.11(a)\hbox {} The longitudinal profile and the 2.11(b)\hbox {} associated bunch power spectrum for a number of bunch lengths assuming a parabolic bunch profile.}}{37}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{37}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{37}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces A comparison of a measured beam power spectrum and a number of analytical bunch profiles assuming a bunch length of 1.2ns.}}{38}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces The beam harmonics of a beam with a bunch spacing of 25ns overlayed on the real component of the longitudinal impedance an example of a low Q impedance ($R_{s}=10\omega $, Q = 10, $f_{res}=1GHz$). The blue lines represent the frequency of a beam harmonic, not necessarily the magnitude of the power spectrum at that point. Note that a number of beam harmonics overlay non-zero impedance values.}}{39}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces The beam harmonics of a beam with a bunch spacing of 25ns overlayed on the real component of the longitudinal impedance an example of a high Q impedance ($R_{s}=10\omega $, Q = 1000, $f_{res}=1GHz$). The blue lines represent the frequency of a beam harmonic, not necessarily the magnitude of the power spectrum at that point. Note that only a single beam harmonic overlays a non-zero impedance values.}}{40}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces The change in power loss due to a narrow band resonance characterised by $\omega _{0} = 2GHz$, $R_{s} = 100\Omega $, $Q = 1000$ with a gaussian bunch distrbution of different lengths.}}{42}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces 2.16(a)\hbox {} The change in power loss due to a narrow band resonance characterised by $\omega _{0} = 2GHz$, $R_{s} = 100\Omega $, $Q = 1000$ interacting with a cos$^{2}$ bunch distribution with different bunch lengths. The impedance and the beam power spectrum are shown in 2.16(b)\hbox {} to illustrate how this relates to the power loss.}}{43}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces 2.17(a)\hbox {} The change in power loss due to a narrow band resonance characterised by $\omega _{0} = 2GHz$, $R_{s} = 100\Omega $, $Q = 1$ interacting with a cos$^{2}$ bunch distribution with different bunch lengths. The impedance and the beam power spectrum are shown in 2.17(b)\hbox {} to illustrate how this relates to the power loss.}}{44}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces 2.10(a)\hbox {} The longitudinal profile and the 2.10(b)\hbox {} associated bunch power spectrum for a number of bunch lengths assuming a gaussian bunch profile.}}{38}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{38}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{38}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces 2.11(a)\hbox {} The longitudinal profile and the 2.11(b)\hbox {} associated bunch power spectrum for a number of bunch lengths assuming a parabolic bunch profile.}}{38}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{38}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{38}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces A comparison of a measured beam power spectrum and a number of analytical bunch profiles assuming a bunch length of 1.2ns.}}{39}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces The beam harmonics of a beam with a bunch spacing of 25ns overlayed on the real component of the longitudinal impedance an example of a low Q impedance ($R_{s}=10\omega $, Q = 10, $f_{res}=1GHz$). The blue lines represent the frequency of a beam harmonic, not necessarily the magnitude of the power spectrum at that point. Note that a number of beam harmonics overlay non-zero impedance values.}}{40}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces The beam harmonics of a beam with a bunch spacing of 25ns overlayed on the real component of the longitudinal impedance an example of a high Q impedance ($R_{s}=10\omega $, Q = 1000, $f_{res}=1GHz$). The blue lines represent the frequency of a beam harmonic, not necessarily the magnitude of the power spectrum at that point. Note that only a single beam harmonic overlays a non-zero impedance values.}}{41}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces The change in power loss due to a narrow band resonance characterised by $\omega _{0} = 2GHz$, $R_{s} = 100\Omega $, $Q = 1000$ with a gaussian bunch distrbution of different lengths.}}{43}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces 2.16(a)\hbox {} The change in power loss due to a narrow band resonance characterised by $\omega _{0} = 2GHz$, $R_{s} = 100\Omega $, $Q = 1000$ interacting with a cos$^{2}$ bunch distribution with different bunch lengths. The impedance and the beam power spectrum are shown in 2.16(b)\hbox {} to illustrate how this relates to the power loss.}}{44}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces A tune diagram illustrating the unperturbed tune of a machine, and the resulting perturbed tune and the tune spread as a result of an impedance source. Note that the tune spread has caused some particle to lie upon a major resonance harmonic.}}{46}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces The change in the bunch length of a proton beam in an SPS like machine due to the effects of a broadband resonator impedance (). Note that the bunch length increases when the beam is above transition, and decreases below transition, as the bunch intensity is increase}}{47}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Examples of a number of modes of transverse oscillation. Note that radial and azimuthal modes may occur, as may coupled modes in which the motion of the horizontal and vertical planes is coupled.}}{48}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces 2.17(a)\hbox {} The change in power loss due to a narrow band resonance characterised by $\omega _{0} = 2GHz$, $R_{s} = 100\Omega $, $Q = 1$ interacting with a cos$^{2}$ bunch distribution with different bunch lengths. The impedance and the beam power spectrum are shown in 2.17(b)\hbox {} to illustrate how this relates to the power loss.}}{45}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{45}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{45}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces A tune diagram illustrating the unperturbed tune of a machine, and the resulting perturbed tune and the tune spread as a result of an impedance source. Note that the tune spread has caused some particle to lie upon a major resonance harmonic.}}{47}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces The change in the bunch length of a proton beam in an SPS like machine due to the effects of a broadband resonator impedance (). Note that the bunch length increases when the beam is above transition, and decreases below transition, as the bunch intensity is increase}}{48}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Examples of a number of modes of transverse oscillation. Note that radial and azimuthal modes may occur, as may coupled modes in which the motion of the horizontal and vertical planes is coupled.}}{49}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison of the electromagnetic field profile of a moving charged particle and a short time pulse propogating along a coaxial wire.}}{55}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Experimental setup for a measurement of the beam coupling impedance using the classical coaxial wire method}}{55}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces An example of a reflection measurement made with and without a matching resistor. The faded line is the measurement without matching, the bold line that with. The reduction in the reflection can be seen.}}{56}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces An example of the resonance pattern seen whilst performing measurements using the resonant method. Each peak corresponds to one data point in the final measurements.}}{58}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Measurement setup for measurements of the dipolar beam coupling impedance using the two wire setup for the classical coaxial wire method.}}{61}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Comparison of the geometries of a cavity and attached beampipes 4.6(a)\hbox {} without and 4.6(b)\hbox {} with the coaxial wire in place. Note the dimensions and that the dashed line in 4.6(a)\hbox {} represents the rotational plane of symmetry}}{67}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{67}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{67}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison of the electromagnetic field profile of a moving charged particle and a short time pulse propogating along a coaxial wire.}}{56}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Experimental setup for a measurement of the beam coupling impedance using the classical coaxial wire method}}{56}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces An example of a reflection measurement made with and without a matching resistor. The faded line is the measurement without matching, the bold line that with. The reduction in the reflection can be seen.}}{57}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces An example of the resonance pattern seen whilst performing measurements using the resonant method. Each peak corresponds to one data point in the final measurements.}}{59}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Measurement setup for measurements of the dipolar beam coupling impedance using the two wire setup for the classical coaxial wire method.}}{62}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Comparison of the geometries of a cavity and attached beampipes 4.6(a)\hbox {} without and 4.6(b)\hbox {} with the coaxial wire in place. Note the dimensions and that the dashed line in 4.6(a)\hbox {} represents the rotational plane of symmetry}}{68}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{68}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{68}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces An illusration of the 5.1(a)\hbox {} source signal and 5.1(b)\hbox {} witness integration in a time domain code. The source signal and the resulting wakefield are shown in 5.1(c)\hbox {}, and the subsequent calculated impedance in 5.1(d)\hbox {}.}}{70}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{70}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{70}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{70}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{70}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces An illusration of the 5.1(a)\hbox {} source signal and 5.1(b)\hbox {} witness integration in a time domain code. The source signal and the resulting wakefield are shown in 5.1(c)\hbox {}, and the subsequent calculated impedance in 5.1(d)\hbox {}.}}{71}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{71}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{71}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{71}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{71}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces An example pillbox structure with and without a tapered transition region 6.1(a)\hbox {}, in this case with the taper at 45$^{\circ }$. The resulting imaginary component of the longitudinal impedances are shown in 6.1(b)\hbox {}, as these are the most significant for beam stability.}}{74}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{74}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{74}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Examples of both 6.2(a)\hbox {} transition pieces (for the SPS Injection Kicker Magnets, between the kicker cells and the vacuum tank) and 6.2(b)\hbox {} RF fingers (in this case for the PIMS module, placed between cryo-modules in the LHC).}}{74}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{74}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{74}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces The layout of the RF fingers in the VMTSA both in 6.3(a)\hbox {} the fully operational configuration and 6.3(b)\hbox {} when the RF fingers lose contact. 6.3(c)\hbox {} shows the resulting beam coupling impedance of the two types of impedance as acquired by coaxial wire measurements.}}{75}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces An example pillbox structure with and without a tapered transition region 6.1(a)\hbox {}, in this case with the taper at 45$^{\circ }$. The resulting imaginary component of the longitudinal impedances are shown in 6.1(b)\hbox {}, as these are the most significant for beam stability.}}{75}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{75}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{75}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{75}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces An example of seriagraphy in the SPS Extraction Kicker Magnets (SPS-MKE). The layout of the interleaved fingers is shown in 6.4(a)\hbox {} and the actual seriagraphed magnets in 6.4(b)\hbox {}. A comparison of the longitudinal beam coupling impedance with and without the seriagraphy is shown in 6.4(c)\hbox {}.}}{78}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{78}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{78}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{78}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces The complex permeability of a number of sample materials used to damp cavity modes.}}{79}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces The change in the peak impedance value of a cavity impedance with a constant R/Q, but changing Q.}}{80}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Two sample geometries used to examine the effects of ferrite damping material on cavity resonances. 6.7(a)\hbox {} shows a cavity with the ferrite unshielded, and 6.7(b)\hbox {} shows a more realistic case in which the ferrite is shielded from directly seeing the traversing beam.}}{81}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{81}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{81}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces The real component of the longitudinal beam coupling impedance of a cavity without and with a damping material with $\epsilon ^{'}=10$, $\mu ^{'}=10$ and $\mu ^{'}/\mu ^{'}$ is varied. The non-damped cavity is shown for comparison. The change in resonance frequency and shunt impedance impedance is due to the increased $\epsilon ^{'}$ of the damping material.}}{84}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces 6.9(a)\hbox {} The reduction in the Q of the cavity resonance with the increasing loss tangent of the ferrite damping, showing a strong decrease of the resonant Q with a small increase in loss tangent. 6.9(b)\hbox {} The percentage of the power loss in the ferrite as the resonant Q decreases. this can be seen to tend towards 100\% as the Q approaches 0.}}{85}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{85}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{85}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces The power loss due to a beam with $1.15 \times 10^{11}$ particles per bunch, 288 bunches, a ring circumference 6911m and a bunch length $4\sigma = 0.04m$ assuming a gaussian bunch distribution in the unscreened cavity.}}{85}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces The real component of the longitudinal beam coupling impedance of a cavity without and with shielded damping material with $\epsilon ^{'}=10$, $\mu ^{'}=10$ and $\mu ^{'}/\mu ^{'}$ is varied. The non-damped cavity is shown for comparison. The change in resonance frequency and shunt impedance impedance is due to the increased $\epsilon ^{'}$ of the damping material.}}{86}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces 6.12(a)\hbox {} The reduction in the Q of the cavity resonance with the increasing loss tangent of the ferrite damping, showing a strong decrease of the resonant Q with a small increase in loss tangent. 6.12(b)\hbox {} The percentage of the power loss in the ferrite as the resonant Q decreases. this can be seen to tend towards 100\% as the Q approaches 0.}}{87}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{87}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{87}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces The power loss due to a beam with $1.15 \times 10^{11}$ particles per bunch, 288 bunches, a ring circumference 6911m and a bunch length $4\sigma = 0.04m$ assuming a gaussian bunch distribution in the screened cavity.}}{87}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Examples of both 6.2(a)\hbox {} transition pieces (for the SPS Injection Kicker Magnets, between the kicker cells and the vacuum tank) and 6.2(b)\hbox {} RF fingers (in this case for the PIMS module, placed between cryo-modules in the LHC).}}{75}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{75}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{75}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces The layout of the RF fingers in the VMTSA both in 6.3(a)\hbox {} the fully operational configuration and 6.3(b)\hbox {} when the RF fingers lose contact. 6.3(c)\hbox {} shows the resulting beam coupling impedance of the two types of impedance as acquired by coaxial wire measurements.}}{76}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{76}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{76}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{76}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces An example of seriagraphy in the SPS Extraction Kicker Magnets (SPS-MKE). The layout of the interleaved fingers is shown in 6.4(a)\hbox {} and the actual seriagraphed magnets in 6.4(b)\hbox {}. A comparison of the longitudinal beam coupling impedance with and without the seriagraphy is shown in 6.4(c)\hbox {}.}}{79}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{79}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{79}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{79}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces The complex permeability of a number of sample materials used to damp cavity modes.}}{80}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces The change in the peak impedance value of a cavity impedance with a constant R/Q, but changing Q.}}{81}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Two sample geometries used to examine the effects of ferrite damping material on cavity resonances. 6.7(a)\hbox {} shows a cavity with the ferrite unshielded, and 6.7(b)\hbox {} shows a more realistic case in which the ferrite is shielded from directly seeing the traversing beam.}}{82}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{82}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{82}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces The real component of the longitudinal beam coupling impedance of a cavity without and with a damping material with $\epsilon ^{'}=10$, $\mu ^{'}=10$ and $\mu ^{'}/\mu ^{'}$ is varied. The non-damped cavity is shown for comparison. The change in resonance frequency and shunt impedance impedance is due to the increased $\epsilon ^{'}$ of the damping material.}}{85}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces 6.9(a)\hbox {} The reduction in the Q of the cavity resonance with the increasing loss tangent of the ferrite damping, showing a strong decrease of the resonant Q with a small increase in loss tangent. 6.9(b)\hbox {} The percentage of the power loss in the ferrite as the resonant Q decreases. this can be seen to tend towards 100\% as the Q approaches 0.}}{86}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{86}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{86}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces The power loss due to a beam with $1.15 \times 10^{11}$ particles per bunch, 288 bunches, a ring circumference 6911m and a bunch length $4\sigma = 0.04m$ assuming a gaussian bunch distribution in the unscreened cavity.}}{86}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces The real component of the longitudinal beam coupling impedance of a cavity without and with shielded damping material with $\epsilon ^{'}=10$, $\mu ^{'}=10$ and $\mu ^{'}/\mu ^{'}$ is varied. The non-damped cavity is shown for comparison. The change in resonance frequency and shunt impedance impedance is due to the increased $\epsilon ^{'}$ of the damping material.}}{87}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces 6.12(a)\hbox {} The reduction in the Q of the cavity resonance with the increasing loss tangent of the ferrite damping, showing a strong decrease of the resonant Q with a small increase in loss tangent. 6.12(b)\hbox {} The percentage of the power loss in the ferrite as the resonant Q decreases. this can be seen to tend towards 100\% as the Q approaches 0.}}{88}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{88}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{88}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces The power loss due to a beam with $1.15 \times 10^{11}$ particles per bunch, 288 bunches, a ring circumference 6911m and a bunch length $4\sigma = 0.04m$ assuming a gaussian bunch distribution in the screened cavity.}}{88}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Different components the impedance reduction measures in the phase 1 collimator design. 7.1(a)\hbox {} shows the longitudinal RF fingers, ensuring a good conducting path for the beam image currents, and 7.1(b)\hbox {} shows the sliding RF contacts on the collimators jaw. These are intended to minimise the volume seen by the beam, thus making any cavity modes that may be excited by the beam at very high frequencies where the beam power spectrum is very small.}}{90}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{90}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{90}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces The RF system for use in the phase 2 collimation system. The sliding RF contacts of the phase 1 design are replaced with a ferrite damping system. The RF contacts are removed, allowing the beam to see the entire RF cavity, causing resonances at lower frequencies. The Q of these resonances are decreased by the use of ferrite damping tiles.}}{92}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces A number of the proposed jaw designs for the phase 2 secondary collimators. 7.3(a)\hbox {} shows the jaw made entirely from molybdenum. Glidcop maybe substituted for molybdenum in this design. 7.3(b)\hbox {} shows the jaw made from a mixture of molybdenum diamond composite with a 2mm coating of molybdenum on the surface. The composite ensure a mechanically strong jaw, whilst the coating screens the higher resistivity composite and provides a smooth surface on the beam-facing part of the jaw. In this case the composite maybe substituted with copper diamond composite, and likewise the coating may be replaced with GlidCop.}}{94}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{94}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{94}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces The physical model of the Mounet model of parallel plate impedance. Note that the two sides of the structure do not have to be symmetric. The materials maybe any material provided it's frequency dependent properties are well defined.}}{95}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces The impedances of different jaw materials for the phase 2 secondary collimators. 7.5(a)\hbox {} The longitudina impedance, 7.5(b)\hbox {} the horizontal dipolar impedance, 7.5(c)\hbox {}, the vertical dipolar impedance, 7.5(d)\hbox {} the horizontal quadrupolar impedance and 7.5(e)\hbox {} the vertical quadrupolar impedance.}}{96}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{96}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{96}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{96}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{96}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{96}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces The real component of the vertical dipolar impedance of the various collimator jaw materials assuming a 2mm half gap.}}{97}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces The TCTP collimator has a number of important impedance reduction techniques present in its design. The RF system, 7.7(a)\hbox {}, replaces the sliding RF contacts of the phase 1 design, using ferrite tiles (shown in black) to reduce the resonant Q of the structure. The longitudinal RF fingers, shown in 7.7(b)\hbox {}, provide a good conducting path for the beam image current in the transition from the beam pipe to the collimator jaw.}}{99}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{99}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{99}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces The different RF systems considered for the TCTP collimator. 7.8(a)\hbox {} shows an RF system similar to the phase 1 RF system. In these simulations the sliding RF contacts are replaced by a perfect connection - for frequencies lower than 2-3GHz this is a good approximation and greatly simplifies the simulation model. 7.8(b)\hbox {} shows the RF circuit complete with ferrite. 7.8(c)\hbox {} shows the phase 2 RF circuit but without any ferrite present.}}{101}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{101}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{101}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{101}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces The real component of the longitudinal impedance for the TCTP collimator as simulated by both the time and frequency domains for the case with and without ferrite damping tiles. The strong resonances present in the case without ferrite can be seen to be strongly damped when the ferrite tiles are added. However a substantial broadband component occurs in addition due to the broadened resonance peaks.}}{103}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces The beam-induced heating of the TCTP with ferrite damping tiles for a number of different bunch lengths assuming both a gaussian and cos$^{2}$ distributions.}}{104}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Different components the impedance reduction measures in the phase 1 collimator design. 7.1(a)\hbox {} shows the longitudinal RF fingers, ensuring a good conducting path for the beam image currents, and 7.1(b)\hbox {} shows the sliding RF contacts on the collimators jaw. These are intended to minimise the volume seen by the beam, thus making any cavity modes that may be excited by the beam at very high frequencies where the beam power spectrum is very small.}}{91}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{91}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{91}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces The RF system for use in the phase 2 collimation system. The sliding RF contacts of the phase 1 design are replaced with a ferrite damping system. The RF contacts are removed, allowing the beam to see the entire RF cavity, causing resonances at lower frequencies. The Q of these resonances are decreased by the use of ferrite damping tiles.}}{93}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces A number of the proposed jaw designs for the phase 2 secondary collimators. 7.3(a)\hbox {} shows the jaw made entirely from molybdenum. Glidcop maybe substituted for molybdenum in this design. 7.3(b)\hbox {} shows the jaw made from a mixture of molybdenum diamond composite with a 2mm coating of molybdenum on the surface. The composite ensure a mechanically strong jaw, whilst the coating screens the higher resistivity composite and provides a smooth surface on the beam-facing part of the jaw. In this case the composite maybe substituted with copper diamond composite, and likewise the coating may be replaced with GlidCop.}}{95}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{95}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{95}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces The physical model of the Mounet model of parallel plate impedance. Note that the two sides of the structure do not have to be symmetric. The materials maybe any material provided it's frequency dependent properties are well defined.}}{96}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces The impedances of different jaw materials for the phase 2 secondary collimators. 7.5(a)\hbox {} The longitudina impedance, 7.5(b)\hbox {} the horizontal dipolar impedance, 7.5(c)\hbox {}, the vertical dipolar impedance, 7.5(d)\hbox {} the horizontal quadrupolar impedance and 7.5(e)\hbox {} the vertical quadrupolar impedance.}}{97}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{97}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{97}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{97}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{97}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{97}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces The real component of the vertical dipolar impedance of the various collimator jaw materials assuming a 2mm half gap.}}{98}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces The TCTP collimator has a number of important impedance reduction techniques present in its design. The RF system, 7.7(a)\hbox {}, replaces the sliding RF contacts of the phase 1 design, using ferrite tiles (shown in black) to reduce the resonant Q of the structure. The longitudinal RF fingers, shown in 7.7(b)\hbox {}, provide a good conducting path for the beam image current in the transition from the beam pipe to the collimator jaw.}}{100}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{100}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{100}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces The different RF systems considered for the TCTP collimator. 7.8(a)\hbox {} shows an RF system similar to the phase 1 RF system. In these simulations the sliding RF contacts are replaced by a perfect connection - for frequencies lower than 2-3GHz this is a good approximation and greatly simplifies the simulation model. 7.8(b)\hbox {} shows the RF circuit complete with ferrite. 7.8(c)\hbox {} shows the phase 2 RF circuit but without any ferrite present.}}{102}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{102}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{102}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{102}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces The real component of the longitudinal impedance for the TCTP collimator as simulated by both the time and frequency domains for the case with and without ferrite damping tiles. The strong resonances present in the case without ferrite can be seen to be strongly damped when the ferrite tiles are added. However a substantial broadband component occurs in addition due to the broadened resonance peaks.}}{104}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces The beam-induced heating of the TCTP with ferrite damping tiles for a number of different bunch lengths assuming both a gaussian and cos$^{2}$ distributions.}}{105}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces The different thermally sensitive components of the TCTP collimator. 7.11(a)\hbox {} shows the ferrite tiles, and 7.11(b)\hbox {} the longitudinal RF fingers.}}{107}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{107}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{107}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
