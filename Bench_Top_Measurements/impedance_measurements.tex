@@ -367,7 +367,25 @@ Consideration of Eqn. \ref{eqn:rot_gen} lets it be seen that
 
 \subsection{Measurements on Example Geometries}
 
-In this section shall be presented a number of example analyses of coaxial wire measurements done on geometries exhibiting top/bottom, left/right symmetry and an asymmetric structure. 
+In this section shall be presented a number of example analyses of coaxial wire measurements done on geometries exhibiting top/bottom, left/right symmetry and an asymmetric structure. This permits a step-by-step guide to analysis of the wire measurements, which may not be immediately clear from the mathematical introduction. These simulations are simulated using both Ansoft HFSS and Maxwell using a driven modal solution. The measurement system is simulated by placing waveguide ports at either end of the geometry with a conducting cylinder placed as the inner conductor of the coaxial system. The transmission parameters are then acquired 
+
+\subsubsection{Structure with Top/Bottom, Left/Rght Symmetry}
+
+For the structure exhibiting top/bottom, left/right symmetry we use the Tsutsui model of two parallel plates as shown in Fig.~\ref{fg:tsutsui-model}. We use this due to the model allowing the prediction of the longitudinal, dipolar and quadrupolar impedances for a wide variety of materials and frequency ranges [cite Tsutsui longitudinal, transverse]. 
+
+
+\begin{figure}
+\subfigure[]{
+\label{fig:tsutsui-model}
+}
+
+\subfigure[]{
+
+\label{fig:zannini-model}
+}
+\label{fig:wire-measure-geometries}
+\caption{The geometries used for coaxial wire measurement simulations. For the geometry with top/bottom, left/right symmetry we use the Tsutsui model (\ref{fig:tsutsui-model}) using two parallel plates. For the asymmetric structure we use the Zannini-model for a c-core ferrite kicker magnet (\ref{fig:zannini-model}), which generates a constant term and a noticeable asymmetric term.}
+\end{figure}
 
 \section{High Q-factor Impedances}
 
