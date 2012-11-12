@@ -367,11 +367,51 @@ Consideration of Eqn. \ref{eqn:rot_gen} lets it be seen that
 
 \subsection{Measurements on Example Geometries}
 
-In this section shall be presented a number of example analyses of coaxial wire measurements done on geometries exhibiting top/bottom, left/right symmetry and an asymmetric structure. This permits a step-by-step guide to analysis of the wire measurements, which may not be immediately clear from the mathematical introduction. These simulations are simulated using both Ansoft HFSS and Maxwell using a driven modal solution. The measurement system is simulated by placing waveguide ports at either end of the geometry with a conducting cylinder placed as the inner conductor of the coaxial system. The transmission parameters are then acquired 
+In this section shall be presented a number of example analyses of coaxial wire measurements done on geometries exhibiting top/bottom, left/right symmetry and an asymmetric structure. This permits a step-by-step guide to analysis of the wire measurements, which may not be immediately clear from the mathematical introduction. These simulations are simulated using both Ansoft HFSS and Maxwell using a driven modal solution. 
+
+The simulations with HFSS are carried out in the following manner: the measurement system is simulated by placing waveguide ports at either end of the geometry with a conducting cylinder placed as the inner conductor of the coaxial system. The transmission parameters are then acquired as a result of the simulations. The wire may then be displaced as neccessary for the displaced single wire measurements. For two wire measurements a quarter geometry may be simulated, using suitable boundary conditions on the quarter geometry.
+
+Maxwell is a frequency domain code optimised for low frequencies (less thans 10s of MHz). It does not permit the use of waveguide ports, however does allow the definition of current segments with phase changes between them. By considering the current (either a single current segment to simulate a single wire, or two current carrying segments 180$^{\circ}$ out of phase for two wires) to be the equivalent of a beam current, and assuming the inclusion of the current carrying component is a negligible perturbation to the geometry, the impedance can be found by summing the power loss in the system. This can be seen to be equivalent to the beam induced heating experienced by a beam interacting with an impedance.
+
+This can be thought of by comparing the system to a homogenous transmission line[cite Kroyer]. The power $P$ of a wave travelling along the line is given by 
+
+\begin{equation}
+P = P_{0}e^{-2\alpha z}
+\end{equation}
+
+where $P_{0}$ is the power at the beginning of the transmission line, $\alpha$ is the attenuation coefficient and $z$ the distance along the line. By differentiation it can be seen that
+
+\begin{equation}
+\alpha = -\frac{1}{2P} \frac{dP}{dz} \approx \frac{1}{2P} \frac{\delta P}{\delta z}
+\end{equation}
+
+where $\delta P$ is the power lost over the short distance $\delta z$. The transmission parameter of a line $S_{21}$ is given by
+
+\begin{equation}
+S_{21} = e^{-\alpha \delta z}.
+\end{equation}
+
+If the impedance is evaluated using the log formula ($Z = Z_{c}ln S_{21}$), it can be seen that the real impedance is subsequently given by
+
+\begin{equation}
+\Re{}e \left( Z \right) = Z_{c} \frac{2 \delta P}{P}.
+\end{equation}
+
+Assuming a peak current $I_{0}$ on the wire, $P = I_{0}^{2}Z_{c}/2$, which gives
+
+\begin{equation}
+\Re{}e \left( Z \right) = \frac{2 \delta P}{I_{0}^{2}}.
+\end{equation}
+
+To acquire the transverse impedance for two wire simulations it is simply neccesary to normalise by the wavenumber $k=\omega / c$ and the seperation of the wire $\Delta$ 
+
+\begin{equation}
+Z_{dip} = \frac{c}{\omega \Delta^{2}} \frac{2 \delta P}{I_{0}^{2}}.
+\end{equation}
 
 \subsubsection{Structure with Top/Bottom, Left/Rght Symmetry}
 
-For the structure exhibiting top/bottom, left/right symmetry we use the Tsutsui model of two parallel plates as shown in Fig.~\ref{fg:tsutsui-model}. We use this due to the model allowing the prediction of the longitudinal, dipolar and quadrupolar impedances for a wide variety of materials and frequency ranges [cite Tsutsui longitudinal, transverse]. 
+For the structure exhibiting top/bottom, left/right symmetry we use the Tsutsui model of two parallel plates as shown in Fig.~\ref{fg:tsutsui-model}. We use this due to the model allowing the prediction of the longitudinal, dipolar and quadrupolar impedances for a wide variety of materials and frequency ranges [cite Tsutsui longitudinal, transverse]. For these simulations a short segment of a Tsutsui geometry is simulated using two different materials
 
 
 \begin{figure}
