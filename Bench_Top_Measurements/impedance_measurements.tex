@@ -411,9 +411,6 @@ Z_{dip} = \frac{c}{\omega \Delta^{2}} \frac{2 \delta P}{I_{0}^{2}}.
 
 \subsubsection{Structure with Top/Bottom, Left/Rght Symmetry}
 
-For the structure exhibiting top/bottom, left/right symmetry we use the Tsutsui model of two parallel plates as shown in Fig.~\ref{fg:tsutsui-model}. We use this due to the model allowing the prediction of the longitudinal, dipolar and quadrupolar impedances for a wide variety of materials and frequency ranges [cite Tsutsui longitudinal, transverse]. For these simulations a short segment of a Tsutsui geometry is simulated using two different materials
-
-
 \begin{figure}
 \subfigure[]{
 \label{fig:tsutsui-model}
@@ -426,6 +423,15 @@ For the structure exhibiting top/bottom, left/right symmetry we use the Tsutsui 
 \label{fig:wire-measure-geometries}
 \caption{The geometries used for coaxial wire measurement simulations. For the geometry with top/bottom, left/right symmetry we use the Tsutsui model (\ref{fig:tsutsui-model}) using two parallel plates. For the asymmetric structure we use the Zannini-model for a c-core ferrite kicker magnet (\ref{fig:zannini-model}), which generates a constant term and a noticeable asymmetric term.}
 \end{figure}
+
+\begin{figure}
+\label{fig:4a4-permeability}
+\caption{The complex permeability of 4A4 ferrite. Taken from the model in [cite]}
+\end{figure}
+
+For the structure exhibiting top/bottom, left/right symmetry we use the Tsutsui model of two parallel plates as shown in Fig.~\ref{fg:tsutsui-model}. We use this due to the model allowing the prediction of the longitudinal, dipolar and quadrupolar impedances for a wide variety of materials and frequency ranges [cite Tsutsui longitudinal, transverse]. For these simulations a short segment of a Tsutsui geometry is simulated using two different materials, in this case graphite, to represent a structure with a poor conductivity ($\sigma_{graphite} = 7 \time 10^{4} S m^{-1}$), and 4A4 ferrite, to represent a magnetically lossy material (In this case, $\epsilon_{r} = 10$, $\sigma_{4A4} = 10^{-6} S m^{-1}$ (a mild conductivity is applied to prevent static build up in ferrite components in accelerators), and $\mu_{r} = \mu^{'} + j \mu^{"}$, shown in Fig.~\ref{fig:4a4-permeability}.). In both cases the following dimensions are used: $a=25mm$, $b=5mm$, $d=5mm$. A structure 150mm iin length is used to reduce numerical artefacts.
+
+
 
 \section{High Q-factor Impedances}
 
